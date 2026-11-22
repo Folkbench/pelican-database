@@ -17,7 +17,7 @@ Each model is indexed under a canonical `provider/model_id` identifier with one 
 <!-- STATS:START -->
 | Metric | Value |
 |---|---:|
-| **Last Updated (UTC)** | `2026-11-22T05:50:22Z` |
+| **Last Updated (UTC)** | `2026-11-22T05:58:30Z` |
 | **Unique Models (`provider/model_id`)** | **507** |
 | **Providers Covered** | **68** |
 | **Original `.svg` + Rendered `.png`** | **454** (89.5%) |
