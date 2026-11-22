@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350" width="400" height="350">
+  <rect width="400" height="350" fill="#87CEEB"/>
+  
+  <rect x="0" y="300" width="400" height="50" fill="#90EE90"/>
+
+  <circle cx="130" cy="265" r="45" fill="none" stroke="#333" stroke-width="5"/>
+  <line x1="130" y1="220" x2="130" y2="310" stroke="#555" stroke-width="2"/>
+  <line x1="85" y1="265" x2="175" y2="265" stroke="#555" stroke-width="2"/>
+  <line x1="98" y1="233" x2="162" y2="297" stroke="#555" stroke-width="2"/>
+  <line x1="162" y1="233" x2="98" y2="297" stroke="#555" stroke-width="2"/>
+  <circle cx="130" cy="265" r="6" fill="#333"/>
+
+  <circle cx="270" cy="265" r="45" fill="none" stroke="#333" stroke-width="5"/>
+  <line x1="270" y1="220" x2="270" y2="310" stroke="#555" stroke-width="2"/>
+  <line x1="225" y1="265" x2="315" y2="265" stroke="#555" stroke-width="2"/>
+  <line x1="238" y1="233" x2="302" y2="297" stroke="#555" stroke-width="2"/>
+  <line x1="302" y1="233" x2="238" y2="297" stroke="#555" stroke-width="2"/>
+  <circle cx="270" cy="265" r="6" fill="#333"/>
+
+  <line x1="130" y1="265" x2="200" y2="245" stroke="#555" stroke-width="5"/>
+  <line x1="130" y1="265" x2="185" y2="185" stroke="#555" stroke-width="5"/>
+  <line x1="200" y1="245" x2="185" y2="185" stroke="#555" stroke-width="5"/>
+  <line x1="185" y1="185" x2="245" y2="185" stroke="#555" stroke-width="5"/>
+  <line x1="245" y1="185" x2="270" y2="265" stroke="#555" stroke-width="5"/>
+  <line x1="200" y1="245" x2="195" y2="175" stroke="#555" stroke-width="5"/>
+
+  <circle cx="200" cy="245" r="8" fill="#333"/>
+  <line x1="200" y1="245" x2="220" y2="260" stroke="#333" stroke-width="4"/>
+  <line x1="215" y1="257" x2="228" y2="262" stroke="#333" stroke-width="4"/>
+  <line x1="200" y1="245" x2="180" y2="230" stroke="#333" stroke-width="4"/>
+  <line x1="172" y1="227" x2="185" y2="232" stroke="#333" stroke-width="4"/>
+
+  <ellipse cx="193" cy="172" rx="22" ry="7" fill="#333"/>
+  <line x1="195" y1="175" x2="195" y2="185" stroke="#555" stroke-width="4"/>
+
+  <line x1="245" y1="185" x2="250" y2="165" stroke="#555" stroke-width="5"/>
+  <line x1="240" y1="163" x2="260" y2="163" stroke="#555" stroke-width="5"/>
+
+  <ellipse cx="195" cy="145" rx="45" ry="30" fill="white" stroke="#ccc" stroke-width="1"/>
+  
+  <ellipse cx="185" cy="148" rx="38" ry="18" fill="#e8e8e8" stroke="#ccc" stroke-width="1" transform="rotate(-10,185,148)"/>
+
+  <path d="M 220 130 Q 240 110 235 90" stroke="white" stroke-width="18" fill="none" stroke-linecap="round"/>
+
+  <circle cx="233" cy="82" r="22" fill="white" stroke="#ccc" stroke-width="1"/>
+
+  <circle cx="243" cy="76" r="5" fill="#333"/>
+  <circle cx="245" cy="74" r="2" fill="white"/>
+
+  <path d="M 248 83 L 295 88 L 290 95 L 248 90 Z" fill="#FF8C00" stroke="#e07000" stroke-width="1"/>
+  <path d="M 250 90 Q 280 105 288 95 L 248 90 Z" fill="#FF6347" stroke="#e05030" stroke-width="1"/>
+
+  <line x1="180" y1="172" x2="185" y2="200" stroke="#FF8C00" stroke-width="4"/>
+  <line x1="205" y1="172" x2="200" y2="200" stroke="#FF8C00" stroke-width="4"/>
+
+  <ellipse cx="228" cy="62" rx="20" ry="5" fill="#e74c3c"/>
+  <rect x="215" y="40" width="25" height="23" fill="#e74c3c" rx="2"/>
+  <ellipse cx="228" cy="40" rx="12" ry="4" fill="#c0392b"/>
+
+  <line x1="50" y1="250" x2="20" y2="250" stroke="white" stroke-width="3" stroke-dasharray="5,4" opacity="0.7"/>
+  <line x1="55" y1="265" x2="15" y2="265" stroke="white" stroke-width="3" stroke-dasharray="5,4" opacity="0.7"/>
+  <line x1="50" y1="280" x2="20" y2="280" stroke="white" stroke-width="3" stroke-dasharray="5,4" opacity="0.7"/>
+</svg>

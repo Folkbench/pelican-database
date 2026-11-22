@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>California Brown Pelican on a Bicycle</title>
+  <desc id="desc">Illustration of a California brown pelican in full breeding plumage pedaling a bicycle.</desc>
+  <style>
+    .pelican-body  { fill: #8B4513; stroke: #333; stroke-width: 1.5; }
+    .pelican-head  { fill: #FFD700; stroke: #333; stroke-width: 1.5; }
+    .pelican-chest { fill: #FFD700; stroke: #333; stroke-width: 1.5; }
+    .pelican-beak  { fill: #FFAA33; stroke: #B37736; stroke-width: 1; }
+    .pelican-pouch { fill: #FF4444; stroke: #B22222; stroke-width: 1; }
+    .pelican-eye   { fill: #333; }
+    .pelican-leg   { fill: #C68642; stroke: #7F5230; stroke-width: 1; }
+    .bike-frame    { fill: none; stroke: #CC3333; stroke-width: 4; }
+    .bike-wheel    { fill: none; stroke: #555; stroke-width: 3; }
+    .bike-tire     { fill: none; stroke: #333; stroke-width: 5; }
+    .bike-spoke    { stroke: #888; stroke-width: 1; }
+    .bike-seat     { fill: #444; }
+    .bike-handlebar{ fill: none; stroke: #666; stroke-width: 3; }
+    .bike-pedal    { fill: #555; stroke: #333; stroke-width: 0.5; }
+  </style>
+
+  <g id="bicycle">
+    <g transform="translate(100,220)" id="rear-wheel">
+      <circle class="bike-tire" r="40" cx="0" cy="0"/>
+      <circle class="bike-wheel" r="35" cx="0" cy="0"/>
+      <line class="bike-spoke" x1="0" y1="-35" x2="0" y2="35"/>
+      <line class="bike-spoke" x1="-35" y1="0" x2="35" y2="0"/>
+      <line class="bike-spoke" x1="-25" y1="-25" x2="25" y2="25"/>
+      <line class="bike-spoke" x1="-25" y1="25" x2="25" y2="-25"/>
+      <circle fill="#666" r="3" cx="0" cy="0"/>
+    </g>
+    <g transform="translate(280,220)" id="front-wheel">
+      <circle class="bike-tire" r="40" cx="0" cy="0"/>
+      <circle class="bike-wheel" r="35" cx="0" cy="0"/>
+      <line class="bike-spoke" x1="0" y1="-35" x2="0" y2="35"/>
+      <line class="bike-spoke" x1="-35" y1="0" x2="35" y2="0"/>
+      <line class="bike-spoke" x1="-25" y1="-25" x2="25" y2="25"/>
+      <line class="bike-spoke" x1="-25" y1="25" x2="25" y2="-25"/>
+      <circle fill="#666" r="3" cx="0" cy="0"/>
+    </g>
+    <g id="frame">
+      <path class="bike-frame" d="M100 220 L190 150 L250 220"/>
+      <path class="bike-frame" d="M190 150 L135 140"/>
+      <line class="bike-frame" x1="190" y1="220" x2="100" y2="220"/>
+      <line class="bike-frame" x1="190" y1="220" x2="280" y2="220"/>
+      <line class="bike-frame" x1="250" y1="220" x2="280" y2="220"/>
+      <line class="bike-frame" x1="250" y1="155" x2="265" y2="220"/>
+      <path class="bike-seat" d="M120 135 h30 q5 0 5 5 v10 q0 5 -5 5 h-30 q-5 0 -5 -5 v-10 q0 -5 5 -5 z"/>
+      <path class="bike-handlebar" d="M255 145 q-10 -15 -25 -15 M275 145 q10 -15 25 -15"/>
+      <line class="bike-handlebar" x1="265" y1="155" x2="265" y2="145" stroke-width="4"/>
+      <circle fill="#666" r="5" cx="190" cy="220"/>
+      <line stroke="#555" stroke-width="2" x1="190" y1="220" x2="175" y2="235"/>
+      <rect class="bike-pedal" x="168" y="232" rx="1" width="14" height="6"/>
+      <line stroke="#555" stroke-width="2" x1="190" y1="220" x2="205" y2="205"/>
+      <rect class="bike-pedal" x="202" y="202" rx="1" width="14" height="6" transform="rotate(-45 209 205)"/>
+    </g>
+  </g>
+
+  <g id="pelican">
+    <path class="pelican-leg" d="M175 155 Q170 190 175 230 L175 234"/>
+    <path class="pelican-leg" d="M195 155 Q200 190 205 205 L210 207"/>
+    <path class="pelican-body" d="M150 160 Q140 120 180 90 Q220 120 210 160 Q190 180 150 160 Z"/>
+    <path class="pelican-chest" d="M175 95 Q180 115 195 120"/>
+    <circle class="pelican-head" cx="195" cy="85" r="15"/>
+    <path class="pelican-beak" d="M205 80 Q250 75 260 85"/>
+    <path class="pelican-pouch" d="M205 88 Q250 95 260 87 L260 85 Q240 115 205 88 Z"/>
+    <circle class="pelican-eye" cx="198" cy="80" r="2.5"/>
+  </g>
+
+</svg>

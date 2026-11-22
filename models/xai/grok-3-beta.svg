@@ -1,0 +1,41 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#87CEEB" />
+  
+  <!-- Ground -->
+  <rect x="0" y="250" width="400" height="50" fill="#8B4513" />
+
+  <!-- Bicycle Wheels -->
+  <circle cx="100" cy="240" r="30" fill="#333" stroke="#000" stroke-width="2" />
+  <circle cx="250" cy="240" r="30" fill="#333" stroke="#000" stroke-width="2" />
+  <circle cx="100" cy="240" r="5" fill="#FFF" />
+  <circle cx="250" cy="240" r="5" fill="#FFF" />
+
+  <!-- Bicycle Frame -->
+  <line x1="100" y1="240" x2="175" y2="180" stroke="#FF0000" stroke-width="3" />
+  <line x1="175" y1="180" x2="250" y2="240" stroke="#FF0000" stroke-width="3" />
+  <line x1="175" y1="180" x2="175" y2="120" stroke="#FF0000" stroke-width="3" />
+  <line x1="175" y1="120" x2="220" y2="120" stroke="#FF0000" stroke-width="3" />
+
+  <!-- Handlebars -->
+  <line x1="220" y1="120" x2="240" y2="100" stroke="#FF0000" stroke-width="3" />
+  <line x1="240" y1="100" x2="260" y2="100" stroke="#FF0000" stroke-width="3" />
+
+  <!-- Pelican Body -->
+  <ellipse cx="175" cy="90" rx="40" ry="60" fill="#FFF" stroke="#000" stroke-width="2" transform="rotate(-10, 175, 90)" />
+  
+  <!-- Pelican Head -->
+  <circle cx="195" cy="60" r="20" fill="#FFF" stroke="#000" stroke-width="2" />
+  <path d="M195 70 Q205 80 215 70" fill="none" stroke="#000" stroke-width="2" />
+  <path d="M205 80 Q215 90 225 80" fill="#FFFF00" stroke="#000" stroke-width="2" />
+  
+  <!-- Eye -->
+  <circle cx="200" cy="55" r="3" fill="#000" />
+
+  <!-- Wings -->
+  <path d="M150 90 Q130 110 150 130" fill="#FFF" stroke="#000" stroke-width="2" />
+
+  <!-- Legs (simplified as holding the pedals) -->
+  <line x1="165" y1="140" x2="165" y2="180" stroke="#FFFF00" stroke-width="3" />
+  <line x1="185" y1="140" x2="185" y2="180" stroke="#FFFF00" stroke-width="3" />
+</svg>

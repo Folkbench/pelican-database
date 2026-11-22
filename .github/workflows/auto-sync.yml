@@ -1,0 +1,86 @@
+name: Auto Sync Pelican Database
+
+on:
+  schedule:
+    # Daily at 09:00 UTC (shortly after upstream pelicanmap daily updates)
+    - cron: "0 9 * * *"
+  workflow_dispatch:
+    inputs:
+      refresh_all_pages:
+        description: "Re-fetch all Simon Willison tag pages"
+        required: false
+        default: false
+        type: boolean
+      force_render:
+        description: "Force re-render all PNGs"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pelican-database-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Restore crawl & render cache
+        uses: actions/cache@v4
+        with:
+          path: cache
+          key: pelican-cache-v1-${{ github.run_id }}
+          restore-keys: |
+            pelican-cache-v1-
+
+      - name: Run incremental sync pipeline
+        run: |
+          ARGS=""
+          if [ "${{ inputs.refresh_all_pages }}" = "true" ]; then
+            ARGS="$ARGS --refresh-all-pages"
+          fi
+          if [ "${{ inputs.force_render }}" = "true" ]; then
+            ARGS="$ARGS --force-render"
+          fi
+          python scripts/sync.py $ARGS
+
+      - name: Commit and push updates if database changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Only commit if actual models or model list changed (ignore timestamp-only churn)
+          CHANGED_FILES=$(git status --porcelain models/)
+          MODEL_DIFF=$(git diff -U0 catalog.json | grep -vE '^(---|\+\+\+|@@|[-+][[:space:]]*"generated_at")' || true)
+
+          if [ -z "$CHANGED_FILES" ] && [ -z "$MODEL_DIFF" ]; then
+            echo "No substantive model changes detected; skipping commit."
+            git checkout -- catalog.json pelicans.sqlite README.md README.zh.md
+            exit 0
+          fi
+
+          TOTAL=$(python -c "import json; d=json.load(open('catalog.json')); print(d['stats']['total_models'])")
+          SVGS=$(python -c "import json; d=json.load(open('catalog.json')); print(d['stats']['with_svg'])")
+
+          git add models/ catalog.json pelicans.sqlite README.md README.zh.md
+          git commit -m "chore(sync): update pelican database (${TOTAL} models, ${SVGS} SVGs)"
+          git push

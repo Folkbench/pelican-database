@@ -1,0 +1,262 @@
+<svg version="1.1"
+     xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c7e3ff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f3fbff;stop-opacity:1"/>
+    </linearGradient>
+    <radialGradient id="sunGrad" cx="70%" cy="18%" r="20%">
+      <stop offset="0%" style="stop-color:#ffd66b;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ffaf4b;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="wheelGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#505050"/>
+      <stop offset="80%" style="stop-color:#252525"/>
+      <stop offset="100%" style="stop-color:#000000"/>
+    </radialGradient>
+    <linearGradient id="frameGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#fa653c;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d23b28;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="beakGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" style="stop-color:#f7a317;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e38900;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="pelicanBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e0e9f5;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="pelicanWing" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" style="stop-color:#f2f7ff"/>
+      <stop offset="100%" style="stop-color:#c8d7e6"/>
+    </linearGradient>
+    <style>
+      .ground {
+        fill: #8bc991;
+      }
+      .frame {
+        fill: url(#frameGrad);
+        stroke: #ab301e;
+        stroke-width: 4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .wheel {
+        fill: none;
+        stroke: #444;
+        stroke-width: 12;
+      }
+      .spokes {
+        stroke: #777;
+        stroke-width: 2;
+      }
+      .tire {
+        fill: none;
+        stroke: black;
+        stroke-width: 5;
+      }
+      .hub {
+        fill: #999;
+      }
+      .pedal {
+        fill: #444;
+        stroke: #222;
+        stroke-width: 2;
+      }
+      .handlebar {
+        fill: none;
+        stroke: #555;
+        stroke-width: 6;
+        stroke-linecap: round;
+      }
+      .seat {
+        fill: #444;
+        stroke: #222;
+        stroke-width: 3;
+      }
+      .leg {
+        fill: #e3a43e;
+        stroke: #c5832a;
+        stroke-width: 3;
+        stroke-linejoin: round;
+      }
+      .foot {
+        fill: #f4b845;
+        stroke: #c89035;
+        stroke-width: 2;
+      }
+      .eye {
+        fill: #fff;
+        stroke: #ddd;
+        stroke-width: 1;
+      }
+      .pupil {
+        fill: #222;
+      }
+      .beak {
+        fill: url(#beakGrad);
+        stroke: #d17f0f;
+        stroke-width: 2;
+        stroke-linejoin: round;
+      }
+      .body {
+        fill: url(#pelicanBody);
+        stroke: #b2c0cc;
+        stroke-width: 3;
+      }
+      .wing {
+        fill: url(#pelicanWing);
+        stroke: #9cadb9;
+        stroke-width: 2;
+      }
+      .head {
+        fill: url(#pelicanBody);
+        stroke: #b2c0cc;
+        stroke-width: 2;
+      }
+      .cap {
+        fill: #2b4962;
+        stroke: #1a3248;
+        stroke-width: 3;
+      }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="600" fill="url(#skyGrad)"/>
+  <circle cx="600" cy="110" r="80" fill="url(#sunGrad)"/>
+  <rect x="0" y="400" width="800" height="200" class="ground"/>
+
+  <!-- Bicycle -->
+  <g id="bike" transform="translate(120, 250)">
+    <!-- Wheels -->
+    <g transform="translate(120, 200)">
+      <circle r="70" class="wheel"/>
+      <circle r="70" class="tire"/>
+      <circle r="8" class="hub"/>
+      <line x1="-70" y1="0" x2="70" y2="0" class="spokes"/>
+      <line x1="0" y1="-70" x2="0" y2="70" class="spokes"/>
+      <line x1="-50" y1="-50" x2="50" y2="50" class="spokes"/>
+      <line x1="-50" y1="50" x2="50" y2="-50" class="spokes"/>
+    </g>
+    <g transform="translate(380, 200)">
+      <circle r="70" class="wheel"/>
+      <circle r="70" class="tire"/>
+      <circle r="8" class="hub"/>
+      <line x1="-70" y1="0" x2="70" y2="0" class="spokes"/>
+      <line x1="0" y1="-70" x2="0" y2="70" class="spokes"/>
+      <line x1="-50" y1="-50" x2="50" y2="50" class="spokes"/>
+      <line x1="-50" y1="50" x2="50" y2="-50" class="spokes"/>
+    </g>
+
+    <!-- Frame -->
+    <path class="frame" d="
+      M 120 200
+      L 220 100
+      L 320 200
+      L 220 200
+      L 150 170
+      " />
+    <path class="frame" d="M 220 100 L 320 80 L 380 50" />
+    <path class="frame" d="M 220 100 L 250 50" />
+    <path class="frame" d="M 220 200 L 220 260" />
+
+    <!-- Handlebar & fork -->
+    <path class="handlebar" d="M 380 50 L 410 30" />
+    <path class="handlebar" d="M 380 50 L 380 90" />
+    <path class="handlebar" d="M 380 90 L 360 110" />
+
+    <!-- Seat -->
+    <rect x="203" y="30" width="34" height="20" rx="5" ry="5" class="seat"/>
+    <rect x="216" y="50" width="8" height="50" class="seat"/>
+
+    <!-- Pedal crank -->
+    <g transform="translate(220,200)">
+      <circle r="14" fill="#666"/>
+      <line x1="0" y1="0" x2="-30" y2="-30" stroke="#444" stroke-width="6" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="35" y2="35" stroke="#444" stroke-width="6" stroke-linecap="round"/>
+      <rect x="-38" y="-34" width="16" height="6" class="pedal" transform="rotate(-45 -30 -30)"/>
+      <rect x="24" y="32" width="16" height="6" class="pedal" transform="rotate(45 35 35)"/>
+    </g>
+  </g>
+
+  <!-- Pelican -->
+  <g id="pelican" transform="translate(220,150)">
+    <!-- Body -->
+    <ellipse cx="200" cy="190" rx="80" ry="90" class="body"/>
+    <!-- Wing -->
+    <path class="wing" d="
+      M 170 180
+      C 130 190, 100 230, 130 250
+      C 155 270, 200 260, 220 230
+      C 240 200, 215 190, 170 180
+      Z" />
+    <!-- Tail -->
+    <path class="wing" d="M 125 220 C 110 235, 100 245, 95 258 C 115 260, 135 255, 145 245 Z"/>
+    <!-- Neck -->
+    <path class="head" d="
+      M 220 150
+      C 200 140, 180 120, 170 100
+      C 160 80, 160 60, 180 50
+      C 200 40, 230 50, 240 70
+      C 250 90, 250 120, 240 140
+      C 230 160, 220 150, 220 150 Z" />
+    <!-- Head -->
+    <ellipse cx="232" cy="74" rx="30" ry="28" class="head"/>
+    <!-- Beak -->
+    <path class="beak" d="
+      M 232 74
+      C 260 70, 300 70, 320 80
+      C 300 90, 260 90, 232 86
+      Z"/>
+    <path class="beak" d="
+      M 232 86
+      C 260 82, 300 82, 320 92
+      C 300 102, 260 100, 232 96
+      Z" opacity="0.9"/>
+    <!-- Eye -->
+    <circle cx="224" cy="67" r="8" class="eye"/>
+    <circle cx="226" cy="68" r="4" class="pupil"/>
+    <!-- Cap (cute) -->
+    <path class="cap" d="
+      M 220 52
+      C 228 40, 245 38, 255 46
+      C 245 48, 232 52, 220 52 Z
+      " />
+    <path class="cap" d="
+      M 218 55
+      C 240 50, 260 52, 258 58
+      C 240 64, 220 62, 218 55
+      Z" />
+    <!-- Legs -->
+    <path class="leg" d="
+      M 230 260
+      C 220 280, 218 320, 200 330
+      L 220 340
+      C 240 330, 230 280, 238 260
+      Z" transform="rotate(-10 220 300) translate(10 -20)"/>
+    <path class="leg" d="
+      M 260 250
+      C 262 270, 274 300, 260 320
+      L 278 330
+      C 292 310, 280 270, 285 250
+      Z" transform="rotate(15 260 280) translate(-10 0)"/>
+    <!-- Feet -->
+    <path class="foot" d="
+      M 180 330
+      C 200 335, 220 334, 235 330
+      C 240 328, 240 322, 235 320
+      L 180 320
+      C 175 322, 175 328, 180 330 Z" />
+    <path class="foot" d="
+      M 260 320
+      C 275 325, 295 330, 310 328
+      C 315 326, 315 320, 310 318
+      L 262 314
+      C 258 314, 255 320, 260 320 Z" />
+  </g>
+
+  <!-- Shadows -->
+  <ellipse cx="240" cy="370" rx="60" ry="10" fill="#7caf8b" opacity="0.5"/>
+  <ellipse cx="500" cy="370" rx="70" ry="12" fill="#7caf8b" opacity="0.5"/>
+</svg>

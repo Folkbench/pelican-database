@@ -1,0 +1,29 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="lightblue" />
+
+  <!-- Bicycle -->
+  <!-- Frame -->
+  <rect x="80" y="120" width="120" height="30" fill="brown" />
+  <!-- Seat -->
+  <rect x="130" y="140" width="40" height="20" fill="brown" />
+  <!-- Handlebar -->
+  <line x1="80" y1="125" x2="200" y2="125" stroke="brown" stroke-width="5" />
+  <!-- Wheels -->
+  <circle cx="100" cy="150" r="15" fill="black" />
+  <circle cx="220" cy="150" r="15" fill="black" />
+
+  <!-- Pelican -->
+  <!-- Body -->
+  <ellipse cx="160" cy="100" rx="40" ry="30" fill="white" />
+  <!-- Beak -->
+  <polygon points="180,90 190,70 185,85" fill="orange" />
+  <!-- Head -->
+  <circle cx="185" cy="90" r="10" fill="white" />
+  <!-- Wings -->
+  <polygon points="140,80 120,120 160,120" fill="white" />
+  <polygon points="200,80 220,120 180,120" fill="white" />
+  <!-- Legs -->
+  <line x1="160" y1="130" x2="160" y2="150" stroke="brown" stroke-width="5" />
+  <line x1="180" y1="130" x2="180" y2="150" stroke="brown" stroke-width="5" />
+</svg>

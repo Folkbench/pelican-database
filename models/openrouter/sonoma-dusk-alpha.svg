@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#87CEEB"/>
+
+  <!-- Ground -->
+  <rect y="250" width="400" height="50" fill="#90EE90"/>
+
+  <!-- Bicycle Wheels -->
+  <circle cx="100" cy="220" r="30" fill="none" stroke="black" stroke-width="3"/>
+  <circle cx="300" cy="220" r="30" fill="none" stroke="black" stroke-width="3"/>
+
+  <!-- Bicycle Frame -->
+  <line x1="100" y1="220" x2="200" y2="150" stroke="black" stroke-width="4"/>
+  <line x1="200" y1="150" x2="300" y2="220" stroke="black" stroke-width="4"/>
+  <line x1="200" y1="150" x2="200" y2="100" stroke="black" stroke-width="4"/>
+  <line x1="150" y1="150" x2="250" y2="150" stroke="black" stroke-width="4"/>
+  <line x1="150" y1="150" x2="100" y2="180" stroke="black" stroke-width="3"/>
+  <line x1="250" y1="150" x2="300" y2="180" stroke="black" stroke-width="3"/>
+
+  <!-- Handlebars -->
+  <line x1="200" y1="100" x2="220" y2="80" stroke="black" stroke-width="3"/>
+
+  <!-- Pelican Body -->
+  <ellipse cx="200" cy="120" rx="40" ry="25" fill="white" stroke="black" stroke-width="2"/>
+
+  <!-- Pelican Head -->
+  <circle cx="200" cy="90" r="20" fill="white" stroke="black" stroke-width="2"/>
+
+  <!-- Pelican Beak -->
+  <path d="M220 90 L260 85 L220 95 Z" fill="#FFD700" stroke="black" stroke-width="2"/>
+  <path d="M260 85 Q270 80 260 90" fill="#FFD700" stroke="black" stroke-width="2"/>
+
+  <!-- Pelican Eye -->
+  <circle cx="210" cy="85" r="3" fill="black"/>
+
+  <!-- Pelican Wings (simplified) -->
+  <path d="M160 120 Q140 100 120 120 Q140 140 160 130" fill="white" stroke="black" stroke-width="2"/>
+  <path d="M240 120 Q260 100 280 120 Q260 140 240 130" fill="white" stroke="black" stroke-width="2"/>
+
+  <!-- Pelican Legs (holding handlebars) -->
+  <line x1="190" y1="140" x2="210" y2="100" stroke="#FFD700" stroke-width="4"/>
+  <line x1="210" y1="140" x2="220" y2="80" stroke="#FFD700" stroke-width="4"/>
+
+  <!-- Pedals (simple) -->
+  <circle cx="200" cy="170" r="5" fill="gray"/>
+</svg>

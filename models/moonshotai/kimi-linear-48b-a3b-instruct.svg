@@ -1,0 +1,39 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bicycle Frame -->
+  <g id="bicycle">
+    <!-- Rear Wheel -->
+    <circle cx="150" cy="300" r="40" fill="none" stroke="black" stroke-width="4"/>
+    <!-- Front Wheel -->
+    <circle cx="450" cy="300" r="40" fill="none" stroke="black" stroke-width="4"/>
+    <!-- Frame Bars -->
+    <line x1="190" y1="300" x2="450" y2="300" stroke="black" stroke-width="6"/>
+    <line x1="150" y1="300" x2="200" y2="200" stroke="black" stroke-width="6"/>
+    <line x1="450" y1="300" x2="400" y2="200" stroke="black" stroke-width="6"/>
+    <!-- Seat -->
+    <line x1="200" y1="200" x2="220" y2="150" stroke="black" stroke-width="6"/>
+    <ellipse cx="210" cy="140" rx="20" ry="10" fill="black"/>
+    <!-- Handlebars -->
+    <line x1="380" y1="200" x2="400" y2="180" stroke="black" stroke-width="6"/>
+    <line x1="390" y1="180" x2="410" y2="180" stroke="black" stroke-width="6"/>
+  </g>
+
+  <!-- Pelican -->
+  <g id="pelican">
+    <!-- Body -->
+    <ellipse cx="300" cy="250" rx="50" ry="60" fill="#f4c2a1"/>
+    <!-- Head -->
+    <ellipse cx="300" cy="180" rx="35" ry="40" fill="#f4c2a1"/>
+    <!-- Beak -->
+    <path d="M 265 190 Q 240 200 260 220 Q 280 200 265 190" fill="#ff9933"/>
+    <!-- Eye -->
+    <circle cx="290" cy="175" r="4" fill="black"/>
+    <!-- Wing -->
+    <ellipse cx="280" cy="230" rx="30" ry="50" fill="#d4a574" transform="rotate(-30 280 230)"/>
+    <!-- Tail -->
+    <path d="M 350 270 Q 380 260 390 280 Q 380 300 350 290" fill="#d4a574"/>
+    <!-- Leg -->
+    <line x1="290" y1="310" x2="290" y2="340" stroke="black" stroke-width="4"/>
+    <!-- Foot -->
+    <path d="M 285 340 Q 290 350 295 340 Q 300 350 305 340 Q 310 350 315 340" fill="none" stroke="black" stroke-width="4"/>
+  </g>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Background (simple sky and ground) -->
+  <rect width="400" height="300" fill="#87CEEB"/>
+  <rect y="200" width="400" height="100" fill="#90EE90"/>
+
+  <!-- Bicycle Wheels -->
+  <circle cx="100" cy="220" r="40" fill="none" stroke="black" stroke-width="3"/>
+  <circle cx="300" cy="220" r="40" fill="none" stroke="black" stroke-width="3"/>
+  
+  <!-- Bicycle Frame -->
+  <line x1="100" y1="220" x2="200" y2="150" stroke="black" stroke-width="3"/>
+  <line x1="200" y1="150" x2="300" y2="220" stroke="black" stroke-width="3"/>
+  <line x1="140" y1="220" x2="200" y2="180" stroke="black" stroke-width="3"/>
+  <line x1="200" y1="180" x2="260" y2="220" stroke="black" stroke-width="3"/>
+  <line x1="200" y1="150" x2="200" y2="100" stroke="black" stroke-width="3"/> <!-- Seat post -->
+  
+  <!-- Seat -->
+  <rect x="190" y="90" width="20" height="5" fill="brown" rx="2"/>
+  
+  <!-- Handlebars -->
+  <line x1="200" y1="100" x2="240" y2="80" stroke="black" stroke-width="3"/>
+  <line x1="240" y1="80" x2="250" y2="85" stroke="black" stroke-width="2"/>
+
+  <!-- Pedals (simplified) -->
+  <circle cx="200" cy="180" r="8" fill="gray"/>
+  <line x1="192" y1="180" x2="208" y2="180" stroke="black" stroke-width="2"/>
+
+  <!-- Pelican Body -->
+  <ellipse cx="200" cy="120" rx="50" ry="30" fill="white" stroke="black" stroke-width="2"/>
+  
+  <!-- Pelican Head -->
+  <circle cx="150" cy="100" r="20" fill="white" stroke="black" stroke-width="2"/>
+  
+  <!-- Pelican Beak (large pouch) -->
+  <path d="M130 100 Q120 110 130 120 Q140 110 130 100 Z" fill="yellow" stroke="black" stroke-width="2"/>
+  <path d="M130 105 Q115 115 130 125" fill="orange" stroke="black" stroke-width="2"/> <!-- Pouch detail -->
+  
+  <!-- Pelican Eye -->
+  <circle cx="140" cy="95" r="3" fill="black"/>
+  
+  <!-- Pelican Wings (simplified) -->
+  <path d="M150 120 Q100 100 80 140 Q120 130 150 120" fill="white" stroke="black" stroke-width="2"/>
+  <path d="M250 120 Q300 100 320 140 Q280 130 250 120" fill="white" stroke="black" stroke-width="2"/>
+  
+  <!-- Pelican Legs (pedaling) -->
+  <line x1="180" y1="150" x2="200" y2="180" stroke="orange" stroke-width="4"/>
+  <line x1="220" y1="150" x2="200" y2="180" stroke="orange" stroke-width="4"/>
+  <line x1="170" y1="150" x2="150" y2="220" stroke="orange" stroke-width="3"/> <!-- Left foot on pedal -->
+  <line x1="230" y1="150" x2="250" y2="200" stroke="orange" stroke-width="3"/> <!-- Right foot -->
+
+  <!-- Pelican Tail -->
+  <path d="M250 140 Q270 145 250 150" fill="white" stroke="black" stroke-width="2"/>
+</svg>

@@ -1,0 +1,79 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  
+  <g id="bicycle">
+    
+    <circle cx="200" cy="450" r="60" fill="none" stroke="#333" stroke-width="3"></circle>
+    <circle cx="200" cy="450" r="50" fill="none" stroke="#333" stroke-width="2"></circle>
+    
+    <circle cx="500" cy="450" r="60" fill="none" stroke="#333" stroke-width="3"></circle>
+    <circle cx="500" cy="450" r="50" fill="none" stroke="#333" stroke-width="2"></circle>
+    
+    
+    <line x1="200" y1="450" x2="200" y2="390" stroke="#333" stroke-width="1"></line>
+    <line x1="200" y1="450" x2="200" y2="510" stroke="#333" stroke-width="1"></line>
+    <line x1="200" y1="450" x2="140" y2="450" stroke="#333" stroke-width="1"></line>
+    <line x1="200" y1="450" x2="260" y2="450" stroke="#333" stroke-width="1"></line>
+    
+    
+    <line x1="500" y1="450" x2="500" y2="390" stroke="#333" stroke-width="1"></line>
+    <line x1="500" y1="450" x2="500" y2="510" stroke="#333" stroke-width="1"></line>
+    <line x1="500" y1="450" x2="440" y2="450" stroke="#333" stroke-width="1"></line>
+    <line x1="500" y1="450" x2="560" y2="450" stroke="#333" stroke-width="1"></line>
+    
+    
+    <line x1="200" y1="450" x2="320" y2="350" stroke="#555" stroke-width="8"></line>
+    <line x1="320" y1="350" x2="380" y2="420" stroke="#555" stroke-width="8"></line>
+    <line x1="380" y1="420" x2="200" y2="450" stroke="#555" stroke-width="8"></line>
+    <line x1="320" y1="350" x2="340" y2="300" stroke="#555" stroke-width="8"></line>
+    <line x1="340" y1="300" x2="480" y2="320" stroke="#555" stroke-width="6"></line>
+    <line x1="480" y1="320" x2="500" y2="450" stroke="#555" stroke-width="6"></line>
+    
+    
+    <circle cx="320" cy="400" r="15" fill="#666" stroke="#333" stroke-width="2"></circle>
+    <line x1="305" y1="400" x2="280" y2="400" stroke="#333" stroke-width="4"></line>
+    
+    
+    <ellipse cx="280" cy="340" rx="30" ry="12" fill="#8B4513"></ellipse>
+    <line x1="310" y1="340" x2="320" y2="350" stroke="#555" stroke-width="5"></line>
+    
+    
+    <line x1="480" y1="320" x2="480" y2="280" stroke="#555" stroke-width="5"></line>
+    <line x1="465" y1="280" x2="495" y2="280" stroke="#555" stroke-width="5"></line>
+  </g>
+  
+  
+  <g id="pelican">
+    
+    <ellipse cx="350" cy="280" rx="70" ry="60" fill="#f0f0f0" stroke="#333" stroke-width="2"></ellipse>
+    
+    
+    <path d="M 380 260 Q 420 220 440 200" fill="none" stroke="#f0f0f0" stroke-width="35"></path>
+    <path d="M 380 260 Q 420 220 440 200" fill="none" stroke="#333" stroke-width="2"></path>
+    
+    
+    <ellipse cx="450" cy="190" rx="35" ry="30" fill="#f0f0f0" stroke="#333" stroke-width="2"></ellipse>
+    
+    
+    <circle cx="465" cy="185" r="5" fill="#333"></circle>
+    
+    
+    <path d="M 475 190 Q 540 185 560 195 Q 540 200 475 200 Z" fill="#FFA500" stroke="#333" stroke-width="2"></path>
+    
+    
+    <path d="M 475 200 Q 520 230 560 195 Q 540 210 500 215 Q 480 210 475 200 Z" fill="#FFD700" stroke="#333" stroke-width="2"></path>
+    
+    
+    <path d="M 320 280 Q 280 260 260 280 Q 270 300 290 310 Q 310 300 320 300 Z" fill="#e0e0e0" stroke="#333" stroke-width="2"></path>
+    
+    
+    <line x1="350" y1="320" x2="340" y2="380" stroke="#FFA500" stroke-width="6"></line>
+    <line x1="340" y1="380" x2="320" y2="400" stroke="#FFA500" stroke-width="6"></line>
+    
+    
+    <path d="M 290 300 L 250 310 L 270 290 Z" fill="#e0e0e0" stroke="#333" stroke-width="2"></path>
+    <path d="M 285 305 L 245 320 L 265 300 Z" fill="#d0d0d0" stroke="#333" stroke-width="2"></path>
+  </g>
+  
+  
+  <line x1="0" y1="510" x2="800" y2="510" stroke="#999" stroke-width="2"></line>
+</svg>

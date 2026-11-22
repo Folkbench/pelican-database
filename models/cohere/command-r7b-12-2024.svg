@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+    <rect x="0" y="0" width="200" height="200" fill="lightgray"/>
+
+    <circle cx="90" cy="120" r="25" fill="gray"/>
+    <path stroke="gray" stroke-width="2" d="M85 115 L90 120 95 115"/>
+    <circle cx="90" cy="120" r="10" fill="black"/>
+
+    <polygon points="60 80 80 80 90 120 60 120 40 80 60 80" fill="darkgray" stroke="gray" stroke-width="2"/>
+
+    <circle cx="90" cy="120" r="20" fill="black"/>
+    <line x1="90" y1="120" x2="90" y2="125" stroke="gray" stroke-width="0.5"/>
+
+    <g transform="translate(100, 100)">
+        <circle cx="30" cy="30" r="15" fill="#F5C04E"/>
+        <path d="M30 30 Q40 20 50 30 C70 50 90 50 100 30 C120 10 100 0 80 30 C60 60 40 60 30 30" fill="#F89A5F"/>
+        <path d="M50 30 L65 50 L60 60 L45 50 Z" fill="#F5C04E"/>
+        <circle cx="50" cy="20" r="10" fill="white"/>
+        <path d="M50 20 L65 10 L70 20 L50 20 Z" fill="#54412B"/>
+        <polygon points="35 70 30 80 50 80 55 70 45 70" fill="#A58968"/>
+        <polygon points="35 70 55 70 60 80 45 80 35 70" fill="#A58968"/>
+        <path d="M30 40 L35 50 L45 70 L50 60 L45 50 L40 40" stroke="#54412B" stroke-width="1"/>
+        <path d="M50 60 L55 70 L65 80 L70 70 L65 60" stroke="#54412B" stroke-width="1"/>
+        <path d="M60 80 L55 90 L45 90 L40 80" stroke="#54412B" stroke-width="1"/>
+        <path d="M45 70 L40 80 L35 90 L30 80" stroke="#54412B" stroke-width="1"/>
+        <polygon points="30 100 20 90 20 110 30 100" fill="#54412B"/>
+        <polygon points="50 100 60 90 60 110 50 100" fill="#54412B"/>
+        <circle cx="45" cy="30" r="5" fill="black"/>
+        <circle cx="55" cy="30" r="5" fill="black"/>
+        <path d="M40 25 L45 30 L50 25" stroke="white" stroke-width="2"/>
+        <path d="M55 25 L50 30 L45 25" stroke="white" stroke-width="2"/>
+    </g>
+
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="5s" repeatCount="indefinite"/>
+</svg>

@@ -1,0 +1,108 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Sky Gradient -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87CEEB" />
+      <stop offset="100%" stop-color="#E0F6FF" />
+    </linearGradient>
+
+    <!-- Sun Gradient -->
+    <radialGradient id="sunGrad">
+      <stop offset="70%" stop-color="#FFFFA0" />
+      <stop offset="100%" stop-color="#FFD700" />
+    </radialGradient>
+
+    <!-- Ground Gradient -->
+    <linearGradient id="groundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8BC34A" />
+      <stop offset="100%" stop-color="#388E3C" />
+    </linearGradient>
+
+    <!-- Pelican Body Shadow/Shading -->
+    <radialGradient id="bodyShade">
+      <stop offset="60%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F5F5DC" />
+    </radialGradient>
+
+    <!-- Beak Gradient -->
+    <linearGradient id="beakGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF8C00" />
+      <stop offset="100%" stop-color="#FFA500" />
+    </linearGradient>
+
+    <!-- Shadow on ground -->
+    <radialGradient id="shadowGrad">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background: Sky -->
+  <rect width="1024" height="1024" fill="url(#skyGrad)" />
+
+  <!-- Sun -->
+  <circle cx="850" cy="150" r="70" fill="url(#sunGrad)" />
+
+  <!-- Clouds (Simple shapes) -->
+  <ellipse cx="150" cy="150" rx="80" ry="30" fill="#FFFFFF" opacity="0.6" />
+  <ellipse cx="220" cy="170" rx="60" ry="25" fill="#FFFFFF" opacity="0.6" />
+  <ellipse cx="850" cy="400" rx="90" ry="35" fill="#FFFFFF" opacity="0.5" />
+
+  <!-- Ground/Hill -->
+  <path d="M 0 750 Q 512 650 1024 800 L 1024 1024 L 0 1024 Z" fill="url(#groundGrad)" />
+
+  <!-- Shadow under bike/pelican -->
+  <ellipse cx="512" cy="830" rx="250" ry="40" fill="url(#shadowGrad)" />
+
+  <!-- Bicycle Wheels -->
+  <!-- Back Wheel -->
+  <circle cx="300" cy="780" r="90" stroke="#333333" stroke-width="16" fill="none" />
+  <circle cx="300" cy="780" r="80" stroke="#666666" stroke-width="2" fill="none" />
+  <!-- Spokes Back -->
+  <line x1="300" y1="700" x2="300" y2="860" stroke="#999999" stroke-width="1" />
+  <line x1="220" y1="780" x2="380" y2="780" stroke="#999999" stroke-width="1" />
+  <line x1="240" y1="730" x2="360" y2="830" stroke="#999999" stroke-width="1" />
+  <line x1="360" y1="730" x2="240" y2="830" stroke="#999999" stroke-width="1" />
+
+  <!-- Front Wheel -->
+  <circle cx="650" cy="780" r="90" stroke="#333333" stroke-width="16" fill="none" />
+  <circle cx="650" cy="780" r="80" stroke="#666666" stroke-width="2" fill="none" />
+  <!-- Spokes Front -->
+  <line x1="650" y1="700" x2="650" y2="860" stroke="#999999" stroke-width="1" />
+  <line x1="570" y1="780" x2="730" y2="780" stroke="#999999" stroke-width="1" />
+  <line x1="590" y1="730" x2="710" y2="830" stroke="#999999" stroke-width="1" />
+  <line x1="710" y1="730" x2="590" y2="830" stroke="#999999" stroke-width="1" />
+
+  <!-- Bicycle Frame -->
+  <path d="M 300 780 L 450 780 L 560 620 L 650 780 Z" fill="none" stroke="#E91E63" stroke-width="12" stroke-linejoin="round" />
+  <path d="M 450 780 L 420 650 M 560 620 L 420 650" fill="none" stroke="#E91E63" stroke-width="12" stroke-linejoin="round" />
+  <path d="M 650 780 L 630 630 M 630 630 L 480 630" fill="none" stroke="#E91E63" stroke-width="12" stroke-linejoin="round" />
+  <!-- Handlebars -->
+  <path d="M 630 630 Q 650 600 680 610" fill="none" stroke="#444444" stroke-width="10" stroke-linecap="round" />
+  <!-- Pedals -->
+  <rect x="440" y="770" width="30" height="15" rx="5" fill="#333333" />
+
+  <!-- Pelican Body -->
+  <ellipse cx="460" cy="580" rx="100" ry="120" fill="url(#bodyShade)" />
+  
+  <!-- Pelican Head/Neck -->
+  <path d="M 400 500 Q 380 430 450 400 Q 520 400 510 470" fill="#FDF5E6" />
+  <!-- Pelican Beak (Huge and iconic) -->
+  <path d="M 500 440 L 680 480 Q 700 520 650 560 L 490 510 Z" fill="url(#beakGrad)" />
+  <path d="M 500 510 Q 630 530 660 530 L 500 560 Z" fill="#FF8C00" opacity="0.4" /> <!-- Lower mandible detail -->
+
+  <!-- Eye -->
+  <circle cx="475" cy="450" r="12" fill="#000000" />
+  <circle cx="479" cy="446" r="4" fill="#FFFFFF" />
+
+  <!-- Wing (As arm resting on handlebar) -->
+  <path d="M 420 580 Q 350 560 380 680 Q 410 700 440 650 Z" fill="#FDF5E6" />
+
+  <!-- Leg (Reaching to pedal) -->
+  <path d="M 480 690 L 460 760 M 450 765 L 470 765" stroke="#FFDAB4" stroke-width="12" stroke-linecap="round" fill="none" />
+
+  <!-- Detail: Small feather marks -->
+  <path d="M 430 550 Q 440 560 430 570" fill="none" stroke="#E0DDCB" stroke-width="2" />
+  <path d="M 410 580 Q 420 590 410 600" fill="none" stroke="#E0DDCB" stroke-width="2" />
+
+</svg>

@@ -1,0 +1,35 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="200"
+  height="200"
+  viewBox="0 0 200 200"
+  style="background:#f0f8ff">
+  <!-- Bicycle frame -->
+  <g id="bike" stroke="#000" stroke-width="2" fill="none">
+    <!-- Wheels -->
+    <circle cx="70" cy="150" r="20" fill="white" stroke="black"/>
+    <circle cx="130" cy="150" r="20" fill="white" stroke="black"/>
+    <!-- Frame -->
+    <path d="M70 150 L100 110 L130 150" />
+    <path d="M100 110 L100 80" />
+    <path d="M100 80 L115 70 L130 80" />
+    <path d="M115 70 L115 60" />
+  </g>
+
+  <!-- Pelican -->
+  <g id="pelican" transform="translate(100,120)" fill="#1e90ff" stroke="#000" stroke-width="1">
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="15" ry="20" />
+    <!-- Head -->
+    <circle cx="0" cy="-25" r="8" />
+    <!-- Beak -->
+    <polygon points="5,-25 12,-20 5,-15" fill="#ffa500" stroke="black"/>
+    <!-- Eye -->
+    <circle cx="-2" cy="-27" r="1" fill="black"/>
+    <!-- Wings (simple arcs) -->
+    <path d="M -12 -7 A 12 12 0 0 1 -12 7" stroke="black" fill="none" />
+    <path d="M 12 -7 A 12 12 0 0 0 12 7" stroke="black" fill="none" />
+    <!-- Tail -->
+    <polygon points="0,20 -5,30 5,30" fill="white" stroke="black"/>
+  </g>
+</svg>

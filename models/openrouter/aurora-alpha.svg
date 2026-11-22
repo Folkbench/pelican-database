@@ -1,0 +1,75 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 300 200"
+    width="300"
+    height="200"
+    aria-labelledby="title desc"
+    role="img">
+
+  <title id="title">Pelican Riding a Bicycle</title>
+  <desc id="desc">
+    Simple cartoon illustration of a pelican perched on a bicycle.
+    The pelican has a white body, orange beak, yellow eyes and a black silhouette.
+    The bicycle is drawn with two wheels, a frame, handlebars and a seat.
+  </desc>
+
+  <!-- ==== Bicycle ==== -->
+  <!-- Wheels -->
+  <circle cx="80"  cy="150" r="30" fill="#555" stroke="#222" stroke-width="3"/>
+  <circle cx="220" cy="150" r="30" fill="#555" stroke="#222" stroke-width="3"/>
+  <!-- Wheel spokes (simple) -->
+  <g stroke="#222" stroke-width="1">
+    <line x1="80"  y1="150" x2="80"  y2="120"/>
+    <line x1="80"  y1="150" x2="80"  y2="180"/>
+    <line x1="80"  y1="150" x2="50"  y2="150"/>
+    <line x1="80"  y1="150" x2="110" y2="150"/>
+    <line x1="220" y1="150" x2="220" y2="120"/>
+    <line x1="220" y1="150" x2="220" y2="180"/>
+    <line x1="220" y1="150" x2="190" y2="150"/>
+    <line x1="220" y1="150" x2="250" y2="150"/>
+  </g>
+
+  <!-- Frame -->
+  <line x1="80"  y1="150" x2="140" y2="110" stroke="#222" stroke-width="4"/>
+  <line x1="140" y1="110" x2="200" y2="110" stroke="#222" stroke-width="4"/>
+  <line x1="200" y1="110" x2="220" y2="150" stroke="#222" stroke-width="4"/>
+  <line x1="140" y1="110" x2="140" y2="150" stroke="#222" stroke-width="4"/>
+  <line x1="140" y1="150" x2="80"  y2="150" stroke="#222" stroke-width="4"/>
+  <line x1="140" y1="150" x2="200" y2="110" stroke="#222" stroke-width="4"/>
+
+  <!-- Handlebars -->
+  <line x1="200" y1="110" x2="210" y2="90" stroke="#222" stroke-width="4"/>
+  <line x1="210" y1="90"  x2="190" y2="90"  stroke="#222" stroke-width="4"/>
+
+  <!-- Seat -->
+  <rect x="130" y="95" width="20" height="5" fill="#222"/>
+
+  <!-- ==== Pelican ==== -->
+  <!-- Body -->
+  <ellipse cx="150" cy="130" rx="15" ry="30" fill="#fff" stroke="#000" stroke-width="2"/>
+  <!-- Head -->
+  <circle cx="150" cy="95" r="12" fill="#fff" stroke="#000" stroke-width="2"/>
+  <!-- Eye -->
+  <circle cx="155" cy="92" r="2" fill="#000"/>
+  <!-- Beak -->
+  <polygon points="162,95 180,100 162,105"
+           fill="#f90" stroke="#000" stroke-width="1"/>
+  <!-- Wing (simple) -->
+  <path d="M140,130 C130,115 130,145 140,130"
+        fill="none" stroke="#000" stroke-width="2"/>
+  <!-- Legs -->
+  <line x1="140" y1="150" x2="130" y2="170" stroke="#000" stroke-width="2"/>
+  <line x1="160" y1="150" x2="170" y2="170" stroke="#000" stroke-width="2"/>
+  <!-- Feet -->
+  <line x1="130" y1="170" x2="125" y2="175" stroke="#000" stroke-width="2"/>
+  <line x1="130" y1="170" x2="135" y2="175" stroke="#000" stroke-width="2"/>
+  <line x1="170" y1="170" x2="165" y2="175" stroke="#000" stroke-width="2"/>
+  <line x1="170" y1="170" x2="175" y2="175" stroke="#000" stroke-width="2"/>
+
+  <!-- Pelican perched on the bike -->
+  <!-- Adjust the position so the body sits on the seat -->
+  <g transform="translate(0,0)">
+    <!-- The body already placed at (150,130) which aligns with the seat at y≈95 -->
+  </g>
+
+</svg>

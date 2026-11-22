@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E0F2FE" />
+    </radialGradient>
+
+    <!-- Wheel Spoke Pattern -->
+    <g id="spokes">
+      <line x1="0" y1="-45" x2="0" y2="45" stroke="#A0AEC0" stroke-width="4" stroke-linecap="round" />
+      <line x1="-45" y1="0" x2="45" y2="0" stroke="#A0AEC0" stroke-width="4" stroke-linecap="round" />
+      <line x1="-32" y1="-32" x2="32" y2="32" stroke="#A0AEC0" stroke-width="4" stroke-linecap="round" />
+      <line x1="32" y1="-32" x2="-32" y2="32" stroke="#A0AEC0" stroke-width="4" stroke-linecap="round" />
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGrad)" />
+  <circle cx="400" cy="300" r="280" fill="#FFFFFF" opacity="0.6" />
+
+  <!-- Ground Shadow -->
+  <ellipse cx="400" cy="480" rx="220" ry="20" fill="#CBD5E0" opacity="0.7" />
+
+  <!-- ================= BICYCLE ================= -->
+  
+  <!-- Back Wheel -->
+  <g transform="translate(250, 400)">
+    <circle cx="0" cy="0" r="50" fill="#F7FAFC" stroke="#2D3748" stroke-width="8" />
+    <use href="#spokes" />
+    <circle cx="0" cy="0" r="6" fill="#2D3748" />
+  </g>
+
+  <!-- Front Wheel -->
+  <g transform="translate(550, 400)">
+    <circle cx="0" cy="0" r="50" fill="#F7FAFC" stroke="#2D3748" stroke-width="8" />
+    <g transform="rotate(15)">
+      <use href="#spokes" />
+    </g>
+    <circle cx="0" cy="0" r="6" fill="#2D3748" />
+  </g>
+
+  <!-- Bicycle Frame -->
+  <path d="M 250 400 L 370 260 L 510 260 L 550 400" fill="none" stroke="#00B894" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 370 260 L 400 400" fill="none" stroke="#00B894" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 370 260 L 250 400" fill="none" stroke="#00B894" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Seat Post & Seat -->
+  <line x1="370" y1="260" x2="360" y2="210" stroke="#2D3748" stroke-width="8" stroke-linecap="round" />
+  <path d="M 330 210 Q 360 195 390 210 Q 400 220 380 220 L 340 220 Q 320 220 330 210 Z" fill="#FF7675" stroke="#2D3748" stroke-width="4" stroke-linejoin="round" />
+
+  <!-- Handlebars -->
+  <path d="M 510 260 L 500 200 L 470 180" fill="none" stroke="#2D3748" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 470 180 L 450 190" fill="none" stroke="#FF7675" stroke-width="16" stroke-linecap="round" />
+
+  <!-- Center Hub & Crank Arm -->
+  <circle cx="400" cy="400" r="12" fill="#2D3748" />
+  <line x1="400" y1="400" x2="430" y2="430" stroke="#2D3748" stroke-width="10" stroke-linecap="round" />
+
+
+  <!-- ================= PELICAN ================= -->
+
+  <!-- Back Leg (Left) -->
+  <rect x="350" y="360" width="16" height="40" fill="#FF9F43" rx="8" />
+  <circle cx="358" cy="400" r="10" fill="#2D3748" />
+
+  <!-- Body -->
+  <ellipse cx="420" cy="320" rx="90" ry="75" fill="#FFFFFF" />
+  
+  <!-- Body Shadow for Depth -->
+  <path d="M 330 320 A 90 75 0 0 0 510 320 A 90 60 0 0 1 330 320 Z" fill="#E2E8F0" />
+
+  <!-- Neck -->
+  <path d="M 460 260 Q 490 180 450 160 L 430 180 Q 450 220 440 260 Z" fill="#FFFFFF" />
+
+  <!-- Head -->
+  <circle cx="450" cy="150" r="45" fill="#FFFFFF" />
+
+  <!-- Wing (Back Layer) -->
+  <g transform="rotate(-15 420 320)">
+    <ellipse cx="420" cy="320" rx="45" ry="65" fill="#E2E8F0" />
+    <ellipse cx="420" cy="320" rx="35" ry="55" fill="#FFFFFF" />
+  </g>
+
+  <!-- Front Leg (Right) - Positioned lower for pedaling motion -->
+  <rect x="420" y="360" width="16" height="50" fill="#FF9F43" rx="8" />
+  <circle cx="428" cy="410" r="10" fill="#2D3748" />
+
+  <!-- Beak Top -->
+  <path d="M 485 140 Q 620 140 640 180 Q 550 190 485 170 Z" fill="#FF9F43" stroke="#2D3748" stroke-width="4" stroke-linejoin="round" />
+
+  <!-- Throat Pouch -->
+  <path d="M 485 170 Q 560 260 620 190 Q 550 200 485 190 Z" fill="#FDCB6E" stroke="#2D3748" stroke-width="4" stroke-linejoin="round" />
+
+  <!-- Eye -->
+  <circle cx="465" cy="135" r="7" fill="#2D3748" />
+  <circle cx="467" cy="133" r="2.5" fill="#FFFFFF" />
+
+  <!-- Eyebrow -->
+  <path d="M 455 120 Q 465 115 475 120" fill="none" stroke="#2D3748" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Blush -->
+  <ellipse cx="485" cy="155" rx="10" ry="6" fill="#FF7675" opacity="0.5" />
+
+</svg>

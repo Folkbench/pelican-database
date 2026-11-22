@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#d9f3ff"/>
+      <stop offset="1" stop-color="#f7fbff"/>
+    </linearGradient>
+
+    <linearGradient id="ground" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#bfe3a6"/>
+      <stop offset="1" stop-color="#86c16b"/>
+    </linearGradient>
+
+    <style>
+      .stroke { stroke:#1b1b1b; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; }
+      .thin { stroke-width:2; }
+      .noStroke { stroke:none; }
+      .blackFill { fill:#1b1b1b; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="600" fill="url(#sky)"/>
+  <path d="M0 430 C150 390, 310 470, 450 440 C590 410, 720 470, 900 430 L900 600 L0 600 Z" fill="url(#ground)"/>
+
+  <circle cx="120" cy="110" r="34" fill="#ffe58a" stroke="#c79a2a" stroke-width="3"/>
+  <g stroke="#c79a2a" stroke-width="4" stroke-linecap="round">
+    <line x1="120" y1="44" x2="120" y2="78"/>
+    <line x1="120" y1="176" x2="120" y2="142"/>
+    <line x1="54" y1="110" x2="88" y2="110"/>
+    <line x1="186" y1="110" x2="152" y2="110"/>
+    <line x1="72" y1="72" x2="96" y2="96"/>
+    <line x1="168" y1="148" x2="144" y2="124"/>
+    <line x1="72" y1="148" x2="96" y2="124"/>
+    <line x1="168" y1="72" x2="144" y2="96"/>
+  </g>
+
+  <g transform="translate(0,0)">
+    <g transform="translate(245,450)">
+      <circle r="105" fill="none" class="stroke" stroke-width="6"/>
+      <circle r="80" fill="none" stroke="#1b1b1b" stroke-width="3"/>
+      <circle r="10" fill="#1b1b1b"/>
+      <g stroke="#1b1b1b" stroke-width="3" opacity="0.9">
+        <line x1="0" y1="-80" x2="0" y2="80"/>
+        <line x1="-56" y1="-56" x2="56" y2="56"/>
+        <line x1="56" y1="-56" x2="-56" y2="56"/>
+        <line x1="-80" y1="0" x2="80" y2="0"/>
+        <line x1="-40" y1="-70" x2="40" y2="70"/>
+        <line x1="70" y1="-40" x2="-70" y2="40"/>
+      </g>
+    </g>
+
+    <g transform="translate(625,450)">
+      <circle r="105" fill="none" class="stroke" stroke-width="6"/>
+      <circle r="80" fill="none" stroke="#1b1b1b" stroke-width="3"/>
+      <circle r="10" fill="#1b1b1b"/>
+      <g stroke="#1b1b1b" stroke-width="3" opacity="0.9">
+        <line x1="0" y1="-80" x2="0" y2="80"/>
+        <line x1="-56" y1="-56" x2="56" y2="56"/>
+        <line x1="56" y1="-56" x2="-56" y2="56"/>
+        <line x1="-80" y1="0" x2="80" y2="0"/>
+        <line x1="-40" y1="-70" x2="40" y2="70"/>
+        <line x1="70" y1="-40" x2="-70" y2="40"/>
+      </g>
+    </g>
+  </g>
+
+  <g>
+    <path d="M245 450 L470 360 L700 450" fill="none" class="stroke"/>
+    <path d="M470 360 L530 295" fill="none" class="stroke"/>
+    <path d="M530 295 L585 295 L700 450" fill="none" class="stroke" opacity="0.95"/>
+    <path d="M245 450 L395 365 L470 360" fill="none" class="stroke"/>
+    <path d="M405 395 L625 450" fill="none" class="stroke"/>
+    <path d="M560 240 L610 200" fill="none" class="stroke"/>
+    <path d="M610 200 L655 202" fill="none" class="stroke"/>
+    <path d="M610 200 L640 232" fill="none" class="stroke"/>
+    <path d="M510 290 C540 282, 560 282, 585 295 C560 315, 535 315, 510 305 Z" fill="#3a2a1a" class="stroke"/>
+  </g>
+
+  <g>
+    <path d="M625 450 L540 400" fill="none" class="stroke"/>
+    <circle cx="540" cy="400" r="14" fill="#2f2f2f" class="stroke"/>
+    <path d="M625 450 L700 450" fill="none" class="stroke" opacity="0.25"/>
+    <circle cx="625" cy="450" r="10" fill="#1b1b1b"/>
+  </g>
+
+  <g transform="translate(0,0)">
+    <path d="M540 420 C560 430, 570 440, 565 455" fill="none" class="stroke"/>
+    <path d="M570 445 C595 465, 606 470, 620 475" fill="none" class="stroke"/>
+    <path d="M520 415 C505 430, 500 445, 505 460" fill="none" class="stroke"/>
+    <path d="M505 460 C480 480, 472 488, 460 495" fill="none" class="stroke"/>
+
+    <g transform="translate(520,245)">
+      <path d="M-35 120 C-80 105, -85 70, -55 50 C-30 35, 10 55, 25 85                C5 110, -15 125, -35 120 Z" fill="#f2f6ff" class="stroke"/>
+      <path d="M55 115 C80 100, 95 70, 80 50 C65 28, 35 35, 20 60                C35 105, 42 125, 55 115 Z" fill="#f2f6ff" class="stroke"/>
+
+      <ellipse cx="15" cy="120" rx="85" ry="70" fill="#f2f6ff" class="stroke"/>
+      <ellipse cx="0" cy="130" rx="55" ry="40" fill="#ffffff" opacity="0.9"/>
+
+      <path d="M-15 135 C-5 185, 25 195, 40 165                C55 135, 30 118, 10 118                C0 120, -10 123, -15 135 Z" fill="#f7fbff" class="stroke"/>
+
+      <g transform="translate(78,55)">
+        <ellipse cx="5" cy="25" rx="35" ry="28" fill="#f2f6ff" class="stroke"/>
+        <path d="M-2 3 C10 -8, 26 -5, 30 8 C20 14, 8 15, -2 3 Z" fill="#f2f6ff" stroke="#1b1b1b" stroke-width="3" stroke-linejoin="round"/>
+
+        <g>
+          <path d="M-10 30 C25 20, 55 20, 95 35                    C65 60, 30 68, -10 52 Z" fill="#f0b04d" class="stroke"/>
+          <path d="M35 38 C55 34, 70 36, 88 44" fill="none" class="stroke thin" opacity="0.6"/>
+          <path d="M-2 48 C28 58, 60 54, 90 36                    C80 70, 35 80, -2 62 Z" fill="#ef9a3a" class="stroke"/>
+        </g>
+
+        <circle cx="0" cy="22" r="6" fill="#1b1b1b"/>
+        <circle cx="2.5" cy="19.5" r="2" fill="#ffffff" opacity="0.9"/>
+      </g>
+    </g>
+
+    <g transform="translate(0,0)">
+      <path d="M535 285 C520 260, 535 245, 560 238                C575 234, 585 242, 590 254" fill="none" class="stroke"/>
+      <path d="M495 295 C465 280, 462 255, 480 235                C495 218, 525 225, 535 245" fill="none" class="stroke"/>
+      <circle cx="610" cy="200" r="10" fill="#f2f6ff" class="stroke"/>
+      <circle cx="640" cy="232" r="10" fill="#f2f6ff" class="stroke"/>
+      <path d="M602 206 C610 214, 625 214, 634 232" fill="none" class="stroke"/>
+    </g>
+  </g>
+
+  <path d="M0 490 C180 460, 320 520, 450 500 C590 480, 720 530, 900 490" fill="none" stroke="#4a8a3a" stroke-width="6" opacity="0.6"/>
+
+  <ellipse cx="435" cy="545" rx="260" ry="30" fill="#000" opacity="0.08"/>
+</svg>

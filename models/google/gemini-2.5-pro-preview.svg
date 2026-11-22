@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" aria-labelledby="title" aria-describedby="desc">
+  <title id="title">Pelican Riding a Bicycle</title>
+  <desc id="desc">A whimsical illustration of a large white pelican with a yellow beak riding a blue bicycle. The pelican is wearing a red scarf that flows in the wind.</desc>
+
+  <style>
+    .pelican-body { fill: #f5f5f5; stroke: #2c3e50; stroke-width: 5; stroke-linejoin: round; }
+    .beak { fill: #f1c40f; stroke: #2c3e50; stroke-width: 5; stroke-linejoin: round; }
+    .pouch { fill: #e67e22; opacity: 0.8; }
+    .eye { fill: #2c3e50; }
+    .leg { fill: #e67e22; stroke: #2c3e50; stroke-width: 5; stroke-linecap: round; }
+    .scarf { fill: #e74c3c; stroke: #c0392b; stroke-width: 3; stroke-linejoin: round; }
+    .bike-frame { fill: #3498db; stroke: #2980b9; stroke-width: 10; stroke-linecap: round; }
+    .bike-details { fill: #bdc3c7; stroke: #7f8c8d; stroke-width: 4; }
+    .tire { fill: #34495e; }
+    .spoke { stroke: #95a5a6; stroke-width: 2; }
+  </style>
+
+  <!-- Bicycle -->
+  <g id="bicycle">
+    <!-- Wheels -->
+    <g id="rear-wheel" transform="translate(200, 450)">
+      <circle class="tire" r="80" />
+      <circle class="bike-details" r="70" fill="none" />
+      <circle class="bike-details" r="10" />
+      <!-- Spokes -->
+      <line class="spoke" x1="0" y1="0" x2="0" y2="-70" />
+      <line class="spoke" x1="0" y1="0" x2="0" y2="70" />
+      <line class="spoke" x1="0" y1="0" x2="70" y2="0" />
+      <line class="spoke" x1="0" y1="0" x2="-70" y2="0" />
+      <line class="spoke" x1="0" y1="0" x2="49.5" y2="-49.5" transform="rotate(45)" />
+      <line class="spoke" x1="0" y1="0" x2="-49.5" y2="49.5" transform="rotate(45)" />
+    </g>
+    <g id="front-wheel" transform="translate(600, 450)">
+      <circle class="tire" r="80" />
+      <circle class="bike-details" r="70" fill="none" />
+      <circle class="bike-details" r="10" />
+      <!-- Spokes -->
+      <line class="spoke" x1="0" y1="0" x2="0" y2="-70" />
+      <line class="spoke" x1="0" y1="0" x2="0" y2="70" />
+      <line class="spoke" x1="0" y1="0" x2="70" y2="0" />
+      <line class="spoke" x1="0" y1="0" x2="-70" y2="0" />
+      <line class="spoke" x1="0" y1="0" x2="49.5" y2="-49.5" transform="rotate(45)" />
+      <line class="spoke" x1="0" y1="0" x2="-49.5" y2="49.5" transform="rotate(45)" />
+    </g>
+    
+    <!-- Frame -->
+    <path class="bike-frame" d="M 200 450 L 380 450 L 560 300 L 420 300 Z M 380 450 L 420 300 M 230 420 L 420 300" fill="none" />
+    <line class="bike-frame" x1="200" y1="450" x2="250" y2="330" />
+    <line class="bike-frame" x1="600" y1="450" x2="560" y2="300" />
+    
+    <!-- Handlebars -->
+    <path class="bike-details" d="M 540 280 L 560 300 L 590 280 L 620 290" fill="none" />
+    
+    <!-- Seat -->
+    <path class="bike-details" d="M 250 330 L 230 300 L 300 300 L 280 330 Z" fill="#555" />
+    
+    <!-- Pedals and Crank -->
+    <circle class="bike-details" cx="380" cy="450" r="25" fill="none" />
+    <line class="bike-details" x1="380" y1="450" x2="430" y2="480" />
+    <rect class="bike-details" x="420" y="475" width="30" height="10" />
+    <line class="bike-details" x1="380" y1="450" x2="330" y2="420" />
+    <rect class="bike-details" x="310" y="415" width="30" height="10" />
+  </g>
+
+  <!-- Pelican -->
+  <g id="pelican">
+    <!-- Scarf flowing behind -->
+    <path class="scarf" d="M 380 190 C 340 160, 280 220, 250 250 C 220 280, 180 240, 150 250 S 100 300, 120 330" fill="none"/>
+    
+    <!-- Body -->
+    <path class="pelican-body" d="M 290 320 C 250 220, 380 150, 450 200 C 550 270, 480 400, 380 420 C 300 430, 310 370, 290 320 Z" />
+    
+    <!-- Neck and Head -->
+    <path class="pelican-body" d="M 440 205 C 430 150, 480 120, 520 130 C 560 140, 570 190, 550 220" />
+    
+    <!-- Beak -->
+    <path class="beak" d="M 520 135 L 680 155 C 690 160, 685 175, 675 175 L 530 160 Z" />
+    <path class="pouch beak" d="M 530 160 C 540 210, 650 220, 675 175 L 530 160 Z" />
+    
+    <!-- Eye -->
+    <circle class="eye" cx="535" cy="145" r="7" />
+    
+    <!-- Wing on Handlebar -->
+    <path class="pelican-body" d="M 480 250 C 520 250, 560 270, 595 285 L 580 320 C 540 300, 500 280, 480 250 Z" />
+    
+    <!-- Crest -->
+    <path class="pelican-body" d="M 490 125 C 500 100, 520 110, 520 130" fill="none" />
+    
+    <!-- Scarf knot -->
+    <circle class="scarf" cx="390" cy="210" r="20" />
+    
+    <!-- Leg -->
+    <path class="leg" d="M 370 400 Q 400 440 430 475" fill="none" />
+  </g>
+
+</svg>

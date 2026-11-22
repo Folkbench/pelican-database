@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="400" height="300">
+  <style>
+    .pelican { fill: #f0f0f0; stroke: #333; stroke-width: 1.5; }
+    .beak { fill: #f9a825; }
+    .eye { fill: #333; }
+    .bicycle { fill: none; stroke: #555; stroke-width: 2; }
+    .wheel { fill: #fff; stroke: #444; stroke-width: 1.5; }
+    .spoke { stroke: #888; stroke-width: 0.5; }
+  </style>
+
+  <g id="bicycle">
+    <circle class="wheel" cx="45" cy="110" r="20" />
+    <g class="spokes">
+      <line class="spoke" x1="45" y1="110" x2="45" y2="90" />
+      <line class="spoke" x1="45" y1="110" x2="45" y2="130" />
+      <line class="spoke" x1="45" y1="110" x2="65" y2="110" />
+      <line class="spoke" x1="45" y1="110" x2="25" y2="110" />
+    </g>
+    <circle class="wheel" cx="145" cy="110" r="20" />
+    <g class="spokes">
+      <line class="spoke" x1="145" y1="110" x2="145" y2="90" />
+      <line class="spoke" x1="145" y1="110" x2="145" y2="130" />
+      <line class="spoke" x1="145" y1="110" x2="165" y2="110" />
+      <line class="spoke" x1="145" y1="110" x2="125" y2="110" />
+    </g>
+    <path class="bicycle" d="M 45 110 L 85 80 L 130 80 M 85 80 L 95 110 L 45 110" />
+    <line class="bicycle" x1="145" y1="110" x2="130" y2="80" />
+    <line class="bicycle" x1="120" y1="70" x2="140" y2="75" />
+    <line class="bicycle" x1="85" y1="80" x2="75" y2="65" />
+    <rect x="68" y="60" width="14" height="5" fill="#333" />
+    <circle cx="95" cy="110" r="5" class="bicycle" />
+    <line class="bicycle" x1="95" y1="110" x2="100" y2="120" />
+  </g>
+
+  <g id="pelican" transform="translate(15, -25)">
+    <path class="pelican" d="M 70 80 C 50 90, 50 120, 75 125 C 100 130, 110 100, 95 85 Z" />
+    <path class="pelican" d="M 95 85 C 110 70, 125 70, 130 85" />
+    <path class="pelican beak" d="M 130 85 C 140 90, 160 85, 155 75 L 130 80 Z" />
+    <circle class="eye" cx="128" cy="80" r="1.5" />
+    <path class="pelican" d="M 100 90 C 115 85, 125 90, 120 105 Z" />
+    <path class="pelican" d="M 80 120 C 85 125, 90 125, 98 120" fill="none" />
+  </g>
+
+</svg>

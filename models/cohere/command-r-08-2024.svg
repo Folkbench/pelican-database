@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300">
+ <style>
+    .pelican {
+        fill: #F5E79D;
+        stroke: #000;
+        stroke-width: 2px;
+    }
+    .bicycle {
+        fill: #82E0AA;
+    }
+ </style>
+  <path class="pelican" d="M100 50q100 0 200 100t100 200h-250q-100 0-50-200 0-100 200-100Zm50 80q-80 0-140-60t-60-140q0-90 60-130t140-40q80 0 140 50t60 140q0 80-45 145t-125 55Zm85 5q0-21 8.5-41t22.5-33.5q6.5-8 20-8t22 7.5l32 17.5q15-4 22-4 25 0 45 17.5t20 42.5q0 25-20 42.5t-45 17.5q-15 0-22-4l-32-17.5q-14 8-21.5 8t-22.5-8.5q-8.5-6-21.5-19t-16-28ZM415 100q0 45-32.5 77.5T285 225H250q-45 0-77.5-32.5T135 100q0-45 32.5-77.5T250 25q45 0 77.5 32.5T365 100Z"/>
+  <circle class="bicycle" cx="135" cy="210" r="20"/>
+  <circle class="bicycle" cx="260" cy="210" r="20"/>
+  <rect class="bicycle" x="225" y="110" width="40" height="160"/>
+  <path class="bicycle" d="M150 200h20l40-80h20l-50-30-50 30h20l40 80ZM395 250q-20 0-20-20t20-20q20 0 20 20t-20 20Z"/>
+</svg>

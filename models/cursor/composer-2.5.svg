@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" width="400" height="280">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87CEEB"></stop>
+      <stop offset="100%" stop-color="#E8F4FC"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="280" fill="url(#sky)"></rect>
+  <ellipse cx="200" cy="250" rx="180" ry="12" fill="#7CB342" opacity="0.6"></ellipse>
+
+  
+  <g id="bicycle" transform="translate(80, 120)">
+    
+    <circle cx="50" cy="80" r="38" fill="none" stroke="#333" stroke-width="4"></circle>
+    <circle cx="50" cy="80" r="4" fill="#555"></circle>
+    <line x1="50" y1="42" x2="50" y2="118" stroke="#888" stroke-width="2"></line>
+    <line x1="12" y1="80" x2="88" y2="80" stroke="#888" stroke-width="2"></line>
+
+    
+    <circle cx="200" cy="80" r="38" fill="none" stroke="#333" stroke-width="4"></circle>
+    <circle cx="200" cy="80" r="4" fill="#555"></circle>
+    <line x1="200" y1="42" x2="200" y2="118" stroke="#888" stroke-width="2"></line>
+    <line x1="162" y1="80" x2="238" y2="80" stroke="#888" stroke-width="2"></line>
+
+    
+    <path d="M 50 80 L 100 35 L 150 80 L 200 80" fill="none" stroke="#E53935" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 100 35 L 100 55" stroke="#E53935" stroke-width="5"></path>
+    <path d="M 150 80 L 150 50 L 180 35" fill="none" stroke="#E53935" stroke-width="5" stroke-linecap="round"></path>
+    <circle cx="100" cy="55" r="8" fill="#333"></circle>
+    <path d="M 180 35 L 200 45" stroke="#333" stroke-width="3"></path>
+
+    
+    <circle cx="100" cy="55" r="12" fill="none" stroke="#555" stroke-width="3"></circle>
+    <line x1="88" y1="55" x2="112" y2="55" stroke="#555" stroke-width="4"></line>
+    <rect x="85" y="68" width="30" height="6" rx="2" fill="#444" transform="rotate(-20 100 71)"></rect>
+  </g>
+
+  
+  <g id="pelican" transform="translate(95, 45)">
+    
+    <ellipse cx="75" cy="95" rx="45" ry="35" fill="#F5F5F5" stroke="#B0BEC5" stroke-width="2"></ellipse>
+    
+    <path d="M 55 85 Q 30 70 45 110 Q 60 105 75 100" fill="#ECEFF1" stroke="#90A4AE" stroke-width="1.5"></path>
+    
+    <path d="M 105 75 Q 130 50 145 35" fill="none" stroke="#F5F5F5" stroke-width="18" stroke-linecap="round"></path>
+    <path d="M 105 75 Q 130 50 145 35" fill="none" stroke="#B0BEC5" stroke-width="2"></path>
+    
+    <circle cx="148" cy="32" r="18" fill="#F5F5F5" stroke="#B0BEC5" stroke-width="2"></circle>
+    
+    <circle cx="155" cy="28" r="4" fill="#263238"></circle>
+    <circle cx="156" cy="27" r="1.2" fill="white"></circle>
+    
+    <path d="M 162 32 L 210 38 L 205 42 L 165 38 Z" fill="#FFB74D" stroke="#F57C00" stroke-width="1"></path>
+    
+    <path d="M 165 38 Q 185 55 200 48 Q 190 52 168 45 Z" fill="#FFCC80" stroke="#F57C00" stroke-width="1"></path>
+    
+    <path d="M 85 125 L 95 145 L 108 158" fill="none" stroke="#FF8A65" stroke-width="5" stroke-linecap="round"></path>
+    
+    <path d="M 70 120 L 60 140 L 55 155" fill="none" stroke="#FF8A65" stroke-width="5" stroke-linecap="round"></path>
+    
+    <ellipse cx="145" cy="18" rx="14" ry="4" fill="#5C6BC0"></ellipse>
+    <rect x="138" y="8" width="14" height="12" rx="2" fill="#5C6BC0"></rect>
+  </g>
+
+  
+  <circle cx="340" cy="45" r="25" fill="#FFD54F" opacity="0.9"></circle>
+</svg>

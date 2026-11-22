@@ -1,0 +1,66 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#a8d8ff"/>
+
+  <!-- Sun -->
+  <circle cx="300" cy="60" r="40" fill="#fff873"/>
+  <circle cx="300" cy="60" r="25" fill="#ffeb3b"/>
+
+  <!-- Clouds -->
+  <path d="M100 50 Q110 40 120 50 Q115 55 125 55 Q130 60 140 50 Q150 40 160 50 Q155 55 165 55 Q170 60 180 50 Q190 40 200 50 Q195 55 205 55 Q210 60 220 50 Q230 40 240 50 Q235 55 245 55 Q250 60 260 50" fill="#ffffff"/>
+  <path d="M110 80 Q120 70 130 80 Q125 85 135 85 Q140 90 150 80 Q160 70 170 80 Q165 85 175 85 Q180 90 190 80 Q200 70 210 80 Q205 85 215 85 Q220 90 230 80 Q240 70 250 80 Q245 85 255 85 Q260 90 270 80" fill="#ffffff"/>
+
+  <!-- Ground -->
+  <rect y="220" width="400" height="80" fill="#6b8e23"/>
+
+  <!-- Bicycle -->
+  <!-- Frame -->
+  <path d="M200 180 L220 160 L230 160 L250 180 L250 200 L230 200 L220 200 L200 200 Z" fill="#808080"/>
+  <!-- Wheels -->
+  <circle cx="220" cy="190" r="15" fill="#333"/>
+  <circle cx="240" cy="190" r="15" fill="#333"/>
+  <!-- Spokes -->
+  <line x1="220" y1="190" x2="220" y2="175" stroke="#666" stroke-width="1"/>
+  <line x1="220" y1="190" x2="235" y2="190" stroke="#666" stroke-width="1"/>
+  <line x1="220" y1="190" x2="220" y2="205" stroke="#666" stroke-width="1"/>
+  <line x1="220" y1="190" x2="205" y2="190" stroke="#666" stroke-width="1"/>
+  <line x1="240" y1="190" x2="240" y2="175" stroke="#666" stroke-width="1"/>
+  <line x1="240" y1="190" x2="255" y2="190" stroke="#666" stroke-width="1"/>
+  <line x1="240" y1="190" x2="240" y2="205" stroke="#666" stroke-width="1"/>
+  <line x1="240" y1="190" x2="225" y2="190" stroke="#666" stroke-width="1"/>
+  <!-- Handlebars -->
+  <path d="M220 160 Q225 140 240 140 Q255 140 260 160" stroke="#808080" stroke-width="6" fill="none"/>
+  <!-- Seat -->
+  <rect x="225" y="195" width="10" height="5" fill="#808080"/>
+  <!-- Basket -->
+  <path d="M230 170 L240 170 L245 180 L240 190 L230 190 L225 180 Z" fill="#c08040"/>
+  <path d="M230 170 L235 175 L240 170" fill="#a06030"/>
+
+  <!-- Pelican -->
+  <!-- Body -->
+  <ellipse cx="240" cy="180" rx="20" ry="18" fill="#c0c0c0"/>
+  <!-- Head -->
+  <circle cx="260" cy="175" r="12" fill="#d0d0d0"/>
+  <!-- Bill -->
+  <path d="M272 175 Q285 170 285 180 Q285 190 272 185" fill="#ffaa55"/>
+  <!-- Eye -->
+  <circle cx="265" cy="170" r="3" fill="#000"/>
+  <!-- Wings -->
+  <path d="M220 170 Q210 160 200 170 Q205 180 220 180" fill="#b0b0b0"/>
+  <path d="M220 180 Q210 190 200 180 Q205 170 220 170" fill="#b0b0b0"/>
+  <!-- Legs -->
+  <line x1="235" y1="195" x2="235" y2="210" stroke="#ff6600" stroke-width="5"/>
+  <line x1="245" y1="195" x2="245" y2="210" stroke="#ff6600" stroke-width="5"/>
+  <!-- Helmet (tiny) -->
+  <circle cx="260" cy="175" r="15" fill="#444"/>
+  <circle cx="260" cy="175" r="10" fill="#f00"/>
+  <circle cx="260" cy="175" r="7" fill="#aaa"/>
+  <path d="M255 170 L265 170" stroke="#aaa" stroke-width="2"/>
+  <path d="M260 165 L260 175" stroke="#aaa" stroke-width="2"/>
+  <!-- Pelican's smile -->
+  <path d="M260 180 Q265 185 270 180" stroke="#000" stroke-width="2" fill="none"/>
+
+  <!-- Text bubble (optional) -->
+  <path d="M250 150 Q260 140 270 150 Q280 160 270 170 Q260 170 250 160" fill="#fff" stroke="#000" stroke-width="1"/>
+  <text x="260" y="155" font-size="10" font-family="Verdana" text-anchor="middle" fill="#000">Wheee!</text>
+</svg>

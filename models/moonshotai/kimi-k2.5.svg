@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" id="scene">
+        <defs>
+            <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1"/>
+                <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1"/>
+            </linearGradient>
+            <linearGradient id="groundGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#96c93d;stop-opacity:1"/>
+                <stop offset="100%" style="stop-color:#00b09b;stop-opacity:1"/>
+            </linearGradient>
+            <radialGradient id="sunGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                <stop offset="0%" style="stop-color:#fff200;stop-opacity:1"/>
+                <stop offset="100%" style="stop-color:#f7971e;stop-opacity:0"/>
+            </radialGradient>
+            
+            <g id="bikeWheel">
+                <circle cx="0" cy="0" r="70" fill="none" stroke="#333" stroke-width="8"/>
+                <circle cx="0" cy="0" r="65" fill="none" stroke="#ddd" stroke-width="2"/>
+                <g stroke="#ccc" stroke-width="2">
+                    <line x1="0" y1="-65" x2="0" y2="65"/>
+                    <line x1="-65" y1="0" x2="65" y2="0"/>
+                    <line x1="-46" y1="-46" x2="46" y2="46"/>
+                    <line x1="46" y1="-46" x2="-46" y2="46"/>
+                    <line x1="-24" y1="-60" x2="24" y2="60"/>
+                    <line x1="24" y1="-60" x2="-24" y2="60"/>
+                    <line x1="-60" y1="-24" x2="60" y2="24"/>
+                    <line x1="60" y1="-24" x2="-60" y2="24"/>
+                </g>
+                <circle cx="0" cy="0" r="5" fill="#555"/>
+            </g>
+
+            <path id="cloud" d="M25,60.5c-0.3-0.9-0.5-1.8-0.5-2.8c0-5.5,4.5-10,10-10c0.6,0,1.2,0.1,1.8,0.2c2-5.8,7.4-10,13.7-10c6.4,0,11.8,4.2,13.7,10c0.6-0.1,1.2-0.2,1.8-0.2c5.5,0,10,4.5,10,10c0,1-0.2,1.9-0.5,2.8c3.3,1.4,5.5,4.6,5.5,8.3c0,5-4,9-9,9H28.5c-5,0-9-4-9-9C19.5,65.1,21.7,61.9,25,60.5z" fill="#fff" opacity="0.8"/>
+        </defs>
+
+        <rect width="100%" height="100%" fill="url(#skyGradient)"/>
+        
+        <circle cx="1000" cy="100" r="80" fill="url(#sunGradient)" opacity="0.6"/>
+
+        <g id="cloudLayer"/>
+
+        <path d="M0,600 Q600,580 1200,600 L1200,800 L0,800 Z" fill="url(#groundGradient)"/>
+        <path d="M0,650 Q600,630 1200,650 L1200,800 L0,800 Z" fill="#555"/>
+        <line x1="0" y1="725" x2="1200" y2="725" stroke="#fff" stroke-width="5" stroke-dasharray="40,40" id="roadLine"/>
+
+        <ellipse cx="600" cy="710" rx="140" ry="15" fill="#000" opacity="0.3" id="shadow"/>
+
+        <g id="bikeGroup" transform="translate(600, 650)">
+            
+            <g id="legFar" transform="translate(0, -50)">
+                <line x1="0" y1="0" x2="0" y2="45" stroke="#e67e22" stroke-width="14" stroke-linecap="round" id="farThigh"/>
+                <line x1="0" y1="45" x2="0" y2="90" stroke="#e67e22" stroke-width="12" stroke-linecap="round" id="farShin"/>
+                <path d="M-5,90 L15,90 L15,100 L-5,100 Z" fill="#d35400"/>
+            </g>
+
+            <use href="#bikeWheel" x="90" y="60" id="wheelFar"/>
+            <use href="#bikeWheel" x="-90" y="60" id="wheelFarFront"/>
+
+            <g stroke="#e74c3c" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="0" y1="-50" x2="-90" y2="60"/> <line x1="0" y1="10" x2="-90" y2="60"/> <line x1="0" y1="-50" x2="0" y2="10"/> <line x1="0" y1="10" x2="70" y2="-50"/> <line x1="0" y1="-50" x2="70" y2="-50"/> <line x1="70" y1="-50" x2="90" y2="60"/> </g>
+
+            <path d="M70,-50 L80,-65 L100,-60" fill="none" stroke="#c0392b" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="100" cy="-60" r="4" fill="#333"/>
+
+            <path d="M-15,-50 L15,-50 L20,-55 L-10,-55 Z" fill="#333"/>
+
+            <g id="crankset" transform="translate(0, 10)">
+                <circle cx="0" cy="0" r="12" fill="#555"/>
+                <line x1="0" y1="0" x2="0" y2="-35" stroke="#7f8c8d" stroke-width="6" id="pedalArmFar" transform="scale(1, 1)"/> 
+                <line x1="0" y1="0" x2="0" y2="35" stroke="#7f8c8d" stroke-width="6" id="pedalArmNear"/>
+                
+                <g id="pedalFarGroup">
+                    <rect x="-8" y="-42" width="16" height="6" fill="#333" rx="2"/>
+                </g>
+                <g id="pedalNearGroup">
+                    <rect x="-8" y="35" width="16" height="6" fill="#333" rx="2"/>
+                </g>
+            </g>
+
+            <use href="#bikeWheel" x="-90" y="60" id="wheelNear"/>
+            <use href="#bikeWheel" x="90" y="60" id="wheelNearFront"/>
+
+            <g id="pelican" transform="translate(10, -50)">
+                <path d="M-60,10 Q-80,20 -90,30 L-70,35 Z" fill="#fff" stroke="#bdc3c7" stroke-width="1"/>
+                
+                <ellipse cx="-20" cy="0" rx="45" ry="35" fill="#fff"/>
+                
+                <path d="M-40,-10 Q-10,-30 20,-5 Q10,20 -30,15 Z" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+                
+                <path d="M15,-10 Q35,-40 45,-70 Q35,-80 25,-70 Q20,-40 10,-5 Z" fill="#fff"/>
+                
+                <g transform="translate(35, -75) rotate(-10)">
+                    <path d="M0,5 Q40,10 90,5 L85,15 Q40,20 0,15 Z" fill="#f39c12"/>
+                    <path d="M0,5 Q40,25 85,15 Q40,0 0,5" fill="#e67e22" opacity="0.8"/>
+                    <path d="M0,5 L90,0 Q95,0 90,5 L0,10 Z" fill="#f1c40f"/>
+                    <path d="M90,0 Q95,5 90,10 L85,5 Z" fill="#333"/>
+                </g>
+
+                <circle cx="38" cy="-75" r="3" fill="#333"/>
+                <circle cx="39" cy="-76" r="1" fill="#fff"/>
+
+                <g id="legNear" transform="translate(0, 0)">
+                    <line x1="-5" y1="10" x2="-5" y2="50" stroke="#fff" stroke-width="14" stroke-linecap="round" id="nearThigh"/>
+                    <line x1="-5" y1="50" x2="-5" y2="90" stroke="#fff" stroke-width="12" stroke-linecap="round" id="nearShin"/>
+                    <path d="M-10,90 L10,90 L10,100 L-10,100 Z" fill="#e67e22"/>
+                </g>
+            </g>
+        </g>
+        
+        <g transform="translate(20, 20)">
+             <rect x="0" y="0" width="200" height="60" rx="10" fill="rgba(255,255,255,0.8)"/>
+             <text x="10" y="25" font-family="sans-serif" font-size="14" fill="#333">Speed Control</text>
+             <rect x="10" y="35" width="180" height="10" rx="5" fill="#ddd"/>
+             <rect x="10" y="35" width="90" height="10" rx="5" fill="#3498db" id="speedBar"/>
+        </g>
+
+    </svg>

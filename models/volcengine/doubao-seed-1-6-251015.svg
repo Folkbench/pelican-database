@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect x="0" y="0" width="400" height="300" fill="#E3F2FD"/> <rect x="0" y="280" width="400" height="20" fill="#8BC34A"/> <circle cx="150" cy="250" r="30" fill="white" stroke="#2196F3" stroke-width="2"/>
+  <circle cx="250" cy="250" r="30" fill="white" stroke="#2196F3" stroke-width="2"/>
+  <line x1="150" y1="220" x2="150" y2="280" stroke="#2196F3" stroke-width="1"/> <line x1="120" y1="250" x2="180" y2="250" stroke="#2196F3" stroke-width="1"/> <line x1="250" y1="220" x2="250" y2="280" stroke="#2196F3" stroke-width="1"/> <line x1="220" y1="250" x2="280" y2="250" stroke="#2196F3" stroke-width="1"/> <polygon points="150,250 200,190 250,250 200,220" fill="none" stroke="#2196F3" stroke-width="3"/>
+  
+  <line x1="200" y1="190" x2="200" y2="170" stroke="#2196F3" stroke-width="2"/>
+  <ellipse cx="200" cy="165" rx="8" ry="5" fill="#2196F3"/>
+
+  <path d="M150,190 C140,180 160,180 150,190" fill="none" stroke="#2196F3" stroke-width="2"/> <circle cx="200" cy="220" r="2" fill="#2196F3"/> <line x1="200" y1="220" x2="180" y2="230" stroke="#2196F3" stroke-width="2"/> <line x1="200" y1="220" x2="220" y2="230" stroke="#2196F3" stroke-width="2"/> <circle cx="180" cy="230" r="3" fill="#2196F3"/> <circle cx="220" cy="230" r="3" fill="#2196F3"/> <ellipse cx="200" cy="180" rx="30" ry="25" fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+  
+  <ellipse cx="200" cy="155" rx="18" ry="15" fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+  
+  <path d="M210,155 L240,150 L240,160 L210,160 Z" fill="#FF9800" stroke="#000000" stroke-width="1"/>
+  
+  <circle cx="205" cy="152" r="2" fill="#000000"/>
+  
+  <path d="M170,180 C150,170 140,190 170,200 Z" fill="#FFFFFF" stroke="#000000" stroke-width="1"/> <path d="M230,180 C250,170 260,190 230,200 Z" fill="#FFFFFF" stroke="#000000" stroke-width="1"/> <line x1="190" y1="200" x2="180" y2="230" stroke="#000000" stroke-width="1"/> <line x1="210" y1="200" x2="220" y2="230" stroke="#000000" stroke-width="1"/> <ellipse cx="180" cy="230" rx="2" ry="1" fill="#000000"/> <ellipse cx="220" cy="230" rx="2" ry="1" fill="#000000"/> <rect x="140" y="185" width="20" height="8" fill="#8D6E63" stroke="#000000" stroke-width="1"/>
+  <line x1="140" y1="185" x2="140" y2="193" stroke="#000000" stroke-width="1"/>
+  <line x1="160" y1="185" x2="160" y2="193" stroke="#000000" stroke-width="1"/>
+</svg>

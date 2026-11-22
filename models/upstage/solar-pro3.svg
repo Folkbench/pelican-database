@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" version="1.1">
+    <title id="title">Pelican riding a bicycle</title>
+    <desc id="desc">A cartoon pelican with a beak, round body, and flowing tail perched atop a bicycle, wheels included.</desc>
+
+    <rect width="500" height="500" fill="white"/>
+
+    <g id="bike">
+        <circle cx="250" cy="250" r="40" fill="#8B2D28" stroke="#5B2D28" stroke-width="3"/> <line x1="250" y1="210" x2="245" y2="170" stroke="#5B2D28" stroke-width="4" marker-end="url(#arrow)"/>
+        <line x1="245" y1="170" x2="255" y2="170" stroke="#5B2D28" stroke-width="4" marker-end="url(#arrow)"/>
+
+        <line x1="250" y1="250" x2="280" y2="230" stroke="#5B2D28" stroke-width="4"/>
+        <line x1="280" y1="230" x2="280" y2="210" stroke="#5B2D28" stroke-width="4"/>
+
+        <rect x="250" y="252" width="20" height="18" fill="#8B2D28" rx="5" ry="5"/>
+
+        <circle cx="250" cy="210" r="8" fill="#F5B545"/>
+        <circle cx="280" cy="210" r="8" fill="#F5B545"/>
+    </g>
+
+    <g id="wheel">
+        <circle cx="245" cy="170" r="65" fill="#A67C52" stroke="#785939" stroke-width="2"/>
+        <path d="M245,105 Q245,75 272,85 Q245,95 272,105" fill="#F5F5F5" stroke="#785939" stroke-width="2"/>
+    </g>
+
+    <circle cx="245" cy="170" r="12" fill="#333"/>
+    <circle cx="245" cy="170" r="8" fill="#DDD"/>
+
+    <use href="#spokeDefs" x="0" y="0">
+        <animateTransform attributeName="transform" type="rotate" dur="8s" repeatCount="indefinite"/>
+    </use>
+</svg>

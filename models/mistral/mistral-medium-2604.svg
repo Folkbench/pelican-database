@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <defs>
+    
+    <linearGradient id="bikeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a6b8a"></stop>
+      <stop offset="100%" stop-color="#2a4b6a"></stop>
+    </linearGradient>
+  </defs>
+
+  
+  <rect x="0" y="150" width="400" height="50" fill="#5c9e31"></rect>
+
+  
+  <g id="bicycle">
+    
+    <path d="M150,120 L200,100 L250,120 L230,140 L170,140 Z" fill="url(#bikeGradient)" stroke="#000" stroke-width="2"></path>
+    
+    <circle cx="160" cy="140" r="20" fill="#1a1a1a"></circle>
+    <circle cx="160" cy="140" r="15" fill="#3a3a3a"></circle>
+    
+    <circle cx="240" cy="140" r="20" fill="#1a1a1a"></circle>
+    <circle cx="240" cy="140" r="15" fill="#3a3a3a"></circle>
+    
+    <circle cx="190" cy="130" r="5" fill="#1a1a1a"></circle>
+    <circle cx="210" cy="130" r="5" fill="#1a1a1a"></circle>
+    
+    <path d="M160,100 L140,110" stroke="#000" stroke-width="3" fill="none"></path>
+  </g>
+
+  
+  <g id="pelican">
+    
+    <ellipse cx="200" cy="110" rx="30" ry="20" fill="#f8f8f8" stroke="#000" stroke-width="2"></ellipse>
+    
+    <path d="M200,90 Q200,60 220,50" stroke="#000" stroke-width="4" fill="none"></path>
+    
+    <circle cx="220" cy="50" r="10" fill="#f8f8f8" stroke="#000" stroke-width="2"></circle>
+    
+    <path d="M230,50 L245,45 L230,40 Z" fill="#ff9900" stroke="#000" stroke-width="1"></path>
+    
+    <circle cx="225" cy="48" r="2" fill="#000"></circle>
+    
+    <path d="M170,110 Q150,100 150,80 Q150,60 170,70" stroke="#000" stroke-width="2" fill="none"></path>
+    <path d="M230,110 Q250,100 250,80 Q250,60 230,70" stroke="#000" stroke-width="2" fill="none"></path>
+    
+    <line x1="190" y1="130" x2="180" y2="140" stroke="#000" stroke-width="2"></line>
+    <line x1="210" y1="130" x2="220" y2="140" stroke="#000" stroke-width="2"></line>
+  </g>
+
+  
+  <text x="200" y="30" font-family="Arial" font-size="20" text-anchor="middle" fill="#000">Pelican on a Bike</text>
+</svg>

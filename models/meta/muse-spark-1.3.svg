@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-labelledby="title desc">
+<title id="title">Pelican riding a bicycle</title>
+<desc id="desc">A cartoon white pelican with a big orange beak, red helmet and scarf, riding a teal bicycle</desc>
+<!-- sky -->
+<rect x="0" y="0" width="800" height="500" rx="20" fill="#BAE6FD"/>
+<circle cx="680" cy="80" r="45" fill="#FDE047" stroke="#F59E0B" stroke-width="4"/>
+<g fill="white" opacity="0.95">
+<ellipse cx="150" cy="90" rx="60" ry="25"/><ellipse cx="200" cy="80" rx="50" ry="28"/><ellipse cx="120" cy="80" rx="40" ry="22"/>
+<ellipse cx="500" cy="70" rx="55" ry="22"/><ellipse cx="540" cy="60" rx="45" ry="24"/>
+</g>
+<!-- hills -->
+<ellipse cx="150" cy="430" rx="280" ry="90" fill="#86EFAC"/>
+<ellipse cx="650" cy="430" rx="300" ry="95" fill="#6EE7B7"/>
+<!-- road -->
+<rect x="0" y="380" width="800" height="120" fill="#4B5563"/>
+<rect x="0" y="380" width="800" height="12" fill="#9CA3AF"/>
+<line x1="0" y1="445" x2="800" y2="445" stroke="white" stroke-width="6" stroke-dasharray="32 26" stroke-linecap="round"/>
+<ellipse cx="400" cy="468" rx="230" ry="16" fill="black" opacity="0.2"/>
+<!-- speed lines -->
+<g stroke="white" stroke-width="6" stroke-linecap="round" opacity="0.8">
+<line x1="60" y1="300" x2="140" y2="300"/>
+<line x1="40" y1="330" x2="150" y2="330"/>
+<line x1="70" y1="360" x2="130" y2="360"/>
+</g>
+
+<!-- WHEELS -->
+<g>
+<!-- rear -->
+<circle cx="250" cy="385" r="75" fill="white" stroke="#1F2937" stroke-width="12"/>
+<circle cx="250" cy="385" r="58" fill="none" stroke="#94A3B8" stroke-width="3"/>
+<g stroke="#9CA3AF" stroke-width="3">
+<line x1="250" y1="327" x2="250" y2="443"/><line x1="192" y1="385" x2="308" y2="385"/>
+<line x1="209" y1="344" x2="291" y2="426"/><line x1="291" y1="344" x2="209" y2="426"/>
+</g>
+<circle cx="250" cy="385" r="12" fill="#374151" stroke="white" stroke-width="3"/>
+<!-- front -->
+<circle cx="550" cy="385" r="75" fill="white" stroke="#1F2937" stroke-width="12"/>
+<circle cx="550" cy="385" r="58" fill="none" stroke="#94A3B8" stroke-width="3"/>
+<g stroke="#9CA3AF" stroke-width="3">
+<line x1="550" y1="327" x2="550" y2="443"/><line x1="492" y1="385" x2="608" y2="385"/>
+<line x1="509" y1="344" x2="591" y2="426"/><line x1="591" y1="344" x2="509" y2="426"/>
+</g>
+<circle cx="550" cy="385" r="12" fill="#374151" stroke="white" stroke-width="3"/>
+</g>
+
+<!-- FRAME -->
+<g fill="none" stroke="#0D9488" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+<path d="M250,385 L400,385"/>
+<path d="M400,385 L340,250"/>
+<path d="M250,385 L340,250"/>
+<path d="M340,250 L520,260"/>
+<path d="M400,385 L520,260"/>
+<path d="M520,260 L550,385"/>
+</g>
+<!-- seat -->
+<line x1="340" y1="250" x2="333" y2="230" stroke="#1F2937" stroke-width="7" stroke-linecap="round"/>
+<ellipse cx="316" cy="224" rx="36" ry="12" fill="#1F2937"/>
+<!-- handlebar -->
+<line x1="520" y1="260" x2="535" y2="228" stroke="#1F2937" stroke-width="7" stroke-linecap="round"/>
+<path d="M535,228 Q558,228 556,250 Q555,265 540,265" fill="none" stroke="#1F2937" stroke-width="7" stroke-linecap="round"/>
+<!-- crank + pedals -->
+<circle cx="400" cy="385" r="18" fill="none" stroke="#1F2937" stroke-width="5"/>
+<line x1="400" y1="385" x2="444" y2="385" stroke="#1F2937" stroke-width="6" stroke-linecap="round"/>
+<line x1="400" y1="385" x2="356" y2="385" stroke="#1F2937" stroke-width="6" stroke-linecap="round"/>
+<rect x="430" y="378" width="28" height="12" rx="3" fill="#111827"/>
+<rect x="342" y="378" width="28" height="12" rx="3" fill="#111827"/>
+
+<!-- PELICAN LEGS -->
+<path d="M330,300 L360,380" fill="none" stroke="#EA580C" stroke-width="12" stroke-linecap="round"/>
+<ellipse cx="358" cy="384" rx="18" ry="10" fill="#1F2937"/>
+<path d="M355,300 L440,380" fill="none" stroke="#F97316" stroke-width="12" stroke-linecap="round"/>
+<ellipse cx="446" cy="384" rx="19" ry="10" fill="#1F2937"/>
+
+<!-- TAIL -->
+<path d="M270,200 L195,168 L212,208 L188,225 L266,252 Z" fill="#E2E8F0" stroke="#334155" stroke-width="4" stroke-linejoin="round"/>
+<!-- BODY -->
+<ellipse cx="365" cy="220" rx="105" ry="78" fill="white" stroke="#334155" stroke-width="4"/>
+<!-- scarf tail blowing behind -->
+<path d="M430,145 Q360,155 295,130 Q335,160 315,185 Q375,180 435,160 Z" fill="#EF4444" stroke="#7F1D1D" stroke-width="3" stroke-linejoin="round"/>
+<!-- wing on body -->
+<g transform="rotate(-15 335 230)">
+<ellipse cx="335" cy="230" rx="62" ry="38" fill="#F1F5F9" stroke="#334155" stroke-width="3"/>
+<path d="M290,230 Q335,245 380,230" fill="none" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+<path d="M295,245 Q335,258 375,245" fill="none" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+</g>
+<!-- neck -->
+<path d="M430,200 C430,160 435,130 465,110" fill="none" stroke="#334155" stroke-width="44" stroke-linecap="round"/>
+<path d="M430,200 C430,160 435,130 465,110" fill="none" stroke="white" stroke-width="34" stroke-linecap="round"/>
+<!-- scarf around neck -->
+<ellipse cx="444" cy="138" rx="26" ry="13" fill="#EF4444" stroke="#7F1D1D" stroke-width="3" transform="rotate(-10 444 138)"/>
+<!-- HEAD -->
+<circle cx="475" cy="100" r="38" fill="white" stroke="#334155" stroke-width="4"/>
+<!-- helmet -->
+<path d="M438,88 A38,38 0 0 1 512,78 L504,92 Q475,82 443,98 Z" fill="#EF4444" stroke="#7F1D1D" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="475" cy="62" r="6" fill="#7F1D1D"/>
+<path d="M445,98 L445,135" stroke="#7F1D1D" stroke-width="3"/>
+<!-- beak -->
+<path d="M505,112 L650,120 Q600,178 520,150 Q505,132 505,112" fill="#FDBA74" stroke="#7C2D12" stroke-width="3" stroke-linejoin="round"/>
+<path d="M505,88 L652,120 L505,112 Z" fill="#FB923C" stroke="#7C2D12" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="505" cy="104" r="4" fill="#7C2D12"/>
+<!-- eye + cheek -->
+<circle cx="482" cy="92" r="8.5" fill="#1F2937"/>
+<circle cx="485" cy="89.5" r="2.8" fill="white"/>
+<ellipse cx="468" cy="112" rx="7" ry="5" fill="#FECDD3" opacity="0.9"/>
+<!-- arm wing to handlebar -->
+<path d="M370,215 Q450,235 535,254" fill="none" stroke="#334155" stroke-width="24" stroke-linecap="round"/>
+<path d="M370,215 Q450,235 535,254" fill="none" stroke="white" stroke-width="15" stroke-linecap="round"/>
+<circle cx="538" cy="255" r="10" fill="white" stroke="#334155" stroke-width="3"/>
+</svg>

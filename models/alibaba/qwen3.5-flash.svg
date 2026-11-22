@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <defs>
+    <linearGradient id="beakGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFCC00;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FF9900;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(0, 0)">
+    <circle cx="120" cy="280" r="50" fill="none" stroke="#333" stroke-width="6"/>
+    <circle cx="120" cy="280" r="42" fill="none" stroke="#999" stroke-width="1" stroke-dasharray="5,5"/>
+    <line x1="120" y1="230" x2="120" y2="330" stroke="#999" stroke-width="2"/>
+    <line x1="70" y1="280" x2="170" y2="280" stroke="#999" stroke-width="2"/>
+    <line x1="95" y1="255" x2="145" y2="305" stroke="#999" stroke-width="2"/>
+    <line x1="145" y1="255" x2="95" y2="305" stroke="#999" stroke-width="2"/>
+  </g>
+
+  <path d="M270 280 L 300 160 L 360 160 L 320 280 L 230 200 L 120 280 L 230 200 Z" fill="none" stroke="#2c3e50" stroke-width="6" stroke-linejoin="round"/>
+  
+  <circle cx="230" cy="280" r="8" fill="#555"/>
+  <circle cx="230" cy="280" r="35" fill="none" stroke="#555" stroke-width="3" stroke-dasharray="10,5" opacity="0.5"/>
+
+  <path d="M300 160 L 300 130 L 340 110" fill="none" stroke="#2c3e50" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="335" y="105" width="15" height="20" rx="5" fill="#111"/>
+
+  <path d="M210 245 L 210 180" stroke="#333" stroke-width="5"/>
+  <path d="M200 180 L 240 180 L 235 170 L 205 170 Z" fill="#333"/>
+
+  <path d="M360 160 L 320 280" fill="none" stroke="#2c3e50" stroke-width="6"/>
+  
+  <g transform="translate(0, 0)">
+    <circle cx="320" cy="280" r="50" fill="none" stroke="#333" stroke-width="6"/>
+    <circle cx="320" cy="280" r="42" fill="none" stroke="#999" stroke-width="1" stroke-dasharray="5,5"/>
+    <line x1="320" y1="230" x2="320" y2="330" stroke="#999" stroke-width="2"/>
+    <line x1="270" y1="280" x2="370" y2="280" stroke="#999" stroke-width="2"/>
+  </g>
+
+  <path d="M180 230 Q 140 250 160 280" fill="white" stroke="none"/>
+
+  <ellipse cx="230" cy="200" rx="80" ry="60" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+  
+  <path d="M260 190 Q 330 140 340 110 L 335 160" fill="white" stroke="#333" stroke-width="2"/>
+  
+  <path d="M200 220 Q 180 200 200 180" fill="white" stroke="#333" stroke-width="2"/>
+
+  <circle cx="240" cy="130" r="45" fill="white" stroke="#333" stroke-width="2"/>
+  
+  <path d="M260 130 Q 340 120 360 150" fill="url(#beakGradient)" stroke="#cc7a00" stroke-width="2" stroke-linecap="round"/>
+  
+  <path d="M260 135 Q 310 180 360 155" fill="#ffe082" stroke="#cc7a00" stroke-width="2" stroke-linecap="round"/>
+  
+  <circle cx="255" cy="125" r="5" fill="black"/>
+  <circle cx="257" cy="123" r="2" fill="white"/>
+
+  <path d="M210 260 L 210 280" stroke="#FF9900" stroke-width="4" stroke-linecap="round"/>
+  <path d="M200 285 L 240 285" stroke="#FF9900" stroke-width="4"/>
+
+</svg>

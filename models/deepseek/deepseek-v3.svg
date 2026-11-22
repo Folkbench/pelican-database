@@ -1,0 +1,20 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  
+  <rect x="80" y="80" width="40" height="20" fill="silver"></rect> 
+  <circle cx="70" cy="120" r="20" fill="none" stroke="black" stroke-width="3"></circle> 
+  <circle cx="130" cy="120" r="20" fill="none" stroke="black" stroke-width="3"></circle> 
+  <line x1="70" y1="120" x2="130" y2="120" stroke="black" stroke-width="3"></line> 
+  <line x1="90" y1="80" x2="70" y2="120" stroke="black" stroke-width="3"></line> 
+  <line x1="90" y1="80" x2="130" y2="120" stroke="black" stroke-width="3"></line> 
+  <line x1="110" y1="80" x2="130" y2="120" stroke="black" stroke-width="3"></line> 
+
+  
+  <ellipse cx="80" cy="70" rx="20" ry="30" fill="lightgray"></ellipse> 
+  <circle cx="60" cy="60" r="10" fill="white"></circle> 
+  <ellipse cx="60" cy="60" rx="5" ry="8" fill="orange"></ellipse> 
+  <circle cx="57" cy="58" r="2" fill="black"></circle> 
+
+  
+  <path d="M60,80 Q40,90 60,100" fill="lightgray"></path> 
+  <path d="M100,80 Q120,90 100,100" fill="lightgray"></path> 
+</svg>

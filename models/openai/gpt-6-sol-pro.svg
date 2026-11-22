@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" role="img" aria-label="A pelican riding a bicycle">
+  <rect width="640" height="440" fill="#e9f8ff"/>
+  <circle cx="530" cy="75" r="35" fill="#ffe28a"/>
+  <path d="M0 350 Q160 330 320 350 T640 350 V440 H0Z" fill="#b9dfaa"/>
+
+  <!-- Bicycle wheels and frame -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="175" cy="335" r="70" stroke="#263b4a" stroke-width="9"/>
+    <circle cx="465" cy="335" r="70" stroke="#263b4a" stroke-width="9"/>
+    <g stroke="#9aadb4" stroke-width="2">
+      <path d="M175 265v140m-70-70h140m-119-49 98 98m0-98-98 98"/>
+      <path d="M465 265v140m-70-70h140m-119-49 98 98m0-98-98 98"/>
+    </g>
+    <path d="M175 335 270 245 350 335 175 335m95-90 195 90-115 0 55-115"
+          stroke="#e65d50" stroke-width="10"/>
+    <path d="M405 220h48m-183 25-12-28h-28" stroke="#263b4a" stroke-width="8"/>
+    <path d="M350 335l-17 22m17-22 19-19" stroke="#263b4a" stroke-width="7"/>
+  </g>
+
+  <!-- Pelican: body, wing, neck, head and beak -->
+  <ellipse cx="292" cy="174" rx="85" ry="64" fill="#fffaf0" stroke="#354651" stroke-width="5"/>
+  <path d="M245 155 Q294 127 346 168 Q313 210 266 194Z"
+        fill="#e7e5db" stroke="#354651" stroke-width="4"/>
+  <path d="M337 173 Q389 165 380 113 Q370 77 399 72"
+        fill="none" stroke="#354651" stroke-width="47" stroke-linecap="round"/>
+  <path d="M337 173 Q389 165 380 113 Q370 77 399 72"
+        fill="none" stroke="#fffaf0" stroke-width="39" stroke-linecap="round"/>
+  <ellipse cx="415" cy="69" rx="33" ry="29" fill="#fffaf0" stroke="#354651" stroke-width="5"/>
+  <path d="M431 76 Q497 70 560 91 L438 97Z" fill="#f7bd57" stroke="#354651" stroke-width="4"/>
+  <path d="M438 97 Q492 117 560 91 Q519 152 459 129 Q444 119 438 97Z"
+        fill="#f3a957" stroke="#354651" stroke-width="4"/>
+  <circle cx="421" cy="63" r="5" fill="#263b4a"/>
+
+  <!-- Feet on pedals -->
+  <path d="M265 218 Q283 252 333 357m-52-135 Q317 243 369 316"
+        fill="none" stroke="#e9a34c" stroke-width="12" stroke-linecap="round"/>
+  <path d="M316 357h29m10-41h29" stroke="#e9a34c" stroke-width="10" stroke-linecap="round"/>
+</svg>

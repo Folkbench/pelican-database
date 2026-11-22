@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+    <defs>
+        <style>
+            .frame { stroke: #E53935; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+            .tire { fill: none; stroke: #333; stroke-width: 8; }
+            .spoke { stroke: #B0BEC5; stroke-width: 2; }
+            .pelican-body { fill: #F5F5F5; stroke: #90A4AE; stroke-width: 4; }
+            .pelican-pouch { fill: #FFCC80; stroke: #E65100; stroke-width: 2; }
+            .pelican-beak { fill: #FF9800; stroke: #E65100; stroke-width: 2; }
+            .pelican-leg { fill: #FF9800; }
+            .bg { fill: #B3E5FC; }
+        </style>
+    </defs>
+
+    <circle cx="250" cy="250" r="230" class="bg"/>
+    <ellipse cx="250" cy="510" rx="150" ry="8" fill="#CFD8DC"/>
+    
+    <path d="M 80,450 L 30,450 M 85,460 L 20,460 M 80,470 L 40,470" stroke="#B0BEC5" stroke-width="4" stroke-linecap="round"/>
+
+    <g id="rear-wheel">
+        <circle cx="150" cy="460" r="45" class="tire"/>
+        <circle cx="150" cy="460" r="5" fill="#333"/>
+        <line x1="150" y1="415" x2="150" y2="505" class="spoke"/>
+        <line x1="105" y1="460" x2="195" y2="460" class="spoke"/>
+        <line x1="118" y1="428" x2="182" y2="492" class="spoke"/>
+        <line x1="118" y1="492" x2="182" y2="428" class="spoke"/>
+    </g>
+    <g id="front-wheel">
+        <circle cx="350" cy="460" r="45" class="tire"/>
+        <circle cx="350" cy="460" r="5" fill="#333"/>
+        <line x1="350" y1="415" x2="350" y2="505" class="spoke"/>
+        <line x1="305" y1="460" x2="395" y2="460" class="spoke"/>
+        <line x1="318" y1="428" x2="382" y2="492" class="spoke"/>
+        <line x1="318" y1="492" x2="382" y2="428" class="spoke"/>
+    </g>
+
+    <g id="bike-frame">
+        <line x1="150" y1="460" x2="230" y2="460" stroke="#666" stroke-width="4" stroke-dasharray="4 2"/>
+        <line x1="150" y1="475" x2="230" y2="475" stroke="#666" stroke-width="4" stroke-dasharray="4 2"/>
+        <line x1="150" y1="460" x2="230" y2="460" class="frame"/>
+        <line x1="150" y1="460" x2="190" y2="360" class="frame"/>
+        <line x1="230" y1="460" x2="190" y2="360" class="frame"/>
+        <line x1="230" y1="460" x2="330" y2="320" class="frame"/>
+        <line x1="190" y1="360" x2="330" y2="320" class="frame"/>
+        <line x1="350" y1="460" x2="330" y2="320" class="frame"/>
+        <line x1="330" y1="320" x2="330" y2="305" stroke="#90A4AE" stroke-width="6" stroke-linecap="round"/>
+        <line x1="310" y1="305" x2="350" y2="305" stroke="#333" stroke-width="8" stroke-linecap="round"/>
+        <line x1="190" y1="360" x2="185" y2="340" stroke="#333" stroke-width="6"/>
+        <ellipse cx="185" cy="340" rx="20" ry="8" fill="#333"/>
+        <circle cx="230" cy="460" r="15" fill="#B0BEC5" stroke="#333" stroke-width="4"/>
+        <line x1="230" y1="460" x2="210" y2="445" stroke="#333" stroke-width="6"/>
+        <line x1="200" y1="445" x2="220" y2="445" stroke="#333" stroke-width="6" stroke-linecap="round"/>
+        <line x1="230" y1="460" x2="250" y2="475" stroke="#333" stroke-width="6"/>
+        <line x1="240" y1="475" x2="260" y2="475" stroke="#333" stroke-width="6" stroke-linecap="round"/>
+    </g>
+
+    <path d="M 130,280 C 100,310 110,330 110,330 L 130,310 Z" fill="#E0E0E0" stroke="#90A4AE" stroke-width="3"/>
+
+    <g id="left-leg">
+        <line x1="200" y1="290" x2="210" y2="445" stroke="#FF9800" stroke-width="8" stroke-linecap="round"/>
+        <circle cx="200" cy="290" r="12" fill="#FF9800"/>
+        <path d="M 210,445 Q 195,460 195,463 Q 205,460 210,463 Q 215,460 220,463 Q 225,460 210,445 Z" class="pelican-leg"/>
+        <path d="M 210,445 L 195,463 M 210,445 L 210,463 M 210,445 L 220,463" stroke="#E65100" stroke-width="2"/>
+    </g>
+
+    <g id="pelican-upper">
+        <ellipse cx="170" cy="270" rx="40" ry="55" class="pelican-body"/>
+        <path d="M 190,240 C 210,180 220,180 235,195 L 225,215 C 200,220 180,240 180,240 Z" class="pelican-body"/>
+        <circle cx="240" cy="185" r="18" class="pelican-body"/>
+        <path d="M 250,180 L 336,190 C 345,190 346,194 342,196 L 250,195 Z" class="pelican-beak"/>
+        <path d="M 250,195 Q 290,280 342,196 Q 300,230 260,210 Z" class="pelican-pouch"/>
+        <circle cx="248" cy="180" r="5" fill="#212121"/>
+        <circle cx="246" cy="178" r="1.5" fill="white"/>
+        <path d="M 150,250 C 190,260 240,240 250,230 C 240,280 180,300 130,270 Z" fill="#E0E0E0" stroke="#90A4AE" stroke-width="3"/>
+        <path d="M 160,260 Q 190,265 220,250" fill="none" stroke="#90A4AE" stroke-width="2"/>
+    </g>
+
+    <g id="right-leg">
+        <line x1="180" y1="310" x2="250" y2="475" stroke="#FF9800" stroke-width="8" stroke-linecap="round"/>
+        <circle cx="180" cy="310" r="12" fill="#FF9800"/>
+        <path d="M 250,470 Q 235,485 235,488 Q 245,485 250,488 Q 255,485 260,488 Q 265,485 250,470 Z" class="pelican-leg"/>
+        <path d="M 250,470 L 235,488 M 250,470 L 250,488 M 250,470 L 260,488" stroke="#E65100" stroke-width="2"/>
+    </g>
+</svg>

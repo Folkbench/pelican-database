@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87CEEB"/>
+      <stop offset="100%" stop-color="#E0F7FA"/>
+    </linearGradient>
+    <style>
+      .ground { fill: #8BC34A; }
+      .bike-frame { fill: #F44336; }
+      .bike-wheel { fill: none; stroke: #333; stroke-width: 3; }
+      .pelican-body { fill: #FFFFFF; }
+      .pelican-beak { fill: #FFC107; }
+      .pelican-leg { fill: #FF9800; }
+    </style>
+  </defs>
+
+  <rect width="200" height="200" fill="url(#sky)"/>
+  <rect y="160" width="200" height="40" class="ground"/>
+
+  <!-- Bicycle -->
+  <circle cx="60" cy="140" r="20" class="bike-wheel"/>
+  <circle cx="140" cy="140" r="20" class="bike-wheel"/>
+  <path d="M60 140 L90 100 L130 100 L140 140" class="bike-frame"/>
+  <line x1="100" y1="100" x2="100" y2="80" stroke="#333" stroke-width="3"/>
+  <line x1="90" y1="100" x2="110" y2="80" stroke="#333" stroke-width="3"/>
+  <circle cx="100" cy="75" r="5" fill="#555"/>
+
+  <!-- Pelican -->
+  <ellipse cx="100" cy="70" rx="25" ry="15" class="pelican-body"/>
+  <path d="M125 65 L170 70 L125 75" class="pelican-beak"/>
+  <circle cx="130" cy="68" r="2" fill="black"/>
+  <path d="M75 70 Q60 60 55 75" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+  <line x1="95" y1="85" x2="100" y2="100" class="pelican-leg"/>
+  <line x1="105" y1="85" x2="110" y2="100" class="pelican-leg"/>
+</svg>

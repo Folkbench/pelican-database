@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+  <line x1="50" y1="150" x2="120" y2="100" stroke="black" stroke-width="4"/>
+  <line x1="120" y1="100" x2="180" y2="100" stroke="black" stroke-width="4"/>
+  <line x1="180" y1="100" x2="220" y2="140" stroke="black" stroke-width="4"/>
+  <line x1="120" y1="100" x2="120" y2="150" stroke="black" stroke-width="4"/>
+  <line x1="180" y1="100" x2="180" y2="150" stroke="black" stroke-width="4"/>
+  
+  <circle cx="120" cy="150" r="30" fill="none" stroke="black" stroke-width="2"/>
+  <circle cx="180" cy="150" r="30" fill="none" stroke="black" stroke-width="2"/>
+  <circle cx="120" cy="150" r="10" fill="white" stroke="black" stroke-width="1"/>
+  <circle cx="180" cy="150" r="10" fill="white" stroke="black" stroke-width="1"/>
+  
+  <ellipse cx="150" cy="90" rx="30" ry="20" fill="white" stroke="black" stroke-width="1"/>
+  
+  <circle cx="175" cy="70" r="15" fill="white" stroke="black" stroke-width="1"/>
+  
+  <polygon points="190,65 210,70 190,75" fill="orange" stroke="black" stroke-width="1"/>
+  
+  <circle cx="180" cy="65" r="3" fill="black"/>
+  
+  <path d="M160,90 Q150,110 160,120 Q170,110 160,90" fill="white" stroke="black" stroke-width="1"/>
+  
+  <line x1="140" y1="110" x2="135" y2="140" stroke="orange" stroke-width="2"/>
+  <line x1="160" y1="110" x2="165" y2="140" stroke="orange" stroke-width="2"/>
+  
+  <path d="M130,80 Q110,60 120,50 Q130,60 130,80" fill="white" stroke="black" stroke-width="1"/>
+  <path d="M170,80 Q190,60 180,50 Q170,60 170,80" fill="white" stroke="black" stroke-width="1"/>
+</svg>

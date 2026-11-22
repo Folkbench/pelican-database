@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a8d8ff"/>
+      <stop offset="100%" stop-color="#f2fbff"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="200" fill="url(#sky)"/>
+  
+  <!-- Ground -->
+  <rect y="150" width="240" height="50" fill="#9ccc65"/>
+  <rect y="145" width="240" height="5" fill="#558b2f"/>
+
+  <!-- Bicycle wheels -->
+  <circle cx="70" cy="150" r="28" fill="none" stroke="#222" stroke-width="4"/>
+  <circle cx="70" cy="150" r="22" fill="none" stroke="#555" stroke-dasharray="4 4" stroke-width="2"/>
+  <circle cx="160" cy="150" r="28" fill="none" stroke="#222" stroke-width="4"/>
+  <circle cx="160" cy="150" r="22" fill="none" stroke="#555" stroke-dasharray="4 4" stroke-width="2"/>
+
+  <!-- Bike frame -->
+  <line x1="70" y1="150" x2="115" y2="110" stroke="#f44336" stroke-width="6"/>
+  <line x1="115" y1="110" x2="160" y2="150" stroke="#f44336" stroke-width="6"/>
+  <line x1="70" y1="150" x2="160" y2="150" stroke="#f44336" stroke-width="4"/>
+  <line x1="115" y1="110" x2="115" y2="70" stroke="#f44336" stroke-width="4"/>
+  <line x1="115" y1="70" x2="145" y2="80" stroke="#f44336" stroke-width="4"/>
+  <line x1="145" y1="80" x2="160" y2="150" stroke="#f44336" stroke-width="4"/>
+  
+  <!-- Handlebars -->
+  <line x1="115" y1="70" x2="90" y2="60" stroke="#333" stroke-width="4"/>
+  <circle cx="90" cy="60" r="4" fill="#333"/>
+
+  <!-- Saddle -->
+  <line x1="100" y1="95" x2="120" y2="95" stroke="#333" stroke-width="5"/>
+  <ellipse cx="110" cy="92" rx="12" ry="6" fill="#455a64"/>
+
+  <!-- Pelican body -->
+  <ellipse cx="110" cy="75" rx="25" ry="18" fill="#f5f5f5" stroke="#b0bec5" stroke-width="2"/>
+  <ellipse cx="95" cy="68" rx="10" ry="12" fill="#f5f5f5" stroke="#b0bec5" stroke-width="2"/>
+  <circle cx="92" cy="63" r="3" fill="#212121"/>
+
+  <!-- Pelican beak -->
+  <path d="M84 66 Q60 60 58 71 Q60 76 78 80 Z" fill="#ffb74d" stroke="#ef6c00" stroke-width="2"/>
+  <path d="M92 60 Q70 56 62 63 L78 65 Z" fill="#ffcc80"/>
+
+  <!-- Pelican wing -->
+  <path d="M112 60 Q135 65 138 80 Q132 95 106 88 Z" fill="#eceff1" stroke="#b0bec5" stroke-width="2"/>
+
+  <!-- Pelican legs -->
+  <path d="M100 90 L92 132" stroke="#ffb74d" stroke-width="4"/>
+  <path d="M120 90 L128 132" stroke="#ffb74d" stroke-width="4"/>
+  <path d="M90 132 L100 132" stroke="#ffb74d" stroke-width="4"/>
+  <path d="M122 132 L132 132" stroke="#ffb74d" stroke-width="4"/>
+
+  <!-- Front basket -->
+  <rect x="140" y="90" width="25" height="18" fill="#ffcc80" stroke="#ef6c00" stroke-width="2"/>
+  <line x1="140" y1="95" x2="165" y2="95" stroke="#ef6c00" stroke-width="1.5"/>
+  <line x1="140" y1="100" x2="165" y2="100" stroke="#ef6c00" stroke-width="1.5"/>
+
+  <!-- Decorative clouds -->
+  <ellipse cx="60" cy="40" rx="25" ry="10" fill="#fff" opacity="0.8"/>
+  <ellipse cx="80" cy="45" rx="20" ry="9" fill="#fff" opacity="0.8"/>
+  <ellipse cx="170" cy="30" rx="30" ry="12" fill="#fff" opacity="0.8"/>
+  <ellipse cx="190" cy="35" rx="18" ry="8" fill="#fff" opacity="0.8"/>
+</svg>

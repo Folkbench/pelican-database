@@ -1,0 +1,22 @@
+<svg width="200" height="150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Pelican body -->
+  <ellipse cx="80" cy="100" rx="30" ry="20" fill="#8B4513"/>
+  <!-- Pelican head -->
+  <ellipse cx="110" cy="80" rx="25" ry="18" fill="#8B4513"/>
+  <!-- Pelican beak -->
+  <polygon points="115,75 120,65 110,70" fill="#A0522D"/>
+  <!-- Pelican eye -->
+  <circle cx="105" cy="75" r="3" fill="white"/>
+  <circle cx="106" cy="74" r="1" fill="black"/>
+  <!-- Bicycle frame -->
+  <rect x="60" y="80" width="60" height="60" stroke="#555" stroke-width="2" fill="none"/>
+  <!-- Bicycle wheel (front) -->
+  <circle cx="80" cy="140" r="15" stroke="#777" stroke-width="2" fill="none"/>
+  <!-- Bicycle wheel (back) -->
+  <circle cx="140" cy="80" r="15" stroke="#777" stroke-width="2" fill="none"/>
+  <!-- Bicycle seat -->
+  <rect x="80" y="70" width="20" height="10" fill="#8B4513"/>
+  <!-- Pedals -->
+  <circle cx="75" cy="110" r="5" stroke="#555" stroke-width="1.5" fill="none"/>
+  <circle cx="85" cy="110" r="5" stroke="#555" stroke-width="1.5" fill="none"/>
+</svg>

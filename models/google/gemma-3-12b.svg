@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400">
+
+  <rect width="100%" height="80" fill="#a0d468"/>
+
+  <line x1="100" y1="200" x2="300" y2="200" stroke="black" stroke-width="4"/>
+  <line x1="100" y1="200" x2="100" y2="320" stroke="black" stroke-width="4"/>
+  <line x1="300" y1="200" x2="300" y2="320" stroke="black" stroke-width="4"/>
+
+  <circle cx="100" cy="250" r="30" fill="gray" stroke="black" stroke-width="2"/>
+
+  <circle cx="300" cy="250" r="30" fill="gray" stroke="black" stroke-width="2"/>
+
+  <line x1="100" y1="180" x2="80" y2="150" stroke="black" stroke-width="3"/>
+  <line x1="100" y1="180" x2="120" y2="150" stroke="black" stroke-width="3"/>
+
+  <rect x="200" y="230" width="10" height="15" fill="brown"/>
+
+    <path d="M205,240 C 215,230, 230,230, 240,240" stroke="black" stroke-width="1" fill="none"/>
+
+  <ellipse cx="250" cy="180" rx="60" ry="40" fill="#e0d8a6" stroke="black" stroke-width="2"/>
+
+  <ellipse cx="210" cy="150" rx="30" ry="20" fill="#e0d8a6" stroke="black" stroke-width="2"/>
+
+  <polygon points="180,140 160,160 180,180" fill="#ffcc66" stroke="black" stroke-width="1"/>
+
+    <path d="M270,160 Q 320,120 350,180" stroke="#e0d8a6" fill="transparent" stroke-width="8"/>
+  <path d="M270,200 Q 320,240 350,200" stroke="#e0d8a6" fill="transparent" stroke-width="8"/>
+
+  <line x1="250" y1="220" x2="250" y2="320" stroke="black" stroke-width="4"/>
+  <line x1="290" y1="220" x2="290" y2="320" stroke="black" stroke-width="4"/>
+
+</svg>

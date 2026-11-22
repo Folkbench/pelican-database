@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" viewBox="0 0 200 200" xml:space="preserve" width="400px" height="400px">
+    <g>
+        <line x1="50" y1="140" x2="90" y2="80" stroke="#000" stroke-width="5"/>
+        <line x1="90" y1="80" x2="130" y2="140" stroke="#000" stroke-width="5"/>
+        <line x1="50" y1="140" x2="130" y2="140" stroke="#000" stroke-width="5"/>
+        <line x1="90" y1="80" x2="70" y2="40" stroke="#000" stroke-width="5"/>
+        <line x1="70" y1="40" x2="110" y2="40" stroke="#000" stroke-width="5"/>
+        <line x1="110" y1="40" x2="130" y2="80" stroke="#000" stroke-width="5"/>
+
+        <circle cx="50" cy="140" r="15" stroke="#000" stroke-width="5" fill="none"/>
+        <circle cx="130" cy="140" r="15" stroke="#000" stroke-width="5" fill="none"/>
+
+        <ellipse cx="90" cy="30" rx="20" ry="10" fill="white" stroke="black" stroke-width="2"/>
+        
+        <circle cx="90" cy="20" r="8" fill="white" stroke="black" stroke-width="2"/>
+        
+        <path d="M 90 20 Q 100 22, 95 25 Q 100 23, 90 28" fill="orange"/>
+        
+        <path d="M 75 30 Q 70 20, 80 25 Q 75 25, 75 30" fill="white" stroke="black" stroke-width="1"/>
+
+        <line x1="85" y1="35" x2="85" y2="40" stroke="orange" stroke-width="5"/>
+        <line x1="95" y1="35" x2="95" y2="40" stroke="orange" stroke-width="5"/>
+    </g>
+</svg>

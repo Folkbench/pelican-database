@@ -1,0 +1,39 @@
+<svg width="300" height="250" viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bicycle Frame -->
+  <path d="M80,180 L130,140 L200,140 L250,180 L200,140 L180,200 L130,140" stroke="black" stroke-width="3" fill="none"/>
+  
+  <!-- Wheels -->
+  <circle cx="80" cy="180" r="30" stroke="black" stroke-width="4" fill="none"/>
+  <circle cx="250" cy="180" r="30" stroke="black" stroke-width="4" fill="none"/>
+  
+  <!-- Pedals -->
+  <circle cx="165" cy="165" r="8" fill="gray"/>
+  <line x1="155" y1="165" x2="175" y2="165" stroke="black" stroke-width="2"/>
+  
+  <!-- Pelican Body -->
+  <ellipse cx="165" cy="90" rx="40" ry="30" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+  
+  <!-- Pelican Head -->
+  <circle cx="165" cy="60" r="20" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+  
+  <!-- Beak (iconic pelican pouch!) -->
+  <path d="M185,60 Q200,75 190,90 Q180,85 185,60" fill="#ffcc99" stroke="#333" stroke-width="1.5"/>
+  
+  <!-- Eye -->
+  <circle cx="172" cy="55" r="3" fill="black"/>
+  
+  <!-- Legs (sitting on bike) -->
+  <line x1="150" y1="115" x2="140" y2="145" stroke="#333" stroke-width="3"/>
+  <line x1="180" y1="115" x2="190" y2="145" stroke="#333" stroke-width="3"/>
+  
+  <!-- Wings (simplified, resting) -->
+  <path d="M130,90 Q120,110 135,120" fill="none" stroke="#333" stroke-width="2"/>
+  <path d="M200,90 Q210,110 195,120" fill="none" stroke="#333" stroke-width="2"/>
+
+  <!-- Ground -->
+  <line x1="20" y1="210" x2="280" y2="210" stroke="green" stroke-width="2"/>
+
+  <!-- Speech bubble (optional fun) -->
+  <path d="M100,40 Q120,20 140,40 L130,50 L110,50 Z" fill="white" stroke="black" stroke-width="1"/>
+  <text x="105" y="45" font-size="8" fill="black">Wheee!</text>
+</svg>

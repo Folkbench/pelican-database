@@ -1,0 +1,46 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  
+  <rect width="400" height="300" fill="#87CEEB"></rect>
+
+  
+  <ellipse cx="150" cy="150" rx="40" ry="20" fill="white" stroke="black"></ellipse>
+  <ellipse cx="130" cy="140" rx="10" ry="5" fill="yellow" stroke="black"></ellipse>
+  <ellipse cx="170" cy="140" rx="10" ry="5" fill="yellow" stroke="black"></ellipse>
+
+  
+  <polygon points="150,140 160,130 160,150" fill="orange" stroke="black"></polygon>
+
+  
+  <path d="M130,150 Q120,160,110,150" stroke="black" fill="none"></path>
+  <path d="M170,150 Q180,160,190,150" stroke="black" fill="none"></path>
+
+  
+  <line x1="140" y1="170" x2="140" y2="190" stroke="black"></line>
+  <line x1="160" y1="170" x2="160" y2="190" stroke="black"></line>
+
+  
+  <rect x="200" y="120" width="10" height="80" fill="black"></rect>
+  <rect x="210" y="150" width="80" height="10" fill="black"></rect>
+  <circle cx="250" cy="170" r="10" fill="silver" stroke="black"></circle>
+  <circle cx="280" cy="170" r="10" fill="silver" stroke="black"></circle>
+
+  
+  <circle cx="250" cy="170" r="40" fill="none" stroke="black"></circle>
+  <circle cx="280" cy="170" r="40" fill="none" stroke="black"></circle>
+
+  
+  <rect x="245" y="165" width="10" height="5" fill="black"></rect>
+  <rect x="275" y="165" width="10" height="5" fill="black"></rect>
+
+  
+  <g transform="translate(220, 100)">
+    
+    <ellipse cx="0" cy="0" rx="20" ry="10" fill="white" stroke="black"></ellipse>
+    
+    <polygon points="20,0 30,-10 30,10" fill="orange" stroke="black"></polygon>
+    
+    <ellipse cx="10" cy="-5" rx="2" ry="3" fill="black" stroke="black"></ellipse>
+    
+    <path d="M0,10 Q-10,20,0,30" stroke="black" fill="none"></path>
+  </g>
+</svg>

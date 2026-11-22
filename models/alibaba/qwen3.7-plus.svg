@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="pouchGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB923C"/>
+      <stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+    <linearGradient id="beakGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="100%" stop-color="#FCD34D"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="370" cy="555" rx="320" ry="25" fill="#000000" opacity="0.08"/>
+
+  <g id="back-wheel">
+    <circle cx="180" cy="460" r="85" fill="none" stroke="#1F2937" stroke-width="14"/>
+    <circle cx="180" cy="460" r="72" fill="none" stroke="#D1D5DB" stroke-width="4"/>
+    <line x1="180" y1="388" x2="180" y2="532" stroke="#9CA3AF" stroke-width="2"/>
+    <line x1="108" y1="460" x2="252" y2="460" stroke="#9CA3AF" stroke-width="2"/>
+    <line x1="129" y1="409" x2="231" y2="511" stroke="#9CA3AF" stroke-width="2"/>
+    <line x1="129" y1="511" x2="231" y2="409" stroke="#9CA3AF" stroke-width="2"/>
+    <circle cx="180" cy="460" r="8" fill="#4B5563"/>
+    <path d="M 135 405 Q 180 385 225 405" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.2" stroke-linecap="round"/>
+  </g>
+
+  <g id="front-wheel">
+    <circle cx="540" cy="460" r="85" fill="none" stroke="#1F2937" stroke-width="14"/>
+    <circle cx="540" cy="460" r="72" fill="none" stroke="#D1D5DB" stroke-width="4"/>
+    <line x1="540" y1="388" x2="540" y2="532" stroke="#9CA3AF" stroke-width="2"/>
+    <line x1="468" y1="460" x2="612" y2="460" stroke="#9CA3AF" stroke-width="2"/>
+    <line x1="489" y1="409" x2="591" y2="511" stroke="#9CA3AF" stroke-width="2"/>
+    <line x1="489" y1="511" x2="591" y2="409" stroke="#9CA3AF" stroke-width="2"/>
+    <circle cx="540" cy="460" r="8" fill="#4B5563"/>
+    <path d="M 495 405 Q 540 385 585 405" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.2" stroke-linecap="round"/>
+  </g>
+
+  <g id="right-leg">
+    <path d="M 320 310 Q 300 360 310 420" fill="none" stroke="#EA580C" stroke-width="9" stroke-linecap="round"/>
+    <path d="M 295 418 Q 290 425 295 432 L 325 432 Q 330 425 325 418 Z" fill="#EA580C"/>
+  </g>
+
+  <rect x="295" y="410" width="30" height="16" rx="4" fill="#1F2937"/>
+  <line x1="350" y1="460" x2="310" y2="420" stroke="#4B5563" stroke-width="6" stroke-linecap="round"/>
+
+  <g id="bike-frame" stroke="#E11D48" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="350" y1="460" x2="180" y2="460" stroke-width="10"/>
+    <line x1="180" y1="460" x2="280" y2="300" stroke-width="8"/>
+    <line x1="350" y1="460" x2="290" y2="300" stroke-width="10"/>
+    <line x1="290" y1="300" x2="440" y2="310" stroke-width="10"/>
+    <line x1="350" y1="460" x2="440" y2="310" stroke-width="12"/>
+    <line x1="540" y1="460" x2="440" y2="310" stroke-width="10"/>
+    <line x1="440" y1="310" x2="445" y2="290" stroke-width="12"/>
+  </g>
+
+  <path d="M 350 460 L 180 460" fill="none" stroke="#9CA3AF" stroke-width="3" stroke-dasharray="4 3" opacity="0.8"/>
+
+  <g id="pelican-body">
+    <path d="M 260 290 C 250 210, 300 180, 360 190 C 410 200, 420 270, 400 320 C 370 370, 290 380, 260 320 Z" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+    <path d="M 360 190 C 410 200, 420 270, 400 320 C 380 330, 360 330, 370 300 C 380 250, 370 210, 360 190 Z" fill="#E2E8F0" opacity="0.6"/>
+    <path d="M 260 300 L 220 320 L 250 340 Z" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="2"/>
+  </g>
+
+  <g id="pelican-wing">
+    <path d="M 300 240 C 350 230, 400 240, 440 280 C 450 290, 440 300, 420 300 C 380 310, 320 300, 300 270 C 290 260, 290 250, 300 240 Z" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <path d="M 310 255 Q 350 260 380 280" fill="none" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 305 275 Q 340 280 370 295" fill="none" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 305 290 Q 330 295 350 300" fill="none" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <g id="left-leg">
+    <path d="M 350 330 Q 370 400 390 490" fill="none" stroke="#FB923C" stroke-width="9" stroke-linecap="round"/>
+    <path d="M 375 490 Q 370 500 375 510 L 405 510 Q 410 500 405 490 Z" fill="#FB923C"/>
+  </g>
+
+  <rect x="375" y="492" width="30" height="16" rx="4" fill="#1F2937"/>
+  <line x1="350" y1="460" x2="390" y2="500" stroke="#4B5563" stroke-width="6" stroke-linecap="round"/>
+
+  <g id="pelican-head-neck">
+    <path d="M 320 200 C 320 160, 360 130, 410 140 C 430 145, 440 160, 430 170 C 400 180, 370 190, 350 220 Z" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+    <path d="M 380 135 C 410 140, 430 150, 430 165 C 410 170, 390 160, 380 150 Z" fill="#E2E8F0" opacity="0.5"/>
+    
+    <circle cx="420" cy="140" r="38" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+    <path d="M 395 120 Q 385 100 405 110 Q 415 90 425 115" fill="none" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round"/>
+    
+    <circle cx="430" cy="130" r="6" fill="#1F2937"/>
+    <circle cx="432" cy="128" r="2.5" fill="#FFFFFF"/>
+    
+    <path d="M 450 125 L 570 140 Q 580 145 575 155 L 560 150 L 450 160 Z" fill="url(#beakGrad)" stroke="#D97706" stroke-width="2"/>
+    
+    <path d="M 450 160 C 460 230, 530 240, 490 190 C 470 175, 460 165, 450 168 Z" fill="url(#pouchGrad)" stroke="#EA580C" stroke-width="2"/>
+    <path d="M 460 168 Q 480 195 485 185" fill="none" stroke="#C2410C" stroke-width="2" opacity="0.4"/>
+  </g>
+
+  <g id="bike-components">
+    <path d="M 260 300 Q 290 280 320 300 L 315 310 L 265 310 Z" fill="#1F2937"/>
+    
+    <line x1="445" y1="290" x2="445" y2="250" stroke="#4B5563" stroke-width="8" stroke-linecap="round"/>
+    
+    <path d="M 445 250 Q 445 230 465 230 L 500 230" fill="none" stroke="#4B5563" stroke-width="8" stroke-linecap="round"/>
+    
+    <rect x="495" y="224" width="20" height="12" rx="6" fill="#1F2937"/>
+    
+    <circle cx="480" cy="224" r="7" fill="#FBBF24" stroke="#B45309" stroke-width="1.5"/>
+    <circle cx="480" cy="224" r="2" fill="#B45309"/>
+  </g>
+
+</svg>

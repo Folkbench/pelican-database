@@ -1,0 +1,86 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grassGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="pelicanBeakGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFB347;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E67E22;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="pelicanBodyGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D1D1D1;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="1024" fill="url(#skyGradient)" />
+  <path d="M0 800 Q512 700 1024 800 L1024 1024 L0 1024 Z" fill="url(#grassGradient)" />
+  
+  <!-- Clouds -->
+  <g fill="#FFFFFF" opacity="0.8">
+    <path d="M150 150 Q200 120 250 150 Q300 120 350 170 Q300 200 250 220 Q200 200 150 180 Z" />
+    <path d="M600 200 Q650 170 700 200 Q750 170 800 230 Q750 270 700 280 Q650 270 600 240 Z" />
+  </g>
+
+  <!-- Bicycle Shadow -->
+  <ellipse cx="512" cy="930" rx="250" ry="30" fill="#000000" opacity="0.15" />
+
+  <!-- Bicycle Wheels -->
+  <g stroke="#333" stroke-width="12" fill="none">
+    <!-- Back Wheel -->
+    <circle cx="280" cy="840" r="110" />
+    <path d="M280 730 L280 950 M170 840 L390 840 M190 760 L370 920 M210 740 L390 940" stroke-width="3" opacity="0.5"/>
+    <!-- Front Wheel -->
+    <circle cx="740" cy="840" r="110" />
+    <path d="M740 730 L740 950 M630 840 L850 840 M650 760 L830 920 M670 740 L850 940" stroke-width="3" opacity="0.5"/>
+  </g>
+
+  <!-- Bicycle Frame -->
+  <g stroke="#E74C3C" stroke-width="15" fill="none" stroke-linecap="round">
+    <path d="M280 840 L450 840 L600 700 L400 700 Z" /> <!-- Main triangles -->
+    <path d="M450 840 L350 650 L150 650" stroke-width="12"/> <!-- Back support -->
+    <path d="M600 700 L740 840" /> <!-- Fork -->
+    <path d="M400 700 L300 680 Q350 630 450 650" /> <!-- Handlebar stem -->
+  </g>
+
+  <!-- Handlebars & Seat -->
+  <path d="M280 660 Q300 610 450 610 L470 620" stroke="#333" stroke-width="12" fill="none"/> <!-- Handlebar bar -->
+  <rect x="330" y="640" width="80" height="15" rx="10" fill="#333" /> <!-- Seat -->
+
+  <!-- Pelican Body -->
+  <g>
+    <!-- Main Torso -->
+    <path d="M380 620 Q450 480 650 550 Q750 650 700 750 Q600 850 450 800 Z" fill="url(#pelicanBodyGrad)" />
+    <!-- Neck -->
+    <path d="M420 580 Q380 450 400 380 Q430 350 460 380 Q480 450 480 550" fill="#D1D1D1" />
+    <!-- Head -->
+    <ellipse cx="430" cy="350" rx="50" ry="45" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2"/>
+    <!-- Eye -->
+    <circle cx="445" cy="340" r="5" fill="#000000" />
+    
+    <!-- Beak (The large pouch) -->
+    <path d="M410 360 Q200 380 220 480 Q250 550 420 520 Z" fill="url(#pelicanBeakGrad)" />
+    <!-- Beak Highlight -->
+    <path d="M410 370 Q300 390 260 450" stroke="#FFFFFF" stroke-width="3" opacity="0.4" fill="none"/>
+    
+    <!-- Wing (Folded) -->
+    <path d="M480 600 Q700 650 680 850 L550 820 Z" fill="#CCCCCC" />
+    <path d="M550 650 Q650 680 630 750" stroke="#AAAAAA" stroke-width="4" fill="none" opacity="0.5"/>
+
+    <!-- Feet & Pedals -->
+    <g fill="#E67E22">
+      <ellipse cx="450" cy="820" rx="30" ry="15" /> <!-- Left foot/peg -->
+      <ellipse cx="550" cy="830" rx="30" ry="15" /> <!-- Right foot/peg -->
+    </g>
+  </g>
+
+  <!-- Decorative details -->
+  <circle cx="280" cy="840" r="115" fill="none" stroke="#E74C3C" stroke-width="2" opacity="0.3"/>
+  <circle cx="740" cy="840" r="115" fill="none" stroke="#E74C3C" stroke-width="2" opacity="0.3"/>
+</svg>

@@ -1,0 +1,58 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background (optional) -->
+  <rect width="400" height="300" fill="#87CEEB" />
+
+  <!-- Bicycle -->
+  <g id="bicycle">
+    <!-- Frame -->
+    <path d="M150 200 L200 150 L250 200 L200 200 Z" fill="none" stroke="#333" stroke-width="4" />
+    <path d="M200 150 L200 100" fill="none" stroke="#333" stroke-width="4" />
+    <path d="M200 100 L180 80" fill="none" stroke="#333" stroke-width="4" />
+    <path d="M200 100 L220 80" fill="none" stroke="#333" stroke-width="4" />
+
+    <!-- Wheels -->
+    <circle cx="150" cy="200" r="30" fill="none" stroke="#333" stroke-width="4" />
+    <circle cx="250" cy="200" r="30" fill="none" stroke="#333" stroke-width="4" />
+    <circle cx="150" cy="200" r="5" fill="#333" />
+    <circle cx="250" cy="200" r="5" fill="#333" />
+
+    <!-- Pedals -->
+    <circle cx="200" cy="200" r="10" fill="#333" />
+    <rect x="195" y="185" width="10" height="30" fill="#333" rx="2" />
+  </g>
+
+  <!-- Pelican -->
+  <g id="pelican" transform="translate(100, 50)">
+    <!-- Body -->
+    <ellipse cx="150" cy="120" rx="40" ry="30" fill="#F5F5DC" stroke="#333" stroke-width="2" />
+
+    <!-- Head and Beak -->
+    <circle cx="190" cy="100" r="20" fill="#F5F5DC" stroke="#333" stroke-width="2" />
+    <path d="M210 100 L250 90 L250 110 Z" fill="#FFD700" stroke="#333" stroke-width="2" />
+
+    <!-- Eye -->
+    <circle cx="195" cy="95" r="3" fill="#333" />
+
+    <!-- Wings -->
+    <path d="M110 120 Q150 80 190 120" fill="none" stroke="#333" stroke-width="2" />
+    <path d="M110 120 Q150 160 190 120" fill="#F5F5DC" stroke="#333" stroke-width="2" />
+
+    <!-- Legs (riding the bike) -->
+    <line x1="130" y1="150" x2="140" y2="200" stroke="#333" stroke-width="3" />
+    <line x1="170" y1="150" x2="160" y2="200" stroke="#333" stroke-width="3" />
+    <circle cx="140" cy="200" r="8" fill="#F5F5DC" stroke="#333" stroke-width="2" />
+    <circle cx="160" cy="200" r="8" fill="#F5F5DC" stroke="#333" stroke-width="2" />
+
+    <!-- Tail -->
+    <path d="M110 120 L80 130 L80 110 Z" fill="#F5F5DC" stroke="#333" stroke-width="2" />
+  </g>
+
+  <!-- Pelican's feet on pedals (adjusting position) -->
+  <g transform="translate(100, 50)">
+    <line x1="140" y1="200" x2="195" y2="185" stroke="#333" stroke-width="2" />
+    <line x1="160" y1="200" x2="205" y2="185" stroke="#333" stroke-width="2" />
+  </g>
+
+  <!-- Optional: Road or ground -->
+  <rect x="0" y="250" width="400" height="50" fill="#556B2F" />
+</svg>

@@ -1,0 +1,115 @@
+<svg width="620" height="340" viewBox="0 0 620 340" xmlns="http://www.w3.org/2000/svg">
+  
+  <rect x="0" y="290" width="620" height="50" fill="#f0e6d2" opacity="0.3"></rect>
+  
+  
+  <circle cx="150" cy="265" r="55" fill="#222222"></circle>
+  <circle cx="150" cy="265" r="45" fill="#f2f2f2"></circle>
+  
+  <g stroke="#555555" stroke-width="3" stroke-linecap="round">
+    <line x1="150" y1="265" x2="150" y2="210"></line>
+    <line x1="150" y1="265" x2="150" y2="320"></line>
+    <line x1="150" y1="265" x2="95" y2="265"></line>
+    <line x1="150" y1="265" x2="205" y2="265"></line>
+    <line x1="150" y1="265" x2="112" y2="227"></line>
+    <line x1="150" y1="265" x2="188" y2="303"></line>
+    <line x1="150" y1="265" x2="112" y2="303"></line>
+    <line x1="150" y1="265" x2="188" y2="227"></line>
+  </g>
+  <circle cx="150" cy="265" r="10" fill="#444444"></circle>
+
+  
+  <circle cx="450" cy="265" r="55" fill="#222222"></circle>
+  <circle cx="450" cy="265" r="45" fill="#f2f2f2"></circle>
+  
+  <g stroke="#555555" stroke-width="3" stroke-linecap="round">
+    <line x1="450" y1="265" x2="450" y2="210"></line>
+    <line x1="450" y1="265" x2="450" y2="320"></line>
+    <line x1="450" y1="265" x2="395" y2="265"></line>
+    <line x1="450" y1="265" x2="505" y2="265"></line>
+    <line x1="450" y1="265" x2="412" y2="227"></line>
+    <line x1="450" y1="265" x2="488" y2="303"></line>
+    <line x1="450" y1="265" x2="412" y2="303"></line>
+    <line x1="450" y1="265" x2="488" y2="227"></line>
+  </g>
+  <circle cx="450" cy="265" r="10" fill="#444444"></circle>
+
+  
+  <g stroke="#333333" stroke-width="9" stroke-linecap="round">
+    
+    <line x1="150" y1="265" x2="205" y2="160"></line>
+    
+    <line x1="150" y1="265" x2="260" y2="208"></line>
+    
+    <line x1="205" y1="160" x2="360" y2="155"></line>
+    
+    <line x1="205" y1="160" x2="260" y2="210"></line>
+    
+    <line x1="360" y1="155" x2="375" y2="235"></line>
+    
+    <line x1="375" y1="235" x2="450" y2="265"></line>
+  </g>
+
+  
+  <path d="M 175 155 Q 210 143 235 155" fill="none" stroke="#2f2f2f" stroke-width="11" stroke-linecap="round"></path>
+  
+  <path d="M 195 158 Q 210 147 225 157" fill="none" stroke="#444444" stroke-width="5" stroke-linecap="round"></path>
+
+  
+  <circle cx="260" cy="212" r="11" fill="#444444"></circle>
+  <line x1="245" y1="212" x2="275" y2="212" stroke="#222222" stroke-width="5"></line>
+  
+  
+  <line x1="360" y1="155" x2="360" y2="128" stroke="#333333" stroke-width="7"></line>
+  <line x1="340" y1="128" x2="380" y2="128" stroke="#333333" stroke-width="7" stroke-linecap="round"></line>
+  
+  <circle cx="340" cy="128" r="4" fill="#222"></circle>
+  <circle cx="380" cy="128" r="4" fill="#222"></circle>
+
+  
+  <ellipse cx="240" cy="155" rx="52" ry="42" fill="#f8f8f8" stroke="#222222" stroke-width="4"></ellipse>
+  
+  
+  <ellipse cx="190" cy="158" rx="24" ry="16" fill="#f8f8f8" stroke="#222222" stroke-width="3"></ellipse>
+  
+  
+  <path d="M 220 140 Q 195 165 170 170 Q 195 150 215 142" fill="#e8e8e8" stroke="#222222" stroke-width="3.5"></path>
+  
+  
+  <path d="M 275 135 Q 295 100 305 130" fill="none" stroke="#f8f8f8" stroke-width="22" stroke-linecap="round"></path>
+  <path d="M 275 135 Q 296 98 305 128" fill="none" stroke="#222222" stroke-width="26" stroke-linecap="round" stroke-opacity="0.9"></path>
+  
+  <path d="M 275 135 Q 295 100 305 130" fill="none" stroke="#f8f8f8" stroke-width="16" stroke-linecap="round"></path>
+
+  
+  <circle cx="315" cy="122" r="20" fill="#f8f8f8" stroke="#222222" stroke-width="3.5"></circle>
+  
+  
+  <circle cx="323" cy="117" r="5.5" fill="#222222"></circle>
+  <circle cx="325" cy="116" r="2" fill="#ffffff"></circle>
+  
+  
+  
+  <path d="M 330 120 L 385 122" fill="none" stroke="#f4a261" stroke-width="7" stroke-linecap="round"></path>
+  
+  <path d="M 330 120 Q 355 114 384 121" fill="none" stroke="#e07d2b" stroke-width="5" stroke-linecap="round"></path>
+  
+  
+  <path d="M 329 124 Q 360 138 385 124" fill="#f4a261" stroke="#222222" stroke-width="2.5"></path>
+  
+  
+  <path d="M 330 127 Q 355 150 372 128 Q 355 162 330 129" fill="#f4a261" stroke="#2f2f2f" stroke-width="2.5"></path>
+
+  
+  
+  <line x1="205" y1="185" x2="248" y2="212" stroke="#444444" stroke-width="7" stroke-linecap="round"></line>
+  
+  <line x1="225" y1="182" x2="255" y2="213" stroke="#444444" stroke-width="7" stroke-linecap="round"></line>
+  
+  
+  
+  <path d="M 246 215 Q 258 219 265 215" fill="none" stroke="#444444" stroke-width="6" stroke-linecap="round"></path>
+  
+  <path d="M 254 217 Q 264 223 268 218" fill="none" stroke="#444444" stroke-width="5" stroke-linecap="round"></path>
+
+</svg>

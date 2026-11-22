@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Background (optional) -->
+  <rect width="100%" height="100%" fill="#e6f7ff" />
+
+  <!-- Road -->
+  <path d="M50,250 Q100,230 150,250 Q200,270 250,250 Q300,230 350,250"
+        stroke="#5a5a5a" stroke-width="15" fill="none" />
+
+  <!-- Bike Frame -->
+  <path d="M150,230 L180,210 L200,230 L220,210 L250,230"
+        stroke="#333" stroke-width="3" fill="none" />
+
+  <!-- Bike Wheels -->
+  <circle cx="160" cy="230" r="15" fill="#333" />
+  <circle cx="240" cy="230" r="15" fill="#333" />
+
+  <!-- Bike Pedals -->
+  <circle cx="170" cy="220" r="3" fill="#555" />
+  <circle cx="230" cy="220" r="3" fill="#555" />
+
+  <!-- Bike Handlebar -->
+  <path d="M150,210 L140,190 L160,190 Z"
+        stroke="#333" stroke-width="2" fill="#555" />
+
+  <!-- Pelican Body -->
+  <path d="M160,180 Q170,160 180,170 Q190,180 200,170 Q210,160 220,180"
+        stroke="#ff9999" stroke-width="2" fill="#ff9999" />
+
+  <!-- Pelican Beak -->
+  <path d="M200,160 L210,150 L220,160"
+        stroke="#ff6666" stroke-width="2" fill="#ff6666" />
+
+  <!-- Pelican Eye -->
+  <circle cx="190" cy="165" r="3" fill="black" />
+
+  <!-- Pelican Legs (on bike) -->
+  <path d="M170,200 L170,220"
+        stroke="#ff9999" stroke-width="4" fill="none" />
+  <path d="M210,200 L210,220"
+        stroke="#ff9999" stroke-width="4" fill="none" />
+
+  <!-- Pelican Feet (on pedals) -->
+  <path d="M170,220 L175,215 L170,210 Z"
+        stroke="#ff6666" stroke-width="2" fill="#ff6666" />
+  <path d="M210,220 L205,215 L210,210 Z"
+        stroke="#ff6666" stroke-width="2" fill="#ff6666" />
+
+  <!-- Pelican Wings (folded) -->
+  <path d="M160,180 L150,170 L150,190 Z"
+        stroke="#ff9999" stroke-width="2" fill="#ff9999" />
+  <path d="M220,180 L230,170 L230,190 Z"
+        stroke="#ff9999" stroke-width="2" fill="#ff9999" />
+
+  <!-- Sun (optional) -->
+  <circle cx="350" cy="50" r="20" fill="#ffcc00" />
+  <circle cx="350" cy="50" r="15" fill="white" />
+  <circle cx="350" cy="50" r="10" fill="#ffcc00" />
+
+  <!-- Text (optional) -->
+  <text x="200" y="30" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">
+    Pelican on a Bike
+  </text>
+</svg>

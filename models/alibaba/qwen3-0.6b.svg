@@ -1,0 +1,8 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Pelican -->
+  <polygon points="20,50 60,100 120,100 120,150 60,200" fill="white" />
+  <polygon points="60,200 120,200 120,150 60,150" fill="white" />
+
+  <!-- Bicycle -->
+  <polygon points="120,150 150,170 190,170 230,190" fill="red" />
+</svg>

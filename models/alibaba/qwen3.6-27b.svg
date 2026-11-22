@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <style>
+      .tire { fill: none; stroke: #2c3e50; stroke-width: 6; }
+      .rim { fill: none; stroke: #bdc3c7; stroke-width: 2; }
+      .frame { fill: none; stroke: #e74c3c; stroke-width: 5; stroke-linejoin: round; stroke-linecap: round; }
+      .pelican-body { fill: #f8f9fa; stroke: #dee2e6; stroke-width: 1; }
+      .pelican-beak { fill: #f1c40f; }
+      .pelican-pouch { fill: #f39c12; }
+      .pelican-wing { fill: #e9ecef; stroke: #ced4da; stroke-width: 1; }
+      .pelican-leg { fill: none; stroke: #e67e22; stroke-width: 5; stroke-linecap: round; }
+      .handlebar { fill: none; stroke: #34495e; stroke-width: 4; stroke-linecap: round; }
+      .seat { fill: #2c3e50; }
+      .pedal { fill: #7f8c8d; }
+      .spoke { stroke: #95a5a6; stroke-width: 1.5; }
+      .motion { stroke: #bdc3c7; stroke-width: 2; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <rect width="400" height="300" fill="#e8f4f8"/>
+  <ellipse cx="200" cy="238" rx="130" ry="6" fill="#000" opacity="0.08"/>
+  <line x1="50" y1="238" x2="350" y2="238" stroke="#cbd5e1" stroke-width="2"/>
+
+  <g id="wheels">
+    <circle cx="140" cy="195" r="42" class="tire"/>
+    <circle cx="140" cy="195" r="35" class="rim"/>
+    <circle cx="260" cy="195" r="42" class="tire"/>
+    <circle cx="260" cy="195" r="35" class="rim"/>
+    <g class="spoke">
+      <line x1="140" y1="153" x2="140" y2="237"/>
+      <line x1="98" y1="195" x2="182" y2="195"/>
+      <line x1="110" y1="165" x2="170" y2="225"/>
+      <line x1="170" y1="165" x2="110" y2="225"/>
+      <line x1="260" y1="153" x2="260" y2="237"/>
+      <line x1="218" y1="195" x2="302" y2="195"/>
+      <line x1="230" y1="165" x2="290" y2="225"/>
+      <line x1="290" y1="165" x2="230" y2="225"/>
+    </g>
+  </g>
+
+  <g id="frame">
+    <path d="M140 195 L200 215 L245 175" class="frame"/>
+    <path d="M200 215 L185 145 L140 195" class="frame"/>
+    <path d="M245 175 L215 155 L185 145" class="frame"/>
+    <line x1="185" y1="145" x2="180" y2="132" stroke="#34495e" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="178" cy="128" rx="14" ry="6" class="seat"/>
+    <path d="M245 175 Q255 145 280 140 Q290 140 285 150" class="handlebar"/>
+    <circle cx="200" cy="215" r="9" fill="#7f8c8d"/>
+    <line x1="200" y1="215" x2="185" y2="235" stroke="#34495e" stroke-width="4" stroke-linecap="round"/>
+    <rect x="178" y="233" width="14" height="5" rx="2" class="pedal"/>
+    <line x1="200" y1="215" x2="215" y2="195" stroke="#34495e" stroke-width="4" stroke-linecap="round"/>
+    <rect x="208" y="193" width="14" height="5" rx="2" class="pedal"/>
+  </g>
+
+  <g id="pelican">
+    <path d="M150 135 L120 145 L130 155 L155 142 Z" class="pelican-wing"/>
+    
+    <ellipse cx="185" cy="125" rx="38" ry="28" class="pelican-body"/>
+    
+    <path d="M168 108 Q158 85 172 68 Q182 58 192 65 Q198 78 195 105 Z" class="pelican-body"/>
+    
+    <path d="M195 60 L260 65 Q270 68 268 78 Q260 82 245 78 L195 68 Z" class="pelican-beak"/>
+    
+    <path d="M195 68 Q215 90 245 100 Q255 102 252 90 Q235 80 195 68 Z" class="pelican-pouch"/>
+    
+    <circle cx="192" cy="62" r="3.5" fill="#2c3e50"/>
+    <circle cx="193" cy="61" r="1" fill="#fff"/>
+    
+    <path d="M212 118 Q250 98 288 142 Q280 152 265 148 Q245 128 212 128 Z" class="pelican-wing"/>
+    
+    <path d="M182 152 Q176 188 185 233" class="pelican-leg"/>
+    <path d="M202 152 Q212 198 208 194" class="pelican-leg"/>
+    
+    <path d="M182 233 L174 241 L192 239 Z" fill="#e67e22"/>
+    <path d="M185 233 L196 243 L192 235 Z" fill="#e67e22"/>
+    <path d="M205 194 L197 203 L213 201 Z" fill="#e67e22"/>
+    <path d="M208 194 L219 200 L215 196 Z" fill="#e67e22"/>
+  </g>
+
+  <g class="motion">
+    <line x1="275" y1="100" x2="325" y2="96"/>
+    <line x1="280" y1="118" x2="320" y2="115"/>
+    <line x1="268" y1="135" x2="305" y2="133"/>
+  </g>
+</svg>

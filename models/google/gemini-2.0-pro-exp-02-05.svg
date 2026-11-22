@@ -1,0 +1,69 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Pelican on a Bicycle</title>
+  <desc>A cartoon-style pelican riding a bicycle.</desc>
+
+  <!-- Bicycle -->
+  <g id="bicycle">
+    <!-- Wheels -->
+    <circle cx="100" cy="250" r="30" stroke="black" stroke-width="3" fill="white"/>
+    <circle cx="250" cy="250" r="30" stroke="black" stroke-width="3" fill="white"/>
+    <!-- Spokes (simplified) -->
+    <line x1="100" y1="250" x2="100" y2="220" stroke="black" stroke-width="1"/>
+    <line x1="100" y1="250" x2="100" y2="280" stroke="black" stroke-width="1"/>
+    <line x1="100" y1="250" x2="80" y2="250" stroke="black" stroke-width="1"/>
+    <line x1="100" y1="250" x2="120" y2="250" stroke="black" stroke-width="1"/>
+    <line x1="250" y1="250" x2="250" y2="220" stroke="black" stroke-width="1"/>
+    <line x1="250" y1="250" x2="250" y2="280" stroke="black" stroke-width="1"/>
+    <line x1="250" y1="250" x2="230" y2="250" stroke="black" stroke-width="1"/>
+    <line x1="250" y1="250" x2="270" y2="250" stroke="black" stroke-width="1"/>
+  
+    <!-- Frame -->
+    <line x1="100" y1="250" x2="175" y2="200" stroke="black" stroke-width="3"/>
+    <line x1="175" y1="200" x2="250" y2="250" stroke="black" stroke-width="3"/>
+    <line x1="175" y1="200" x2="225" y2="200" stroke="black" stroke-width="3"/>
+    <line x1="175" y1="200" x2="150" y2="150" stroke="black" stroke-width="3" /> <!-- To seat post -->
+
+    <!-- Handlebars -->
+    <line x1="225" y1="200" x2="235" y2="180" stroke="black" stroke-width="3"/>
+    <line x1="225" y1="200" x2="215" y2="180" stroke="black" stroke-width="3"/>
+
+    <!-- Seat post and seat -->
+    <line x1="150" y1="150" x2="150" y2="120" stroke="black" stroke-width="3"/>
+    <ellipse cx="150" cy="115" rx="15" ry="8" fill="brown" stroke="black" stroke-width="2"/>
+
+    <!-- Pedals (simplified) -->
+    <circle cx="175" cy="235" r="8" fill="gray" stroke="black" stroke-width="1"/>
+   
+  </g>
+
+  <!-- Pelican -->
+  <g id="pelican">
+    <!-- Body -->
+    <ellipse cx="150" cy="100" rx="35" ry="45" fill="white" stroke="black" stroke-width="2"/>
+    
+    <!-- Head -->
+    <ellipse cx="185" cy="50" rx="20" ry="15" fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Beak -->
+    <path d="M195 50 C 200 60, 240 75, 270 40 C 265 20, 205 25, 195 50 Z" fill="orange" stroke="black" stroke-width="2"/>
+      <!-- Pouch (under the beak) -->
+      <path d="M 200 60 C 210 80, 260 90, 270 40" fill="yellow" stroke="black" stroke-width="1"/>
+    
+    <!-- Eye -->
+    <circle cx="190" cy="45" r="4" fill="black"/>
+
+    <!-- Wing (reaching for handlebars) -->
+     <path d="M 130 90 C 150 80, 210 120, 225 170" stroke="black" stroke-width="3" stroke-linecap="round"/>
+
+
+    <!-- Leg (simplified) -->
+      <!-- Left Leg (on pedal)-->
+      <path d="M 135 140 C 145 160, 165 200, 175 235" stroke="black" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="175" cy="240" r="6" fill="orange" stroke="black" stroke-width="1"/>  <!--Foot -->
+
+    <!-- Right Leg (Bent, behind) -->
+      <path d="M 150 145 C 155 165, 160 200, 155 220" stroke="black" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="155" cy="225" r="6" fill="orange" stroke="black" stroke-width="1"/>  <!-- Foot -->
+
+  </g>
+</svg>

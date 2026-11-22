@@ -1,0 +1,250 @@
+<svg 
+  width="600" 
+  height="400" 
+  viewBox="0 0 600 400" 
+  xmlns="http://www.w3.org/2000/svg" 
+  version="1.1"
+>
+  <!-- ***************
+       DEFINITIONS
+       *************** -->
+  <defs>
+    <!-- Background gradient (sky) -->
+    <linearGradient id="skyGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a0d8f1" />
+      <stop offset="100%" stop-color="#e6f7ff" />
+    </linearGradient>
+
+    <!-- Wheel gradient (dark center, metallic rim) -->
+    <radialGradient id="wheelGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="40%" stop-color="#777" />
+      <stop offset="90%" stop-color="#bbb" />
+      <stop offset="100%" stop-color="#eee" />
+    </radialGradient>
+
+    <!-- Bicycle frame gradient (adds subtle metallic effect) -->
+    <linearGradient id="frameGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#333" />
+      <stop offset="100%" stop-color="#666" />
+    </linearGradient>
+
+    <!-- Pelican main body gradient -->
+    <linearGradient id="pelicanBodyGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f5f5f5"/>
+    </linearGradient>
+
+    <!-- Pelican feather detail gradient -->
+    <linearGradient id="featherGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6e6e6"/>
+      <stop offset="100%" stop-color="#cccccc"/>
+    </linearGradient>
+
+    <!-- Ground gradient -->
+    <linearGradient id="groundGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#92c47e" />
+      <stop offset="100%" stop-color="#6aa84f" />
+    </linearGradient>
+  </defs>
+
+  <!-- ***************
+       BACKGROUND
+       *************** -->
+  <!-- Sky -->
+  <rect width="600" height="400" fill="url(#skyGradient)" />
+
+  <!-- Ground -->
+  <rect y="320" width="600" height="80" fill="url(#groundGradient)" />
+
+  <!-- ***************
+       SHADOW UNDER BIKE
+       (subtle ellipse)
+       *************** -->
+  <ellipse 
+    cx="300" cy="305" rx="90" ry="10" 
+    fill="rgba(0, 0, 0, 0.15)"
+  />
+
+  <!-- ***************
+       BICYCLE GROUP
+       *************** -->
+  <g id="bicycle" transform="translate(180, 160)">
+    <!-- Wheels -->
+    <circle 
+      cx="0" cy="100" r="30" 
+      fill="url(#wheelGradient)" 
+      stroke="#555" stroke-width="2"
+    />
+    <circle 
+      cx="140" cy="100" r="30" 
+      fill="url(#wheelGradient)" 
+      stroke="#555" stroke-width="2"
+    />
+
+    <!-- Frame -->
+    <line 
+      x1="0" y1="100" x2="50" y2="60" 
+      stroke="url(#frameGradient)" 
+      stroke-width="5" stroke-linecap="round"
+    />
+    <line 
+      x1="50" y1="60" x2="140" y2="100" 
+      stroke="url(#frameGradient)" 
+      stroke-width="5" stroke-linecap="round"
+    />
+    <line 
+      x1="50" y1="60" x2="90" y2="20" 
+      stroke="url(#frameGradient)" 
+      stroke-width="4" stroke-linecap="round"
+    />
+    <line 
+      x1="90" y1="20" x2="140" y2="100" 
+      stroke="url(#frameGradient)" 
+      stroke-width="4" stroke-linecap="round"
+    />
+
+    <!-- Seat -->
+    <rect 
+      x="45" y="57" width="10" height="5" 
+      fill="#444" rx="2" ry="2"
+    />
+
+    <!-- Handlebars -->
+    <g transform="translate(90,20)">
+      <line 
+        x1="0" y1="0" x2="20" y2="-5" 
+        stroke="#444" stroke-width="4" stroke-linecap="round"
+      />
+      <line 
+        x1="0" y1="0" x2="-20" y2="-5" 
+        stroke="#444" stroke-width="4" stroke-linecap="round"
+      />
+      <!-- Center clamp -->
+      <circle cx="0" cy="0" r="4" fill="#333" />
+    </g>
+  </g>
+
+  <!-- ***************
+       PELICAN GROUP
+       *************** -->
+  <g id="pelican" transform="translate(225, 90)">
+    <!-- Body -->
+    <path
+      d="
+         M 0,40
+         C -20,20 -10,5  15,0
+         C 35,-5 50, 5  60,20
+         C 65,25 63,35  55,40
+         C 45,50 25,55   10,50
+         C 4,48 2,45     0,40
+      "
+      fill="url(#pelicanBodyGradient)"
+      stroke="#444"
+      stroke-width="2"
+    />
+
+    <!-- Wing (layered for extra detail) -->
+    <path
+      d="
+         M 10,25
+         C -10,10 -5,-10 20,-15
+         C 35,-18 50,-10 60,0
+         C 40,-5 35,10  25,15
+         C 20,20 15,25  10,25
+      "
+      fill="url(#featherGradient)"
+      stroke="#444"
+      stroke-width="2"
+      opacity="0.85"
+    />
+
+    <!-- Neck/Upper body -->
+    <path
+      d="
+         M 20,0
+         C 25,-20 35,-20 40,-8
+         C 45,0  45,10  42,15
+         L 35,20
+         C 30,15 23,10 20,5
+         Z
+      "
+      fill="url(#pelicanBodyGradient)"
+      stroke="#444"
+      stroke-width="2"
+    />
+
+    <!-- Head -->
+    <ellipse
+      cx="40" cy="-12" rx="12" ry="10"
+      fill="url(#pelicanBodyGradient)"
+      stroke="#444"
+      stroke-width="2"
+    />
+
+    <!-- Eye -->
+    <circle
+      cx="44" cy="-14" r="2.5"
+      fill="#000"
+    />
+
+    <!-- Beak (two-layer for detail) -->
+    <!-- Upper beak -->
+    <path
+      d="
+        M 48,-15
+        C 60,-20 75,-18 80,-8
+        C 75,-6 65,-10 58,-12
+        L 48,-12
+        Z
+      "
+      fill="#f0a629"
+      stroke="#444"
+      stroke-width="2"
+    />
+    <!-- Lower beak/pouch -->
+    <path
+      d="
+        M 48,-12
+        C 60,-5 75,-5  82,3
+        C 75,0 60,-2  50,-5
+        L 48,-10
+        Z
+      "
+      fill="#ffa500"
+      stroke="#444"
+      stroke-width="2"
+      opacity="0.85"
+    />
+
+    <!-- Pelican's right foot on pedal (rough position) -->
+    <g transform="translate(10, 55) rotate(-10)">
+      <path
+        d="
+          M 0,0
+          C 5,-5 15,-5 20,0
+          C 18,5 5,8 0,5
+          Z
+        "
+        fill="#f7d8b1"
+        stroke="#444"
+        stroke-width="2"
+      />
+    </g>
+
+    <!-- Pelican's left foot on pedal (rough position) -->
+    <g transform="translate(60, 65) rotate(15)">
+      <path
+        d="
+          M 0,0
+          C 5,-5 15,-5 20,0
+          C 18,5 5,8 0,5
+          Z
+        "
+        fill="#f7d8b1"
+        stroke="#444"
+        stroke-width="2"
+      />
+    </g>
+  </g>
+
+</svg>

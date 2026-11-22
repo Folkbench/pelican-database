@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <title>Pelican riding a bicycle, Paris at golden hour</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7d9bc4"/><stop offset="40%" stop-color="#f2bd6b"/>
+      <stop offset="75%" stop-color="#ff9e4a"/><stop offset="100%" stop-color="#ff8b3d"/>
+    </linearGradient>
+    <pattern id="cobbles" width="56" height="30" patternUnits="userSpaceOnUse">
+      <rect width="56" height="30" fill="#9b7a5f"/>
+      <g fill="#8a6a50" stroke="#6e5340" stroke-width="2">
+        <ellipse cx="28" cy="0" rx="24" ry="10"/><ellipse cx="0" cy="15" rx="24" ry="10"/>
+        <ellipse cx="56" cy="15" rx="24" ry="10"/><ellipse cx="28" cy="30" rx="24" ry="10"/>
+      </g>
+    </pattern>
+  </defs>
+
+  <!-- sky + sun -->
+  <rect width="900" height="430" fill="url(#sky)"/>
+  <circle cx="742" cy="312" r="95" fill="#ffe3a0" opacity="0.4"/>
+  <circle cx="742" cy="312" r="44" fill="#ffedb8"/>
+  <rect y="412" width="900" height="20" fill="#8a6855" opacity="0.55"/>
+
+  <!-- Eiffel Tower -->
+  <g fill="#5f4636">
+    <path d="M116,430 C150,340 162,250 166,132 L178,132 C182,250 194,340 228,430 L204,430 C192,348 180,268 176,190 C172,268 148,348 138,430 Z"/>
+    <rect x="146" y="246" width="52" height="10"/><rect x="158" y="168" width="28" height="8"/>
+    <rect x="170" y="92" width="4" height="42"/><circle cx="172" cy="90" r="4"/>
+  </g>
+
+  <!-- Haussmann silhouettes -->
+  <g fill="#6e4f3f">
+    <rect y="346" width="66" height="84"/><rect x="560" y="338" width="108" height="92"/>
+    <rect x="676" y="378" width="80" height="52"/><rect x="766" y="350" width="64" height="80"/>
+    <rect x="838" y="368" width="62" height="62"/>
+  </g>
+  <g fill="#5c3f31">
+    <polygon points="0,346 33,330 66,346"/><polygon points="556,338 614,320 672,338"/>
+    <polygon points="672,378 716,366 760,378"/><polygon points="762,350 798,336 834,350"/>
+    <polygon points="834,368 869,356 904,368"/>
+  </g>
+  <g fill="#ffd27a" opacity="0.9">
+    <rect x="10" y="360" width="12" height="16"/><rect x="38" y="360" width="12" height="16"/>
+    <rect x="10" y="386" width="12" height="16"/><rect x="38" y="386" width="12" height="16"/>
+    <rect x="572" y="356" width="14" height="18"/><rect x="604" y="356" width="14" height="18"/>
+    <rect x="636" y="356" width="14" height="18"/><rect x="572" y="392" width="14" height="18"/>
+    <rect x="604" y="392" width="14" height="18"/><rect x="636" y="392" width="14" height="18"/>
+    <rect x="688" y="392" width="14" height="14"/><rect x="718" y="392" width="14" height="14"/>
+    <rect x="778" y="364" width="12" height="16"/><rect x="804" y="364" width="12" height="16"/>
+    <rect x="778" y="394" width="12" height="16"/><rect x="804" y="394" width="12" height="16"/>
+    <rect x="850" y="382" width="12" height="14"/><rect x="876" y="382" width="12" height="14"/>
+  </g>
+
+  <!-- sidewalk + cobblestone street -->
+  <rect y="430" width="900" height="12" fill="#b59477"/>
+  <line x1="0" y1="442" x2="900" y2="442" stroke="#8a6a50" stroke-width="2"/>
+  <rect y="442" width="900" height="158" fill="url(#cobbles)"/>
+  <ellipse cx="742" cy="472" rx="60" ry="10" fill="#ffd98a" opacity="0.25"/>
+  <ellipse cx="345" cy="549" rx="275" ry="15" fill="#4a2f1a" opacity="0.3"/>
+
+  <!-- bicycle -->
+  <g stroke="#2e2a28" stroke-width="10" fill="none">
+    <circle cx="320" cy="480" r="58"/><circle cx="600" cy="480" r="58"/>
+  </g>
+  <g stroke="#7a736c" stroke-width="2.5">
+    <line x1="262" y1="480" x2="378" y2="480"/><line x1="320" y1="422" x2="320" y2="538"/>
+    <line x1="279" y1="439" x2="361" y2="521"/><line x1="279" y1="521" x2="361" y2="439"/>
+    <line x1="542" y1="480" x2="658" y2="480"/><line x1="600" y1="422" x2="600" y2="538"/>
+    <line x1="559" y1="439" x2="641" y2="521"/><line x1="559" y1="521" x2="641" y2="439"/>
+  </g>
+  <circle cx="320" cy="480" r="7" fill="#3a3532"/><circle cx="600" cy="480" r="7" fill="#3a3532"/>
+  <g stroke="#1f7a72" stroke-width="9" stroke-linecap="round">
+    <line x1="432" y1="398" x2="455" y2="497"/><line x1="434" y1="400" x2="558" y2="418"/>
+    <line x1="455" y1="497" x2="560" y2="424"/><line x1="320" y1="480" x2="455" y2="497"/>
+    <line x1="322" y1="477" x2="434" y2="400"/>
+  </g>
+  <line x1="554" y1="410" x2="564" y2="434" stroke="#17645d" stroke-width="11" stroke-linecap="round"/>
+  <line x1="562" y1="434" x2="600" y2="480" stroke="#17645d" stroke-width="8" stroke-linecap="round"/>
+  <line x1="556" y1="412" x2="548" y2="396" stroke="#17645d" stroke-width="7" stroke-linecap="round"/>
+  <line x1="548" y1="396" x2="530" y2="401" stroke="#2e2a28" stroke-width="7" stroke-linecap="round"/>
+  <path d="M406,386 Q432,378 458,386 Q444,396 430,396 Q414,396 406,386 Z" fill="#2e2a28"/>
+  <circle cx="455" cy="497" r="17" fill="none" stroke="#3a3532" stroke-width="4"/>
+  <circle cx="455" cy="497" r="5" fill="#3a3532"/>
+  <line x1="455" y1="497" x2="432" y2="528" stroke="#3a3532" stroke-width="6"/>
+  <line x1="455" y1="497" x2="478" y2="466" stroke="#3a3532" stroke-width="6"/>
+  <rect x="419" y="524" width="26" height="8" fill="#26221f"/><rect x="465" y="462" width="26" height="8" fill="#26221f"/>
+  <path d="M441,488 L325,472 M441,506 L325,488" stroke="#3a3532" stroke-width="3" stroke-dasharray="6,4"/>
+
+  <!-- pelican -->
+  <path d="M336,306 C304,294 280,306 268,330 C286,332 306,340 324,346 Z" fill="#fff8ee" stroke="#e3d5bd" stroke-width="2"/>
+  <path d="M426,384 C450,410 466,436 476,458" stroke="#d97f26" stroke-width="9" stroke-linecap="round" fill="none"/>
+  <path d="M460,454 Q478,442 496,456 L496,462 L460,462 Z" fill="#d97f26"/>
+  <path d="M400,292 C392,252 404,228 424,214" stroke="#fff8ee" stroke-width="30" stroke-linecap="round" fill="none"/>
+  <circle cx="428" cy="206" r="25" fill="#fff8ee"/>
+  <ellipse cx="398" cy="326" rx="80" ry="62" fill="#fff8ee" stroke="#e3d5bd" stroke-width="2"/>
+  <path d="M392,262 L434,262 L441,280 L398,282 Z" fill="#ffd95e" stroke="#dda826" stroke-width="2"/>
+  <path d="M330,320 C322,364 346,390 382,393 L446,393 C486,387 502,352 493,312 C486,278 452,261 412,261 C366,258 338,284 330,320 Z" fill="#ffcf33" stroke="#dda826" stroke-width="3"/>
+  <line x1="412" y1="266" x2="416" y2="390" stroke="#dda826" stroke-width="2"/>
+  <g fill="#b98a12"><circle cx="414" cy="290" r="2.5"/><circle cx="415" cy="312" r="2.5"/><circle cx="416" cy="334" r="2.5"/><circle cx="417" cy="356" r="2.5"/></g>
+  <path d="M402,382 C410,432 420,482 430,520" stroke="#f2a03d" stroke-width="11" stroke-linecap="round" fill="none"/>
+  <path d="M412,518 Q432,504 452,520 L452,528 L412,528 Z" fill="#f2a03d"/>
+  <path d="M460,284 C518,298 548,350 554,396 L538,402 C532,366 508,326 462,306 Z" fill="#fff8ee" stroke="#e3d5bd" stroke-width="2"/>
+  <path d="M448,208 L546,214 Q500,272 448,220 Z" fill="#f7b45c" stroke="#d97c26" stroke-width="2"/>
+  <polygon points="448,196 548,213 546,224 448,216" fill="#f2953a" stroke="#d97c26" stroke-width="2"/>
+  <circle cx="438" cy="200" r="4.5" fill="#2b2622"/><circle cx="439.5" cy="198.2" r="1.5" fill="#fff"/>
+  <path d="M403,197 C403,172 414,157 428,157 C442,157 453,172 453,197 Z" fill="#d63a2f" stroke="#a92418" stroke-width="2"/>
+  <rect x="398" y="192" width="60" height="11" rx="5" fill="#b02a24"/>
+  <circle cx="428" cy="152" r="9" fill="#f1e9dd" stroke="#d8c9b6" stroke-width="2"/>
+
+  <!-- basket with baguettes -->
+  <line x1="566" y1="432" x2="592" y2="436" stroke="#17645d" stroke-width="5"/>
+  <polygon points="592,426 662,426 653,484 601,484" fill="#96692f"/>
+  <g transform="translate(604,442) rotate(-34)">
+    <rect x="-8" y="-96" width="16" height="96" rx="8" fill="#eab268" stroke="#c58a44" stroke-width="2"/>
+    <path d="M-3,-78 L3,-70 M-3,-58 L3,-50 M-3,-38 L3,-30" stroke="#c58a44" stroke-width="2"/>
+  </g>
+  <g transform="translate(626,442) rotate(-14)">
+    <rect x="-8" y="-104" width="16" height="104" rx="8" fill="#eab268" stroke="#c58a44" stroke-width="2"/>
+    <path d="M-3,-86 L3,-78 M-3,-64 L3,-56 M-3,-42 L3,-34 M-3,-20 L3,-12" stroke="#c58a44" stroke-width="2"/>
+  </g>
+  <g transform="translate(648,446) rotate(-52)">
+    <rect x="-8" y="-84" width="16" height="84" rx="8" fill="#eab268" stroke="#c58a44" stroke-width="2"/>
+    <path d="M-3,-66 L3,-58 M-3,-46 L3,-38 M-3,-26 L3,-18" stroke="#c58a44" stroke-width="2"/>
+  </g>
+  <polygon points="588,428 666,428 656,488 598,488" fill="#b8823f" stroke="#8a5f2c" stroke-width="2"/>
+  <path d="M592,444 L662,444 M595,458 L659,458 M597,472 L657,472 M620,430 L618,486 M640,430 L640,486" stroke="#8a5f2c" stroke-width="2" opacity="0.8"/>
+</svg>

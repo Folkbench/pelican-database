@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200">
+  <title>Pelican riding a bicycle</title>
+  <desc>Stylized pelican sitting on a bicycle with two wheels and simple shapes.</desc>
+
+  <rect x="0" y="0" width="300" height="200" fill="#e7f4ff"/>
+
+  <line x1="20" y1="170" x2="280" y2="170" stroke="#8b9ba5" stroke-width="2" stroke-linecap="round"/>
+
+  <circle cx="90" cy="160" r="28" fill="#f7f7f7" stroke="#333" stroke-width="3"/>
+  <circle cx="210" cy="160" r="28" fill="#f7f7f7" stroke="#333" stroke-width="3"/>
+
+  <circle cx="90" cy="160" r="3" fill="#333"/>
+  <circle cx="210" cy="160" r="3" fill="#333"/>
+
+  <line x1="90" y1="160" x2="210" y2="160" stroke="#444" stroke-width="4" stroke-linecap="round"/>
+  <line x1="150" y1="160" x2="150" y2="120" stroke="#444" stroke-width="4" stroke-linecap="round"/>
+  <line x1="150" y1="120" x2="210" y2="140" stroke="#444" stroke-width="4" stroke-linecap="round"/>
+  <line x1="150" y1="120" x2="110" y2="140" stroke="#444" stroke-width="4" stroke-linecap="round"/>
+
+  <line x1="210" y1="140" x2="225" y2="120" stroke="#444" stroke-width="4" stroke-linecap="round"/>
+  <line x1="215" y1="115" x2="235" y2="125" stroke="#444" stroke-width="4" stroke-linecap="round"/>
+
+  <circle cx="130" cy="150" r="4" fill="#333"/>
+  <line x1="130" y1="150" x2="120" y2="165" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+  <rect x="116" y="165" width="10" height="4" rx="1" fill="#333"/>
+
+  <line x1="145" y1="115" x2="160" y2="110" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+  <rect x="155" y="103" width="20" height="8" rx="3" fill="#222"/>
+
+  <g id="pelican">
+    <ellipse cx="150" cy="95" rx="32" ry="24" fill="#ffffff" stroke="#222" stroke-width="2"/>
+
+    <path d="M140 95              Q130 105 132 118              Q150 115 162 110              Q152 100 140 95 Z" fill="#dde3ea" stroke="#222" stroke-width="1.5"/>
+
+    <polygon points="120,95 108,90 110,105" fill="#ffffff" stroke="#222" stroke-width="1.5"/>
+
+    <path d="M158 88              Q172 78 182 70              Q184 66 182 62              Q170 68 160 76              Q154 80 152 88 Z" fill="#ffffff" stroke="#222" stroke-width="2"/>
+
+    <ellipse cx="190" cy="60" rx="14" ry="12" fill="#ffffff" stroke="#222" stroke-width="2"/>
+
+    <circle cx="193" cy="58" r="2.2" fill="#000"/>
+    <circle cx="192.5" cy="57.5" r="0.8" fill="#fff"/>
+
+    <path d="M196 62              Q215 60 236 64              Q220 68 200 68 Z" fill="#f3c451" stroke="#b88a21" stroke-width="1.5"/>
+
+    <path d="M196 62              Q210 70 230 74              Q212 76 198 71 Z" fill="#f7d477" stroke="#b88a21" stroke-width="1.2"/>
+
+    <line x1="150" y1="115" x2="140" y2="140" stroke="#f3c451" stroke-width="3" stroke-linecap="round"/>
+    <line x1="158" y1="114" x2="148" y2="138" stroke="#f3c451" stroke-width="3" stroke-linecap="round"/>
+
+    <polyline points="138,140 132,145 140,146" fill="none" stroke="#f3c451" stroke-width="2" stroke-linecap="round"/>
+    <polyline points="146,138 140,143 148,144" fill="none" stroke="#f3c451" stroke-width="2" stroke-linecap="round"/>
+
+    <line x1="165" y1="100" x2="210" y2="132" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="210" cy="132" r="3" fill="#ffffff" stroke="#222" stroke-width="1"/>
+  </g>
+</svg>

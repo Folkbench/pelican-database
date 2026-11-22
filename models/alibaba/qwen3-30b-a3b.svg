@@ -1,0 +1,35 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bicycle Frame -->
+  <path d="M50 150 Q70 100 120 150" stroke="black" stroke-width="4" fill="none"/>
+  
+  <!-- Wheels -->
+  <circle cx="50" cy="150" r="15" fill="black"/>
+  <circle cx="120" cy="150" r="15" fill="black"/>
+  
+  <!-- Handlebars -->
+  <line x1="50" y1="100" x2="70" y2="100" stroke="black" stroke-width="4"/>
+  
+  <!-- Seat -->
+  <rect x="90" y="120" width="20" height="10" fill="brown"/>
+  
+  <!-- Pelican Body -->
+  <ellipse cx="90" cy="110" rx="20" ry="15" fill="saddlebrown"/>
+  
+  <!-- Pelican Head -->
+  <circle cx="85" cy="90" r="10" fill="saddlebrown"/>
+  
+  <!-- Beak -->
+  <polygon points="85,90 95,95 85,100" fill="yellow"/>
+  
+  <!-- Eyes -->
+  <circle cx="82" cy="88" r="2" fill="white"/>
+  <circle cx="88" cy="88" r="2" fill="white"/>
+  
+  <!-- Legs -->
+  <line x1="90" y1="125" x2="90" y2="140" stroke="saddlebrown" stroke-width="4"/>
+  <line x1="100" y1="125" x2="100" y2="140" stroke="saddlebrown" stroke-width="4"/>
+  
+  <!-- Wings -->
+  <path d="M70 110 Q60 90 70 80" stroke="saddlebrown" stroke-width="2" fill="none"/>
+  <path d="M110 110 Q120 90 110 80" stroke="saddlebrown" stroke-width="2" fill="none"/>
+</svg>

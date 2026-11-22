@@ -1,0 +1,158 @@
+<svg id="scene" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        
+        
+        <defs>
+            
+            <linearGradient id="pelicanBodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1"></stop>
+                <stop offset="100%" style="stop-color:#F0F0F0;stop-opacity:1"></stop>
+            </linearGradient>
+            
+            <linearGradient id="beakGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#E6B800;stop-opacity:1"></stop>
+                <stop offset="50%" style="stop-color:#FFD700;stop-opacity:1"></stop>
+                <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1"></stop>
+            </linearGradient>
+            
+            <radialGradient id="rimGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                <stop offset="80%" style="stop-color:#333;stop-opacity:0"></stop>
+                <stop offset="100%" style="stop-color:#111;stop-opacity:1"></stop>
+            </radialGradient>
+            
+            <linearGradient id="groundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#2E8B57;stop-opacity:1"></stop>
+                <stop offset="100%" style="stop-color:#228B22;stop-opacity:1"></stop>
+            </linearGradient>
+        </defs>
+
+        
+        <rect x="0" y="0" width="800" height="600" fill="#87CEEB"></rect>
+        
+        
+        <g id="cloudLayer"></g>
+
+        
+        <circle cx="700" cy="80" r="50" fill="#FFD700">
+            
+        </circle>
+
+        
+        <rect x="0" y="500" width="800" height="100" fill="url(#groundGrad)"></rect>
+        
+        
+        <g id="speedLines" stroke="#FFF" stroke-width="2" opacity="0.5"></g>
+
+        
+        <g id="riderGroup" transform="translate(200, 330)">
+            
+            
+            <g id="bicycle">
+                
+                <g id="wheelBack" transform="translate(0, 130)">
+                    <circle cx="0" cy="0" r="58" fill="none" stroke="#333" stroke-width="8"></circle> 
+                    <circle cx="0" cy="0" r="52" fill="none" stroke="#DDD" stroke-width="2"></circle> 
+                    <circle cx="0" cy="0" r="5" fill="#555"></circle> 
+                    <g id="spokesBack" stroke="#CCC" stroke-width="1">
+                        
+                        <line x1="0" y1="-52" x2="0" y2="52"></line>
+                        <line x1="-52" y1="0" x2="52" y2="0"></line>
+                        <line x1="-36" y1="-36" x2="36" y2="36"></line>
+                        <line x1="36" y1="-36" x2="-36" y2="36"></line>
+                        <line x1="-15" y1="-50" x2="15" y2="50"></line>
+                        <line x1="15" y1="-50" x2="-15" y2="50"></line>
+                        <line x1="-50" y1="-15" x2="50" y2="15"></line>
+                        <line x1="-50" y1="15" x2="50" y2="-15"></line>
+                    </g>
+                </g>
+
+                
+                <g id="wheelFront" transform="translate(240, 130)">
+                    <circle cx="0" cy="0" r="58" fill="none" stroke="#333" stroke-width="8"></circle>
+                    <circle cx="0" cy="0" r="52" fill="none" stroke="#DDD" stroke-width="2"></circle>
+                    <circle cx="0" cy="0" r="5" fill="#555"></circle>
+                    <g id="spokesFront" stroke="#CCC" stroke-width="1">
+                        <line x1="0" y1="-52" x2="0" y2="52"></line>
+                        <line x1="-52" y1="0" x2="52" y2="0"></line>
+                        <line x1="-36" y1="-36" x2="36" y2="36"></line>
+                        <line x1="36" y1="-36" x2="-36" y2="36"></line>
+                        <line x1="-15" y1="-50" x2="15" y2="50"></line>
+                        <line x1="15" y1="-50" x2="-15" y2="50"></line>
+                        <line x1="-50" y1="-15" x2="50" y2="15"></line>
+                        <line x1="-50" y1="15" x2="50" y2="-15"></line>
+                    </g>
+                </g>
+
+                
+                
+                <path d="M0 130 L80 50 L210 50 L240 130" fill="none" stroke="#D32F2F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M0 130 L60 130" fill="none" stroke="#D32F2F" stroke-width="5"></path> 
+                <path d="M60 130 L80 50" fill="none" stroke="#D32F2F" stroke-width="5"></path> 
+                <path d="M80 50 L140 130 L210 50" fill="none" stroke="#D32F2F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path> 
+                
+                
+                <path d="M210 50 L240 130" fill="none" stroke="#333" stroke-width="6"></path>
+                
+                
+                <line x1="80" y1="50" x2="75" y2="20" stroke="#333" stroke-width="6"></line>
+                
+                <path d="M60 20 Q95 15 100 25 L95 35 Q60 35 60 20" fill="#111"></path>
+
+                
+                <path d="M210 50 L205 25 L160 25" fill="none" stroke="#111" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle cx="205" cy="25" r="4" fill="#111"></circle> 
+
+                
+                <g id="crank" transform="translate(60, 130)">
+                    <circle cx="0" cy="0" r="10" fill="#444"></circle>
+                    <line x1="0" y1="0" x2="0" y2="25" stroke="#888" stroke-width="4"></line>
+                    <rect x="-8" y="20" width="16" height="6" fill="#111" rx="2"></rect> 
+                    <line x1="0" y1="0" x2="0" y2="-25" stroke="#888" stroke-width="4"></line>
+                    <rect x="-8" y="-25" width="16" height="6" fill="#111" rx="2"></rect> 
+                </g>
+            </g>
+
+            
+            <g id="pelican" transform="translate(10, 0)">
+                
+                
+                <path d="M60 140 C 50 140, 50 150, 60 155" fill="none" stroke="#FFA07A" stroke-width="4" stroke-linecap="round"></path>
+                <path d="M65 150 L75 150 L70 140" fill="none" stroke="#FFA07A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+
+                
+                <path d="M50 -20 L50 60" fill="none" stroke="#FFA07A" stroke-width="4" stroke-linecap="round"></path>
+
+                
+                <path d="M-40 0 Q-70 10 -60 -10 Z" fill="#FFF" stroke="#AAA" stroke-width="1"></path>
+                <path d="M-35 5 Q-65 15 -55 -5 Z" fill="#FFF" stroke="#AAA" stroke-width="1"></path>
+
+                
+                <ellipse cx="0" cy="0" rx="65" ry="40" fill="url(#pelicanBodyGrad)"></ellipse>
+                
+                <path d="M-30 -10 Q 10 10 40 -5 Q 20 20 -30 -10" fill="#DDD" stroke="#CCC" stroke-width="1"></path>
+
+                
+                <path d="M40 -20 Q 60 -40 55 -60 L 75 -60 L 75 -20 Q 70 0 40 10 Z" fill="url(#pelicanBodyGrad)" stroke="#F0F0F0"></path>
+
+                
+                <circle cx="65" cy="-70" r="25" fill="url(#pelicanBodyGrad)"></circle>
+
+                
+                <path d="M60 -75 Q 65 -85 75 -78 Q 65 -70 60 -75" fill="#FFC0CB" opacity="0.6"></path>
+                <circle cx="68" cy="-75" r="3" fill="#000"></circle> 
+                <circle cx="69" cy="-76" r="1" fill="#FFF"></circle> 
+
+                
+                <g transform="rotate(15, 80, -70)">
+                    
+                    <path d="M80 -70 L 180 -60 L 160 -40 L 80 -55 Z" fill="#FFD700" stroke="#DAA520" stroke-width="1"></path>
+                    
+                    <path d="M80 -55 Q 120 -30 150 -50 L 155 -60" fill="none" stroke="#333" stroke-width="1"></path> 
+                </g>
+
+                
+                <path d="M20 -10 Q 10 -30 160 -10 Q 10 10 20 -10" fill="#FFF" stroke="#DDD" stroke-width="1"></path>
+                <path d="M150 5 Q 160 0 160 -5" fill="none" stroke="#FFF" stroke-width="8" stroke-linecap="round"></path> 
+
+            </g>
+        </g>
+    </svg>

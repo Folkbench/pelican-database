@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="white"/>
+  <line x1="50" y1="530" x2="750" y2="530" stroke="#dddddd" stroke-width="4" stroke-linecap="round"/>
+  <path d="M160 460 Q190 450 210 460" stroke="#eeeeee" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M180 450 Q210 440 230 450" stroke="#eeeeee" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="250" cy="450" r="80" fill="none" stroke="#333" stroke-width="8"/>
+  <g stroke="#999" stroke-width="2">
+    <line x1="250" y1="450" x2="250" y2="370"/>
+    <line x1="250" y1="450" x2="250" y2="530"/>
+    <line x1="250" y1="450" x2="170" y2="450"/>
+    <line x1="250" y1="450" x2="330" y2="450"/>
+    <line x1="250" y1="450" x2="193" y2="393"/>
+    <line x1="250" y1="450" x2="307" y2="393"/>
+    <line x1="250" y1="450" x2="193" y2="507"/>
+    <line x1="250" y1="450" x2="307" y2="507"/>
+  </g>
+  <circle cx="550" cy="450" r="80" fill="none" stroke="#333" stroke-width="8"/>
+  <g stroke="#999" stroke-width="2">
+    <line x1="550" y1="450" x2="550" y2="370"/>
+    <line x1="550" y1="450" x2="550" y2="530"/>
+    <line x1="550" y1="450" x2="470" y2="450"/>
+    <line x1="550" y1="450" x2="630" y2="450"/>
+    <line x1="550" y1="450" x2="493" y2="393"/>
+    <line x1="550" y1="450" x2="607" y2="393"/>
+    <line x1="550" y1="450" x2="493" y2="507"/>
+    <line x1="550" y1="450" x2="607" y2="507"/>
+  </g>
+  <g stroke="#222" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="400" y1="450" x2="250" y2="450"/> <line x1="400" y1="350" x2="250" y2="450"/> <line x1="400" y1="450" x2="520" y2="380"/> <line x1="400" y1="350" x2="520" y2="380"/> <line x1="400" y1="350" x2="400" y2="450"/> <line x1="520" y1="380" x2="550" y2="450"/> </g>
+  <path d="M380 340 Q400 330 420 340 Q420 350 380 350 Z" fill="#222"/>
+  <path d="M500 360 Q520 340 540 360" stroke="#222" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <g fill="#333" stroke="#222" stroke-width="2">
+    <rect x="380" y="445" width="10" height="10" rx="2"/> <rect x="410" y="445" width="10" height="10" rx="2"/> <line x1="400" y1="450" x2="385" y2="450" stroke="#222" stroke-width="4"/> <line x1="400" y1="450" x2="415" y2="450" stroke="#222" stroke-width="4"/> </g>
+  <g fill="#e0e0e0" stroke="#ccc" stroke-width="1">
+    <path d="M340 300 L310 280 L320 310 Z"/>
+    <path d="M340 300 L300 290 L315 315 Z"/>
+  </g>
+  <ellipse cx="400" cy="300" rx="60" ry="40" fill="#f5f5f5" stroke="#ddd" stroke-width="1"/>
+  <circle cx="400" cy="220" r="32" fill="#f5f5f5" stroke="#ddd" stroke-width="1"/>
+  <g>
+    <path d="M400 218 L472 223 L467 233 L400 228 Z" fill="#f4d03f" stroke="#333" stroke-width="1"/>
+    <path d="M470 223 L475 220 L475 226 Z" fill="#000"/>
+    <path d="M400 228 Q432 272 400 238" fill="#f8c471" stroke="#333" stroke-width="1"/>
+  </g>
+  <circle cx="415" cy="210" r="4" fill="#000"/>
+  <circle cx="416" cy="209" r="1" fill="white"/> <g fill="#e0e0e0" stroke="#ccc" stroke-width="1">
+    <path d="M340 280 Q420 320 500 355 L510 360 Q430 330 350 290 Z"/>
+    <line x1="370" y1="290" x2="480" y2="345" stroke="#ccc" stroke-width="1"/>
+    <line x1="350" y1="300" x2="460" y2="350" stroke="#ccc" stroke-width="1"/>
+    <path d="M460 280 Q490 320 540 355 L550 360 Q500 330 470 290 Z"/>
+    <line x1="470" y1="290" x2="530" y2="345" stroke="#ccc" stroke-width="1"/>
+    <line x1="480" y1="300" x2="540" y2="350" stroke="#ccc" stroke-width="1"/>
+  </g>
+  <g stroke="#999" stroke-width="2" stroke-linecap="round">
+    <path d="M385 455 L380 470" fill="none"/>
+    <path d="M380 470 L375 475 M380 470 L380 476 M380 470 L385 475" fill="none"/>
+    <path d="M415 455 L410 470" fill="none"/>
+    <path d="M410 470 L405 475 M410 470 L410 476 M410 470 L415 475" fill="none"/>
+  </g>
+</svg>

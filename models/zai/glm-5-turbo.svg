@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500">
+  <rect width="600" height="500" fill="#dceefb"/>
+  
+  <circle cx="520" cy="70" r="40" fill="#FFD93D" opacity="0.85"/>
+  <circle cx="520" cy="70" r="34" fill="#FFE566" opacity="0.6"/>
+  
+  <g fill="white" opacity="0.85">
+    <ellipse cx="90" cy="75" rx="42" ry="20"/>
+    <ellipse cx="125" cy="68" rx="36" ry="18"/>
+    <ellipse cx="60" cy="72" rx="28" ry="14"/>
+  </g>
+  <g fill="white" opacity="0.6">
+    <ellipse cx="430" cy="110" rx="32" ry="13"/>
+    <ellipse cx="460" cy="105" rx="28" ry="12"/>
+  </g>
+  
+  <rect x="0" y="440" width="600" height="60" fill="#7dba6d"/>
+  <rect x="0" y="440" width="600" height="4" fill="#6aa55c"/>
+  
+  <g fill="#6aa55c" opacity="0.5">
+    <circle cx="50" cy="458" r="3"/>
+    <circle cx="130" cy="465" r="2.5"/>
+    <circle cx="290" cy="460" r="3"/>
+    <circle cx="440" cy="455" r="2"/>
+    <circle cx="530" cy="462" r="3"/>
+    <circle cx="570" cy="452" r="2"/>
+  </g>
+
+  <g>
+    <circle cx="168" cy="398" r="56" fill="none" stroke="#3a3a3a" stroke-width="5"/>
+    <circle cx="168" cy="398" r="50" fill="none" stroke="#666" stroke-width="0.8"/>
+    <g stroke="#999" stroke-width="0.8">
+      <line x1="168" y1="342" x2="168" y2="454"/>
+      <line x1="112" y1="398" x2="224" y2="398"/>
+      <line x1="128" y1="358" x2="208" y2="438"/>
+      <line x1="208" y1="358" x2="128" y2="438"/>
+      <line x1="139" y1="348" x2="197" y2="448"/>
+      <line x1="197" y1="348" x2="139" y2="448"/>
+    </g>
+    <circle cx="168" cy="398" r="6" fill="#555"/>
+
+    <circle cx="388" cy="398" r="56" fill="none" stroke="#3a3a3a" stroke-width="5"/>
+    <circle cx="388" cy="398" r="50" fill="none" stroke="#666" stroke-width="0.8"/>
+    <g stroke="#999" stroke-width="0.8">
+      <line x1="388" y1="342" x2="388" y2="454"/>
+      <line x1="332" y1="398" x2="444" y2="398"/>
+      <line x1="348" y1="358" x2="428" y2="438"/>
+      <line x1="428" y1="358" x2="348" y2="438"/>
+      <line x1="359" y1="348" x2="417" y2="448"/>
+      <line x1="417" y1="348" x2="359" y2="448"/>
+    </g>
+    <circle cx="388" cy="398" r="6" fill="#555"/>
+
+    <g stroke="#c0392b" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <line x1="222" y1="292" x2="245" y2="386"/>
+      <line x1="222" y1="292" x2="362" y2="286"/>
+      <line x1="362" y1="286" x2="245" y2="386"/>
+      <line x1="245" y1="386" x2="168" y2="398"/>
+      <line x1="222" y1="292" x2="168" y2="398"/>
+      <line x1="362" y1="286" x2="388" y2="398"/>
+    </g>
+
+    <circle cx="245" cy="386" r="9" fill="#c0392b"/>
+    <circle cx="245" cy="386" r="5" fill="#e74c3c"/>
+
+    <g>
+      <line x1="245" y1="386" x2="245" y2="410" stroke="#555" stroke-width="4" stroke-linecap="round"/>
+      <line x1="245" y1="386" x2="268" y2="386" stroke="#555" stroke-width="4" stroke-linecap="round"/>
+      <rect x="237" y="408" width="16" height="6" rx="2" fill="#777" stroke="#555" stroke-width="1"/>
+      <rect x="264" y="382" width="16" height="6" rx="2" fill="#777" stroke="#555" stroke-width="1"/>
+    </g>
+
+    <line x1="222" y1="292" x2="218" y2="280" stroke="#666" stroke-width="4" stroke-linecap="round"/>
+    
+    <path d="M198,278 Q208,270 228,270 Q238,270 242,278 Q238,282 228,284 Q208,284 198,278 Z" fill="#4a3728" stroke="#3a2a1c" stroke-width="1"/>
+    <path d="M202,278 Q210,273 226,273 Q234,273 238,278" fill="none" stroke="#5c4633" stroke-width="1"/>
+
+    <line x1="362" y1="286" x2="362" y2="264" stroke="#666" stroke-width="4" stroke-linecap="round"/>
+    
+    <path d="M340,258 Q362,248 384,262" fill="none" stroke="#555" stroke-width="5" stroke-linecap="round"/>
+    <line x1="338" y1="258" x2="340" y2="258" stroke="#333" stroke-width="7" stroke-linecap="round"/>
+    <line x1="384" y1="262" x2="387" y2="264" stroke="#333" stroke-width="7" stroke-linecap="round"/>
+
+    <path d="M250,390 L168,402" stroke="#888" stroke-width="2" fill="none" stroke-dasharray="3,2.5"/>
+  </g>
+
+  <g>
+    <path d="M212,315 C220,350 235,375 243,410" fill="none" stroke="#e8941a" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M228,315 C238,350 252,375 266,388" fill="none" stroke="#e8941a" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M233,410 L243,410 L253,410" stroke="#e8941a" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M256,388 L266,388 L276,388" stroke="#e8941a" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <path d="M175,260 Q155,248 148,268 Q158,262 162,278 Q168,265 178,272 Q172,258 180,252 Z" fill="#d8d8d8" stroke="#c0c0c0" stroke-width="1"/>
+    <path d="M170,268 Q158,260 152,275" fill="none" stroke="#bbb" stroke-width="0.8"/>
+
+    <ellipse cx="212" cy="268" rx="58" ry="48" fill="white"/>
+    <ellipse cx="212" cy="268" rx="58" ry="48" fill="none" stroke="#e0e0e0" stroke-width="1.5"/>
+    <ellipse cx="225" cy="280" rx="38" ry="28" fill="#f0f0f0" opacity="0.6"/>
+    <ellipse cx="210" cy="295" rx="35" ry="15" fill="#e8e8e8" opacity="0.5"/>
+
+    <path d="M190,242 Q225,230 258,252 Q245,260 238,278 Q228,262 195,262 Z" fill="#e2e2e2" stroke="#ccc" stroke-width="1"/>
+    <path d="M205,250 Q232,243 250,257" fill="none" stroke="#d0d0d0" stroke-width="1"/>
+    <path d="M200,258 Q228,250 246,264" fill="none" stroke="#d0d0d0" stroke-width="1"/>
+    <path d="M197,266 Q222,258 240,270" fill="none" stroke="#d0d0d0" stroke-width="0.8"/>
+
+    <path d="M242,248 C258,225 278,198 292,178 C302,163 310,152 316,146               L326,150 C320,158 312,168 302,183 C288,203 270,228 256,252 Z" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <path d="M252,248 C265,228 282,203 296,183 C304,170 312,160 318,153" fill="none" stroke="#eee" stroke-width="3" opacity="0.5"/>
+
+    <ellipse cx="320" cy="142" rx="24" ry="19" fill="white" stroke="#e0e0e0" stroke-width="1.5"/>
+    <path d="M305,128 Q302,116 306,110" fill="none" stroke="#ddd" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M312,126 Q310,113 314,107" fill="none" stroke="#ddd" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M319,126 Q318,114 321,108" fill="none" stroke="#e0e0e0" stroke-width="2" stroke-linecap="round"/>
+
+    <circle cx="328" cy="137" r="6" fill="white" stroke="#444" stroke-width="1.5"/>
+    <circle cx="329.5" cy="136" r="3.5" fill="#1a1a1a"/>
+    <circle cx="331" cy="134.5" r="1.2" fill="white"/>
+    <path d="M322,133 Q328,129 334,133" fill="none" stroke="#f5c77e" stroke-width="1.5" opacity="0.7"/>
+
+    <path d="M336,136 L395,128 Q400,133 396,138 L336,144 Z" fill="#e8941a" stroke="#d4820f" stroke-width="1.2"/>
+    <line x1="338" y1="140" x2="394" y2="133" stroke="#d4820f" stroke-width="0.8" opacity="0.6"/>
+    <path d="M395,128 Q400,133 396,138" fill="none" stroke="#c47510" stroke-width="2.5" stroke-linecap="round"/>
+    <ellipse cx="355" cy="137" rx="2" ry="1" fill="#d4820f" opacity="0.5"/>
+
+    <path d="M336,144 Q350,175 378,162 Q396,152 396,138 L336,144 Z" fill="#f0a830" stroke="#d4820f" stroke-width="1" opacity="0.85"/>
+    <path d="M340,147 Q352,166 372,158" fill="none" stroke="#d4820f" stroke-width="0.7" opacity="0.5"/>
+    <path d="M342,150 Q354,168 370,161" fill="none" stroke="#d4820f" stroke-width="0.5" opacity="0.3"/>
+
+    <path d="M252,268 Q285,262 315,272 Q340,278 348,264" fill="none" stroke="#d8d8d8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M252,268 Q285,262 315,272 Q340,278 348,264" fill="none" stroke="#e8e8e8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="348" cy="262" r="7" fill="#e0e0e0" stroke="#ccc" stroke-width="1.5"/>
+  </g>
+
+  <g stroke="#aab" stroke-width="2" stroke-linecap="round" opacity="0.45">
+    <line x1="72" y1="388" x2="105" y2="388"/>
+    <line x1="62" y1="400" x2="100" y2="400"/>
+    <line x1="68" y1="412" x2="102" y2="412"/>
+    <line x1="58" y1="424" x2="95" y2="424"/>
+  </g>
+
+  <g fill="#c5d8b5" opacity="0.4">
+    <circle cx="100" cy="440" r="6"/>
+    <circle cx="88" cy="435" r="4"/>
+    <circle cx="95" cy="443" r="5"/>
+    <circle cx="78" cy="438" r="3"/>
+  </g>
+</svg>

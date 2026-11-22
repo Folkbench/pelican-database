@@ -1,0 +1,41 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background (optional) -->
+  <rect width="400" height="300" fill="#e0f7fa" />
+
+  <!-- Road -->
+  <path d="M0 250 L400 250" stroke="#5d4037" stroke-width="30" stroke-linecap="round" />
+
+  <!-- Bicycle -->
+  <!-- Frame -->
+  <path d="M100 200 L150 150 L250 150 L200 200" stroke="#3e2723" stroke-width="5" fill="none" />
+  <!-- Front Wheel -->
+  <circle cx="150" cy="200" r="30" fill="#3e2723" stroke="#1a1a1a" stroke-width="2" />
+  <circle cx="150" cy="200" r="10" fill="#bcaaa4" />
+  <!-- Back Wheel -->
+  <circle cx="200" cy="200" r="30" fill="#3e2723" stroke="#1a1a1a" stroke-width="2" />
+  <circle cx="200" cy="200" r="10" fill="#bcaaa4" />
+  <!-- Pedals -->
+  <circle cx="150" cy="180" r="5" fill="#3e2723" />
+  <circle cx="170" cy="200" r="5" fill="#3e2723" />
+  <!-- Handlebar -->
+  <path d="M150 150 L130 130" stroke="#3e2723" stroke-width="5" />
+  <path d="M130 130 L110 130" stroke="#3e2723" stroke-width="3" />
+
+  <!-- Pelican -->
+  <!-- Body -->
+  <ellipse cx="200" cy="120" rx="30" ry="20" fill="white" stroke="#333" stroke-width="2" />
+  <!-- Beak -->
+  <path d="M230 120 L280 110 L280 130 Z" fill="#ff9800" stroke="#333" stroke-width="2" />
+  <!-- Eye -->
+  <circle cx="220" cy="110" r="3" fill="#333" />
+  <!-- Wing -->
+  <path d="M180 120 Q150 100 170 80" fill="none" stroke="#333" stroke-width="2" />
+  <!-- Tail -->
+  <path d="M170 120 Q160 140 180 140" fill="none" stroke="#333" stroke-width="2" />
+  <!-- Legs (holding pedals) -->
+  <path d="M200 150 L200 180" stroke="#333" stroke-width="3" />
+  <path d="M190 150 L190 180" stroke="#333" stroke-width="3" />
+
+  <!-- Optional: Sun -->
+  <circle cx="350" cy="50" r="20" fill="#ffeb3b" />
+</svg>

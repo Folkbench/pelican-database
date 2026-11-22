@@ -1,0 +1,60 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bicycle -->
+  <!-- Back wheel -->
+  <circle cx="120" cy="220" r="35" fill="none" stroke="#333" stroke-width="3"/>
+  <circle cx="120" cy="220" r="3" fill="#333"/>
+  <!-- Front wheel -->
+  <circle cx="280" cy="220" r="35" fill="none" stroke="#333" stroke-width="3"/>
+  <circle cx="280" cy="220" r="3" fill="#333"/>
+  
+  <!-- Bike frame -->
+  <path d="M120 220 L180 170 L280 220" fill="none" stroke="#ff4444" stroke-width="3"/>
+  <path d="M180 170 L180 140" fill="none" stroke="#ff4444" stroke-width="3"/>
+  <path d="M120 220 L180 140" fill="none" stroke="#ff4444" stroke-width="3"/>
+  
+  <!-- Handlebars -->
+  <path d="M180 140 L200 135" fill="none" stroke="#333" stroke-width="3"/>
+  <path d="M195 130 L195 140" fill="none" stroke="#333" stroke-width="3"/>
+  
+  <!-- Seat -->
+  <ellipse cx="165" cy="135" rx="15" ry="5" fill="#8B4513"/>
+  
+  <!-- Pedals -->
+  <circle cx="180" cy="190" r="4" fill="#333"/>
+  <path d="M175 190 L185 190" stroke="#333" stroke-width="2"/>
+  <path d="M170 195 L175 190" stroke="#333" stroke-width="2"/>
+  <path d="M185 190 L190 185" stroke="#333" stroke-width="2"/>
+  
+  <!-- Pelican -->
+  <!-- Body -->
+  <ellipse cx="160" cy="110" rx="35" ry="30" fill="white" stroke="#333" stroke-width="2"/>
+  
+  <!-- Head -->
+  <ellipse cx="190" cy="90" rx="20" ry="18" fill="white" stroke="#333" stroke-width="2"/>
+  
+  <!-- Beak -->
+  <path d="M205 90 L235 92 L230 98 L205 95 Z" fill="#FFA500" stroke="#333" stroke-width="1"/>
+  <!-- Pouch -->
+  <path d="M205 95 Q220 105 230 98" fill="#FFB347" stroke="#333" stroke-width="1"/>
+  
+  <!-- Eye -->
+  <circle cx="195" cy="87" r="3" fill="#333"/>
+  <circle cx="196" cy="86" r="1" fill="white"/>
+  
+  <!-- Wing -->
+  <ellipse cx="145" cy="110" rx="20" ry="25" fill="white" stroke="#333" stroke-width="2" transform="rotate(-10 145 110)"/>
+  
+  <!-- Wing feathers -->
+  <path d="M135 115 L130 120 M140 118 L135 123 M145 120 L140 125" stroke="#333" stroke-width="1"/>
+  
+  <!-- Legs on pedals -->
+  <path d="M155 135 L170 195" stroke="#FFA500" stroke-width="4"/>
+  <path d="M165 135 L190 185" stroke="#FFA500" stroke-width="4"/>
+  
+  <!-- Feet -->
+  <path d="M168 195 L165 198 M170 195 L170 199 M172 195 L175 198" stroke="#FFA500" stroke-width="2"/>
+  <path d="M188 185 L185 188 M190 185 L190 189 M192 185 L195 188" stroke="#FFA500" stroke-width="2"/>
+  
+  <!-- Wing holding handlebar -->
+  <ellipse cx="195" cy="125" rx="8" ry="15" fill="white" stroke="#333" stroke-width="2" transform="rotate(45 195 125)"/>
+</svg>

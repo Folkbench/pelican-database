@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="A pelican riding a bicycle">
+  <title>Pelican riding a bicycle</title>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#e8f4ff"/>
+  <circle cx="675" cy="115" r="48" fill="#ffe28a" opacity="0.85"/>
+  <path d="M0 500 h800 v100 H0 Z" fill="#cde7ba"/>
+  <path d="M0 500 h800" stroke="#95c37d" stroke-width="5"/>
+  <ellipse cx="410" cy="522" rx="275" ry="28" fill="#234" opacity="0.10"/>
+
+  <!-- Wheels -->
+  <g fill="#f8f8f8" stroke="#2f2f2f" stroke-width="12">
+    <circle cx="215" cy="425" r="82"/>
+    <circle cx="605" cy="425" r="82"/>
+  </g>
+
+  <g stroke="#9aa5b1" stroke-width="4" stroke-linecap="round">
+    <path d="M215 347 V503 M137 425 H293 M157 367 L273 483 M157 483 L273 367"/>
+    <path d="M605 347 V503 M527 425 H683 M547 367 L663 483 M547 483 L663 367"/>
+  </g>
+
+  <g fill="#555" stroke="none">
+    <circle cx="215" cy="425" r="9"/>
+    <circle cx="605" cy="425" r="9"/>
+  </g>
+
+  <!-- Bicycle frame -->
+  <g stroke="#1f9e6f" stroke-width="13" fill="none" stroke-linecap="round">
+    <path d="M215 425 L390 445"/>
+    <path d="M390 445 L350 320"/>
+    <path d="M390 445 L535 355"/>
+    <path d="M350 320 L525 305"/>
+    <path d="M525 305 L545 365 L605 425"/>
+  </g>
+
+  <!-- Handlebar -->
+  <g stroke="#2f2f2f" stroke-width="10" fill="none" stroke-linecap="round">
+    <path d="M525 305 L557 290"/>
+    <path d="M535 279 L581 301"/>
+  </g>
+
+  <!-- Chainring -->
+  <circle cx="390" cy="445" r="22" fill="#d8dee5" stroke="#2f2f2f" stroke-width="4"/>
+  <circle cx="390" cy="445" r="6" fill="#2f2f2f"/>
+
+  <!-- Crank and pedals -->
+  <g stroke="#2f2f2f" stroke-width="9" fill="none" stroke-linecap="round">
+    <path d="M390 445 L432 502"/>
+    <path d="M390 445 L348 388"/>
+  </g>
+
+  <g fill="#333" stroke="none">
+    <rect x="410" y="502" width="48" height="12" rx="6"/>
+    <rect x="326" y="380" width="48" height="12" rx="6"/>
+  </g>
+
+  <!-- Saddle -->
+  <path d="M315 318 q42 -25 86 -6 l -6 17 q -46 11 -80 -11 z"
+        fill="#4b2e1f" stroke="#2b1a10" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- Pelican -->
+  <g>
+    <!-- Tail -->
+    <path d="M318 285 L268 260 L280 300 L255 315 L315 310 Z"
+          fill="#fff" stroke="#d9d9d9" stroke-width="4" stroke-linejoin="round"/>
+
+    <!-- Body -->
+    <ellipse cx="420" cy="290" rx="105" ry="72" fill="#fff" stroke="#d9d9d9" stroke-width="4"/>
+
+    <!-- Wing reaching toward handlebar -->
+    <path d="M415 268 C480 250 540 275 565 295 C545 320 500 330 455 320 C425 308 410 288 415 268 Z"
+          fill="#eef1f6" stroke="#d9d9d9" stroke-width="4" stroke-linejoin="round"/>
+
+    <!-- Neck -->
+    <path d="M470 260 C488 222 510 198 540 195"
+          fill="none" stroke="#d9d9d9" stroke-width="44" stroke-linecap="round"/>
+    <path d="M470 260 C488 222 510 198 540 195"
+          fill="none" stroke="#fff" stroke-width="34" stroke-linecap="round"/>
+
+    <!-- Head -->
+    <circle cx="545" cy="198" r="30" fill="#fff" stroke="#d9d9d9" stroke-width="4"/>
+
+    <!-- Beak and pouch -->
+    <path d="M545 190 Q610 188 672 208 Q612 222 545 215 Z"
+          fill="#fca550" stroke="#d97706" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M545 215 Q612 222 672 208 Q642 262 595 268 Q556 262 545 215 Z"
+          fill="#f59e42" stroke="#d97706" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M545 213 Q612 220 670 209"
+          fill="none" stroke="#b45309" stroke-width="3"/>
+
+    <!-- Eye -->
+    <circle cx="550" cy="188" r="5" fill="#222"/>
+    <circle cx="551.5" cy="186.5" r="1.5" fill="#fff"/>
+  </g>
+
+  <!-- Legs and feet -->
+  <g>
+    <path d="M430 345 L435 475"
+          fill="none" stroke="#f97316" stroke-width="8" stroke-linecap="round"/>
+    <path d="M400 350 L360 385"
+          fill="none" stroke="#f97316" stroke-width="8" stroke-linecap="round"/>
+
+    <path d="M415 470 l25 -4 q22 8 20 22 q-14 12 -35 4 q-10 -10 -10 -22 z"
+          fill="#f97316" stroke="#c2410c" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M345 375 l22 -2 q18 6 16 18 q-12 10 -30 3 q-8 -9 -8 -19 z"
+          fill="#f97316" stroke="#c2410c" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Handlebar grips -->
+  <g fill="#c2410c" stroke="none">
+    <circle cx="535" cy="279" r="8"/>
+    <circle cx="581" cy="301" r="8"/>
+  </g>
+</svg>

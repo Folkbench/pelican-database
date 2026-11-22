@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400">
+  <rect width="640" height="400" fill="#e8f4fc"/>
+  <ellipse cx="320" cy="360" rx="280" ry="18" fill="#d0e4c8"/>
+  <!-- bicycle -->
+  <g stroke="#333" stroke-width="6" fill="none" stroke-linecap="round">
+    <circle cx="180" cy="300" r="55"/>
+    <circle cx="420" cy="300" r="55"/>
+    <path d="M180 300 L280 300 L330 220 L420 300"/>
+    <path d="M280 300 L250 220 L330 220"/>
+    <path d="M250 220 L210 200"/>
+    <path d="M330 220 L360 185"/>
+    <circle cx="280" cy="300" r="10" fill="#333" stroke="none"/>
+  </g>
+  <path d="M200 200 h30" stroke="#555" stroke-width="5" stroke-linecap="round"/>
+  <path d="M345 175 h40" stroke="#555" stroke-width="5" stroke-linecap="round"/>
+  <!-- pelican body -->
+  <ellipse cx="310" cy="195" rx="70" ry="42" fill="#f5f5f5" stroke="#333" stroke-width="3"/>
+  <!-- wing -->
+  <path d="M270 185 Q240 150 290 155 Q310 170 300 190" fill="#e8e8e8" stroke="#333" stroke-width="2"/>
+  <!-- neck -->
+  <path d="M360 175 Q400 140 390 100" fill="none" stroke="#f5f5f5" stroke-width="22" stroke-linecap="round"/>
+  <path d="M360 175 Q400 140 390 100" fill="none" stroke="#333" stroke-width="3"/>
+  <!-- head -->
+  <circle cx="392" cy="92" r="28" fill="#f5f5f5" stroke="#333" stroke-width="3"/>
+  <circle cx="402" cy="86" r="4" fill="#222"/>
+  <!-- beak -->
+  <path d="M415 95 L510 108 L415 118 Z" fill="#f4a261" stroke="#333" stroke-width="2"/>
+  <path d="M415 108 Q460 128 505 112" fill="#f4a261" stroke="#333" stroke-width="2"/>
+  <!-- pouch line -->
+  <path d="M420 112 Q455 122 498 110" fill="none" stroke="#e76f51" stroke-width="2"/>
+  <!-- legs on pedals -->
+  <path d="M300 230 L275 285" stroke="#f4a261" stroke-width="6" stroke-linecap="round"/>
+  <path d="M320 232 L300 290" stroke="#f4a261" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="275" cy="288" r="6" fill="#333"/>
+  <circle cx="300" cy="292" r="6" fill="#333"/>
+  <!-- tail -->
+  <path d="M245 190 L200 175 L210 200 L195 210 L230 205 Z" fill="#f5f5f5" stroke="#333" stroke-width="2"/>
+</svg>

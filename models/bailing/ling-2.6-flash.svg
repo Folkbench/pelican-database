@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 250">
+  <rect width="300" height="250" fill="#87CEEB"/>
+  <circle cx="250" cy="60" r="30" fill="#FFF" opacity="0.6"/>
+  <circle cx="270" cy="80" r="25" fill="#FFF" opacity="0.4"/>
+  <circle cx="285" cy="65" r="20" fill="#FFF" opacity="0.3"/>
+  
+  <circle cx="250" cy="60" r="40" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.5"/>
+  
+  <g fill="white">
+    <ellipse cx="100" cy="40" rx="20" ry="14"/>
+    <ellipse cx="115" cy="38" rx="18" ry="12"/>
+    <ellipse cx="85" cy="42" rx="15" ry="10"/>
+    <ellipse cx="40" cy="70" rx="15" ry="10"/>
+    <ellipse cx="55" cy="68" rx="12" ry="8"/>
+    <ellipse cx="280" cy="80" rx="25" ry="14"/>
+    <ellipse cx="295" cy="82" rx="20" ry="12"/>
+    <ellipse cx="270" cy="78" rx="15" ry="10"/>
+  </g>
+  
+  <path d="M40,220 Q50,160 90,140 L95,150 Q50,170 45,205 Z" fill="#555"/>
+  
+  <path d="M95,140 Q100,80 85,60" stroke="#555" stroke-width="6" fill="none"/>
+  <path d="M85,60 Q75,40 65,55" stroke="#333" stroke-width="4" fill="none"/>
+  <circle cx="65" cy="55" r="5" fill="#333"/>
+  
+  <circle cx="45" cy="210" r="40" fill="#E0E0E0" stroke="#999" stroke-width="3"/>
+  <line x1="5" y1="40" x2="85" y2="40" stroke="#333" stroke-width="3"/>
+  <line x1="45" y1="-5" x2="45" y2="85" stroke="#333" stroke-width="3"/>
+  <circle cx="45" cy="210" r="5" fill="#666"/>
+  
+  <path d="M85,60 Q78,45 70,58 M70,58 Q65,52 60,56" stroke="#555" stroke-width="5" fill="none"/>
+  <path d="M85,60 Q90,40 95,35" stroke="#555" stroke-width="5" fill="none"/>
+  <circle cx="95" cy="35" r="4" fill="#333"/>
+  <line x1="95" y1="35" x2="75" y2="48" stroke="#333" stroke-width="3"/>
+  
+  <ellipse cx="70" cy="160" rx="22" ry="8" fill="#FF6B6B"/>
+  <path d="M60,160 L70,145 L80,160" stroke="#444" stroke-width="2" fill="none"/>
+  <line x1="80" y1="150" x2="80" y2="180" stroke="#888" stroke-width="2"/>
+  
+  <path d="M60,170 L68,195" stroke="#333" stroke-width="2" fill="none"/>
+  
+  <ellipse cx="150" cy="170" rx="50" ry="35" fill="#FFF"/>
+  <ellipse cx="155" cy="162" rx="30" ry="20" fill="#F8F8F8"/>
+  
+  <path d="M195,160 Q210,120 200,90" stroke="#FFF" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <path d="M200,95 Q212,135 205,165" stroke="#FFF" stroke-width="8" fill="none" stroke-linecap="round"/>
+  
+  <circle cx="205" cy="80" r="28" fill="#FFF"/>
+  <circle cx="202" cy="75" r="15" fill="#FFD700"/>
+  <circle cx="198" cy="73" r="5" fill="black"/>
+  <path d="M215,90 L225,90 L220,85" stroke="black" stroke-width="2" fill="none"/>
+  
+  <path d="M202,82 Q218,78 225,92 Q218,105 200,98" fill="#FF9966"/>
+  <path d="M205,85 Q215,82 222,90" stroke="#CC7744" stroke-width="2" fill="none"/>
+  
+  <path d="M120,185 Q80,160 40,170 Q70,190 120,190 Z" fill="#E8E8E8"/>
+  <path d="M130,180 Q90,155 50,165" stroke="#D0D0D0" stroke-width="2" fill="none"/>
+  
+  <line x1="155" y1="195" x2="145" y2="225" stroke="#FF9966" stroke-width="4" stroke-linecap="round"/>
+  <line x1="170" y1="195" x2="178" y2="225" stroke="#FF9966" stroke-width="4" stroke-linecap="round"/>
+  <line x1="155" y1="200" x2="145" y2="215" stroke="#333" stroke-width="2"/>
+  <line x1="170" y1="200" x2="178" y2="215" stroke="#333" stroke-width="2"/>
+  
+  <path d="M90,120 Q100,100 130,95 Q160,95 170,120" stroke="#555" stroke-width="4" fill="none"/>
+  <path d="M130,95 Q130,70 115,65" stroke="#555" stroke-width="3" fill="none"/>
+  <path d="M150,95 Q150,70 140,65" stroke="#555" stroke-width="3" fill="none"/>
+  
+  <ellipse cx="145" cy="70" rx="15" ry="5" fill="#FF6B6B"/>
+  <ellipse cx="125" cy="85" rx="15" ry="5" fill="#FF6B6B"/>
+  <ellipse cx="155" cy="85" rx="15" ry="5" fill="#FF6B6B"/>
+  
+  <path d="M95,140 L120,155 L110,180 Z" fill="#555"/>
+  <path d="M120,155 L110,180 L135,170" fill="#555"/>
+  
+  <circle cx="45" cy="210" r="35" fill="none" stroke="#999" stroke-width="2"/>
+  <line x1="10" y1="210" x2="80" y2="210" stroke="#AAA" stroke-width="1"/>
+  <line x1="45" y1="175" x2="45" y2="245" stroke="#AAA" stroke-width="1"/>
+  
+  <path d="M130,140 Q145,130 150,145 Q145,155 135,152 Q140,155 135,158 Q135,155 130,148 Q125,145 130,140 Z" fill="#FFF" stroke="#555" stroke-width="2"/>
+  <path d="M135,148 L125,160" stroke="#555" stroke-width="2"/>
+  <line x1="130" y1="145" x2="130" y2="150" stroke="#555" stroke-width="2"/>
+  <line x1="135" y1="145" x2="135" y2="148" stroke="#555" stroke-width="2"/>
+  
+  <text x="150" y="235" font-family="Comic Sans MS, cursive" font-size="14" fill="#555" text-anchor="middle">Look at me, I'm cycling!</text>
+</svg>

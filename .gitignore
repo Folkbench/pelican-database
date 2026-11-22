@@ -1,0 +1,8 @@
+# Local crawl/download caches & cloned upstream repos (reproducible via scripts/sync.py)
+cache/
+models_dev.json
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+sync.log

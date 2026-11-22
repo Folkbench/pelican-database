@@ -1,0 +1,190 @@
+<svg aria-label="A pelican riding a bicycle" role="img" viewbox="0 0 700 500" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<radialgradient cx="50%" cy="50%" id="sunGlow" r="50%">
+<stop offset="0%" stop-color="#fff7a0"></stop>
+<stop offset="60%" stop-color="#ffe566"></stop>
+<stop offset="100%" stop-color="#f9d97600"></stop>
+</radialgradient>
+<lineargradient id="bodyGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#fafafa"></stop>
+<stop offset="80%" stop-color="#e8e0d8"></stop>
+<stop offset="100%" stop-color="#d4c8bc"></stop>
+</lineargradient>
+<lineargradient id="wingGrad" x1="0" x2="0.3" y1="0" y2="1">
+<stop offset="0%" stop-color="#555e6e"></stop>
+<stop offset="100%" stop-color="#3a414f"></stop>
+</lineargradient>
+<lineargradient id="beakGrad" x1="0" x2="1" y1="0" y2="0.5">
+<stop offset="0%" stop-color="#f4a623"></stop>
+<stop offset="100%" stop-color="#e8881a"></stop>
+</lineargradient>
+<lineargradient id="pouchGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#f4a623"></stop>
+<stop offset="50%" stop-color="#e07a10"></stop>
+<stop offset="100%" stop-color="#c86a08"></stop>
+</lineargradient>
+<lineargradient id="frameGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#d63031"></stop>
+<stop offset="100%" stop-color="#a02020"></stop>
+</lineargradient>
+<lineargradient id="tireGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#333"></stop>
+<stop offset="100%" stop-color="#1a1a1a"></stop>
+</lineargradient>
+<lineargradient id="groundGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#6a9a4c"></stop>
+<stop offset="100%" stop-color="#4a7a2c"></stop>
+</lineargradient>
+<lineargradient id="skyGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#87ceeb"></stop>
+<stop offset="100%" stop-color="#f9d976"></stop>
+</lineargradient>
+</defs>
+<!-- Background -->
+<rect fill="url(#skyGrad)" height="500" rx="12" width="700"></rect>
+<!-- Sun -->
+<circle cx="600" cy="80" fill="url(#sunGlow)" opacity="0.8" r="60"></circle>
+<!-- Clouds (no SVG transform, CSS animation safe) -->
+<g class="cloud1" opacity="0.85">
+<ellipse cx="120" cy="70" fill="white" rx="50" ry="20"></ellipse>
+<ellipse cx="150" cy="60" fill="white" rx="40" ry="22"></ellipse>
+<ellipse cx="90" cy="65" fill="white" rx="35" ry="18"></ellipse>
+</g>
+<g class="cloud2" opacity="0.7">
+<ellipse cx="460" cy="50" fill="white" rx="45" ry="18"></ellipse>
+<ellipse cx="490" cy="42" fill="white" rx="35" ry="20"></ellipse>
+<ellipse cx="435" cy="46" fill="white" rx="30" ry="15"></ellipse>
+</g>
+<!-- Ground -->
+<rect fill="url(#groundGrad)" height="100" width="700" x="0" y="400"></rect>
+<path d="M0,400 Q50,395 100,400 Q150,405 200,400 Q250,395 300,400 Q350,405 400,400 Q450,395 500,400 Q550,405 600,400 Q650,395 700,400" fill="none" stroke="#5a8a3c" stroke-width="2"></path>
+<!-- Distant hills -->
+<ellipse cx="150" cy="400" fill="#7aaa5c" opacity="0.5" rx="200" ry="40"></ellipse>
+<ellipse cx="550" cy="400" fill="#6a9a4c" opacity="0.4" rx="220" ry="50"></ellipse>
+<!-- Small flowers -->
+<circle cx="80" cy="420" fill="#f4e04d" r="3"></circle>
+<circle cx="82" cy="418" fill="#fff" r="2"></circle>
+<circle cx="200" cy="425" fill="#ff6b6b" r="3"></circle>
+<circle cx="202" cy="423" fill="#fff" r="2"></circle>
+<circle cx="520" cy="418" fill="#f4e04d" r="3"></circle>
+<circle cx="522" cy="416" fill="#fff" r="2"></circle>
+<circle cx="620" cy="422" fill="#ff6b6b" r="3"></circle>
+<circle cx="622" cy="420" fill="#fff" r="2"></circle>
+<!-- ============ BICYCLE ============ -->
+<!-- Outer group: positioning only -->
+<g transform="translate(350, 340)">
+<!-- Back wheel â spins via animateTransform -->
+<g>
+<circle cx="-70" cy="50" fill="none" r="55" stroke="url(#tireGrad)" stroke-width="8"></circle>
+<circle cx="-70" cy="50" fill="none" r="48" stroke="#c0c0c0" stroke-width="2"></circle>
+<line stroke="#bbb" stroke-width="1" x1="-70" x2="-70" y1="2" y2="98"></line>
+<line stroke="#bbb" stroke-width="1" x1="-118" x2="-22" y1="50" y2="50"></line>
+<line stroke="#bbb" stroke-width="1" x1="-104" x2="-36" y1="16" y2="84"></line>
+<line stroke="#bbb" stroke-width="1" x1="-36" x2="-104" y1="16" y2="84"></line>
+<circle cx="-70" cy="50" fill="#999" r="6" stroke="#777" stroke-width="1"></circle>
+<animatetransform attributename="transform" dur="1.5s" from="0 -70 50" repeatcount="indefinite" to="360 -70 50" type="rotate"></animatetransform>
+</g>
+<!-- Front wheel â spins via animateTransform -->
+<g>
+<circle cx="70" cy="50" fill="none" r="55" stroke="url(#tireGrad)" stroke-width="8"></circle>
+<circle cx="70" cy="50" fill="none" r="48" stroke="#c0c0c0" stroke-width="2"></circle>
+<line stroke="#bbb" stroke-width="1" x1="70" x2="70" y1="2" y2="98"></line>
+<line stroke="#bbb" stroke-width="1" x1="22" x2="118" y1="50" y2="50"></line>
+<line stroke="#bbb" stroke-width="1" x1="36" x2="104" y1="16" y2="84"></line>
+<line stroke="#bbb" stroke-width="1" x1="104" x2="36" y1="16" y2="84"></line>
+<circle cx="70" cy="50" fill="#999" r="6" stroke="#777" stroke-width="1"></circle>
+<animatetransform attributename="transform" dur="1.5s" from="0 70 50" repeatcount="indefinite" to="360 70 50" type="rotate"></animatetransform>
+</g>
+<!-- Frame (static) -->
+<line stroke="url(#frameGrad)" stroke-linecap="round" stroke-width="5" x1="-15" x2="-5" y1="-20" y2="50"></line>
+<line stroke="url(#frameGrad)" stroke-linecap="round" stroke-width="5" x1="-15" x2="45" y1="-20" y2="-10"></line>
+<line stroke="url(#frameGrad)" stroke-linecap="round" stroke-width="5" x1="-5" x2="45" y1="50" y2="-10"></line>
+<line stroke="url(#frameGrad)" stroke-linecap="round" stroke-width="4" x1="-5" x2="-70" y1="50" y2="50"></line>
+<line stroke="url(#frameGrad)" stroke-linecap="round" stroke-width="3" x1="-15" x2="-70" y1="-20" y2="50"></line>
+<line stroke="url(#frameGrad)" stroke-linecap="round" stroke-width="4" x1="45" x2="70" y1="-10" y2="50"></line>
+<!-- Handlebar -->
+<line stroke="#888" stroke-linecap="round" stroke-width="4" x1="45" x2="55" y1="-10" y2="-40"></line>
+<path d="M40,-45 Q55,-50 70,-40" fill="none" stroke="#555" stroke-linecap="round" stroke-width="4"></path>
+<circle cx="40" cy="-45" fill="#333" r="4"></circle>
+<circle cx="70" cy="-40" fill="#333" r="4"></circle>
+<!-- Seat -->
+<line stroke="#777" stroke-linecap="round" stroke-width="4" x1="-15" x2="-18" y1="-20" y2="-35"></line>
+<ellipse cx="-18" cy="-40" fill="#2d2d2d" rx="18" ry="7" stroke="#222" stroke-width="1"></ellipse>
+<!-- Pedal crank â rotates via animateTransform -->
+<g>
+<line stroke="#888" stroke-linecap="round" stroke-width="3" x1="-5" x2="-5" y1="50" y2="25"></line>
+<line stroke="#888" stroke-linecap="round" stroke-width="3" x1="-5" x2="-5" y1="50" y2="75"></line>
+<rect fill="#555" height="5" rx="2" width="14" x="-12" y="22"></rect>
+<rect fill="#555" height="5" rx="2" width="14" x="-12" y="73"></rect>
+<circle cx="-5" cy="50" fill="none" r="14" stroke="#999" stroke-width="2"></circle>
+<circle cx="-5" cy="50" fill="#888" r="4"></circle>
+<animatetransform attributename="transform" dur="1.5s" from="0 -5 50" repeatcount="indefinite" to="360 -5 50" type="rotate"></animatetransform>
+</g>
+<!-- Chain -->
+<path d="M-19,50 Q-40,50 -70,50" fill="none" stroke="#777" stroke-dasharray="3,2" stroke-width="1.5"></path>
+</g>
+<!-- ============ PELICAN ============ -->
+<!-- Outer group: positioning only â NO CSS animation class here -->
+<g transform="translate(340, 270)">
+<!-- Inner group: bobbing animation only -->
+<g>
+<animatetransform attributename="transform" dur="0.75s" repeatcount="indefinite" type="translate" values="0,0; 0,-3; 0,0"></animatetransform>
+<!-- Tail feathers -->
+<path d="M-30,30 Q-50,10 -45,-5 Q-38,5 -30,15 Z" fill="#d4c8bc" stroke="#c0b0a0" stroke-width="1"></path>
+<path d="M-28,35 Q-55,20 -50,5 Q-40,15 -30,25 Z" fill="#e0d4c8" stroke="#c0b0a0" stroke-width="1"></path>
+<path d="M-25,38 Q-48,28 -48,15 Q-38,22 -28,30 Z" fill="#d4c8bc" stroke="#c0b0a0" stroke-width="1"></path>
+<!-- Body -->
+<ellipse cx="0" cy="15" fill="url(#bodyGrad)" rx="38" ry="28" stroke="#d0c4b8" stroke-width="1"></ellipse>
+<!-- Wing -->
+<path d="M-15,5 Q-25,0 -30,15 Q-28,30 -10,28 Q5,25 10,20 Q0,15 -15,5 Z" fill="url(#wingGrad)" stroke="#2e3540" stroke-width="1"></path>
+<path d="M-20,12 Q-15,18 -5,22" fill="none" stroke="#4a5262" stroke-width="0.8"></path>
+<path d="M-22,17 Q-16,22 -8,25" fill="none" stroke="#4a5262" stroke-width="0.8"></path>
+<!-- Neck -->
+<path d="M15,0 Q20,-20 25,-45 Q30,-55 28,-60" fill="url(#bodyGrad)" stroke="#d0c4b8" stroke-width="1.5"></path>
+<path d="M25,0 Q28,-18 30,-45 Q32,-55 30,-60" fill="url(#bodyGrad)" stroke="none"></path>
+<!-- Head -->
+<ellipse cx="29" cy="-65" fill="url(#bodyGrad)" rx="16" ry="14" stroke="#d0c4b8" stroke-width="1"></ellipse>
+<!-- Eye -->
+<circle cx="36" cy="-68" fill="white" r="4" stroke="#333" stroke-width="0.5"></circle>
+<circle cx="37" cy="-68" fill="#1a1a1a" r="2.5"></circle>
+<circle cx="38" cy="-69" fill="white" r="1"></circle>
+<circle cx="36" cy="-68" fill="none" r="5.5" stroke="#c8b090" stroke-width="0.8"></circle>
+<!-- Beak (upper) -->
+<path d="M42,-68 L75,-64 Q78,-62 75,-60 L42,-58 Q40,-63 42,-68 Z" fill="url(#beakGrad)" stroke="#d0801a" stroke-width="1"></path>
+<line opacity="0.6" stroke="#e89830" stroke-width="1" x1="44" x2="74" y1="-63" y2="-62"></line>
+<ellipse cx="50" cy="-66" fill="#c87010" rx="2" ry="1"></ellipse>
+<!-- Pouch (lower beak) with wobble -->
+<g>
+<path d="M42,-58 Q43,-50 48,-42 Q55,-35 62,-38 Q70,-42 75,-60 L42,-58 Z" fill="url(#pouchGrad)" opacity="0.9" stroke="#b06008" stroke-width="1"></path>
+<path d="M48,-50 Q55,-46 60,-52" fill="none" opacity="0.6" stroke="#c06a08" stroke-width="0.8"></path>
+<animatetransform additive="sum" attributename="transform" dur="0.75s" repeatcount="indefinite" type="scale" values="1,1; 1.03,0.97; 1,1"></animatetransform>
+</g>
+<!-- Head crest -->
+<path d="M18,-75 Q15,-85 20,-88 Q22,-82 24,-77" fill="#e0d4c8" stroke="#c8b8a8" stroke-width="0.8"></path>
+<path d="M22,-77 Q20,-90 25,-92 Q26,-85 26,-78" fill="#d8ccc0" stroke="#c8b8a8" stroke-width="0.8"></path>
+<!-- Legs (static, positioned toward pedals) -->
+<path d="M-5,38 Q-3,48 -8,58" fill="none" stroke="#e8a040" stroke-linecap="round" stroke-width="4"></path>
+<path d="M-8,58 L-14,62 M-8,58 L-8,64 M-8,58 L-2,62" fill="none" stroke="#e8a040" stroke-linecap="round" stroke-width="2"></path>
+<path d="M5,38 Q7,48 2,58" fill="none" stroke="#f0a830" stroke-linecap="round" stroke-width="4"></path>
+<path d="M2,58 L-4,62 M2,58 L2,64 M2,58 L8,62" fill="none" stroke="#f0a830" stroke-linecap="round" stroke-width="2"></path>
+<!-- Wing reaching toward handlebar -->
+<path d="M15,5 Q30,0 50,-8 Q60,-12 70,-15" fill="none" stroke="#555e6e" stroke-linecap="round" stroke-width="3"></path>
+<path d="M50,-8 Q55,-5 60,-3" fill="none" stroke="#555e6e" stroke-linecap="round" stroke-width="2"></path>
+</g>
+</g>
+<!-- Speed lines -->
+<g opacity="0.3">
+<line stroke="#888" stroke-linecap="round" stroke-width="1.5" x1="180" x2="210" y1="310" y2="310"></line>
+<line stroke="#888" stroke-linecap="round" stroke-width="1.5" x1="170" x2="205" y1="320" y2="320"></line>
+<line stroke="#888" stroke-linecap="round" stroke-width="1" x1="175" x2="200" y1="330" y2="330"></line>
+<line stroke="#888" stroke-linecap="round" stroke-width="1" x1="160" x2="195" y1="340" y2="340"></line>
+<line stroke="#888" stroke-linecap="round" stroke-width="1.5" x1="165" x2="190" y1="350" y2="350"></line>
+</g>
+<!-- Dust puffs -->
+<g opacity="0.25">
+<circle cx="210" cy="395" fill="#c8b898" r="8"></circle>
+<circle cx="195" cy="390" fill="#c8b898" r="6"></circle>
+<circle cx="220" cy="388" fill="#c8b898" r="5"></circle>
+<circle cx="200" cy="400" fill="#c8b898" r="4"></circle>
+</g>
+</svg>

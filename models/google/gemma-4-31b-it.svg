@@ -1,0 +1,92 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87CEEB" />
+      <stop offset="100%" stop-color="#E0F7FA" />
+    </linearGradient>
+    <linearGradient id="groundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7CFC00" />
+      <stop offset="100%" stop-color="#32CD32" />
+    </linearGradient>
+    <radialGradient id="wheelGrad">
+      <stop offset="80%" stop-color="#444" />
+      <stop offset="100%" stop-color="#222" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="700" fill="url(#skyGrad)" />
+  <path d="M0 800 Q512 600 1024 800 L1024 1024 L0 1024 Z" fill="url(#groundGrad)" />
+
+  <!-- Bicycle -->
+  <g transform="translate(300, 400)">
+    <!-- Wheels -->
+    <circle cx="100" cy="300" r="80" fill="none" stroke="#333" stroke-width="20" />
+    <circle cx="100" cy="300" r="65" fill="none" stroke="#ccc" stroke-width="2" />
+    <circle cx="400" cy="300" r="80" fill="none" stroke="#333" stroke-width="20" />
+    <circle cx="400" cy="300" r="65" fill="none" stroke="#ccc" stroke-width="2" />
+    
+    <!-- Spokes -->
+    <g stroke="#aaa" stroke-width="1">
+      <line x1="100" y1="220" x2="100" y2="380" />
+      <line x1="20" y1="300" x2="180" y2="300" />
+      <line x1="400" y1="220" x2="400" y2="380" />
+      <line x1="320" y1="300" x2="480" y2="300" />
+    </g>
+
+    <!-- Frame -->
+    <path d="M100 300 L250 300 L350 200 L200 200 Z" fill="none" stroke="#D32F2F" stroke-width="15" stroke-linejoin="round" />
+    <path d="M250 300 L250 200" fill="none" stroke="#D32F2F" stroke-width="15" />
+    <path d="M350 200 L400 300" fill="none" stroke="#D32F2F" stroke-width="15" />
+    
+    <!-- Handlebars and Front Fork -->
+    <path d="M400 300 L380 150 L350 150" fill="none" stroke="#555" stroke-width="12" stroke-linecap="round" />
+    <path d="M350 150 Q340 130 360 130" fill="none" stroke="#333" stroke-width="10" stroke-linecap="round" />
+
+    <!-- Seat -->
+    <path d="M200 200 L180 180 Q210 170 240 180 L220 200" fill="#5D4037" />
+    
+    <!-- Pedals -->
+    <circle cx="250" cy="300" r="15" fill="#333" />
+    <line x1="250" y1="300" x2="260" y2="340" stroke="#333" stroke-width="8" />
+    <rect x="240" y="340" width="40" height="10" rx="5" fill="#777" />
+
+    <!-- Basket -->
+    <path d="M360 160 L420 160 L410 210 L370 210 Z" fill="#BCAAA4" stroke="#8D6E63" stroke-width="3" />
+    <path d="M365 170 H415 M365 180 H415 M365 190 H415" fill="none" stroke="#8D6E63" stroke-width="2" />
+
+    <!-- PELICAN -->
+    <g transform="translate(-20, -100)">
+      <!-- Legs -->
+      <path d="M210 270 L245 335" fill="none" stroke="#FFB300" stroke-width="8" stroke-linecap="round" />
+      
+      <!-- Body -->
+      <ellipse cx="220" cy="220" rx="60" ry="45" fill="#FFFFFF" stroke="#DDD" stroke-width="1" />
+      <path d="M170 210 Q220 180 270 210" fill="none" stroke="#EEE" stroke-width="5" />
+      
+      <!-- Neck -->
+      <path d="M260 210 Q300 210 300 140" fill="none" stroke="#FFFFFF" stroke-width="30" stroke-linecap="round" />
+      
+      <!-- Head -->
+      <circle cx="310" cy="130" r="35" fill="#FFFFFF" />
+      
+      <!-- Eye -->
+      <circle cx="325" cy="120" r="4" fill="#000" />
+      
+      <!-- Beak (Large Pelican Pouch) -->
+      <path d="M340 130 Q420 130 420 160 Q340 210 300 150 Z" fill="#FFCA28" stroke="#FBC02D" stroke-width="2" />
+      <path d="M340 130 L420 130" fill="none" stroke="#F9A825" stroke-width="4" stroke-linecap="round" />
+
+      <!-- Wing (holding handlebar) -->
+      <path d="M220 220 Q300 220 360 140" fill="none" stroke="#FFFFFF" stroke-width="25" stroke-linecap="round" />
+      <path d="M340 160 Q370 150 380 140" fill="none" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" />
+    </g>
+  </g>
+
+  <!-- Decorative elements -->
+  <circle cx="200" cy="150" r="40" fill="#FFF" opacity="0.6" />
+  <path d="M200 150 Q230 120 260 150 T320 150" fill="none" stroke="#FFF" stroke-width="4" opacity="0.7" />
+  
+  <circle cx="800" cy="200" r="60" fill="#FFF" opacity="0.8" />
+  <path d="M800 200 Q830 170 860 200 T920 200" fill="none" stroke="#FFF" stroke-width="5" opacity="0.7" />
+</svg>

@@ -1,0 +1,36 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="600" fill="#87CEEB"/>
+  
+  <!-- Bicycle -->
+  <!-- Rear Wheel -->
+  <circle cx="200" cy="400" r="50" fill="gray"/>
+  <!-- Front Wheel -->
+  <circle cx="500" cy="400" r="50" fill="gray"/>
+  <!-- Frame -->
+  <path d="M200,400 L350,400 L350,300 L500,400" stroke="black" stroke-width="4" fill="none"/>
+  <!-- Seat -->
+  <rect x="345" y="290" width="10" height="20" fill="black"/>
+  <!-- Handlebars -->
+  <path d="M500,400 Q550,350 600,300" stroke="black" stroke-width="4" fill="none"/>
+  <circle cx="600" cy="300" r="5" fill="black"/>
+  <!-- Pedals -->
+  <circle cx="340" cy="400" r="10" fill="black"/>
+  <circle cx="360" cy="400" r="10" fill="black"/>
+  
+  <!-- Pelican -->
+  <!-- Body -->
+  <ellipse cx="350" cy="300" rx="40" ry="25" fill="white" stroke="orange" stroke-width="2"/>
+  <!-- Head -->
+  <circle cx="350" cy="270" r="15" fill="white" stroke="orange" stroke-width="2"/>
+  <!-- Beak -->
+  <path d="M350,270 L380,265 L375,275 Z" fill="orange"/>
+  <!-- Eye -->
+  <circle cx="345" cy="265" r="3" fill="black"/>
+  <!-- Wings -->
+  <path d="M310,300 Q280,270 320,250" stroke="white" stroke-width="5" fill="none"/>
+  <path d="M390,300 Q420,270 380,250" stroke="white" stroke-width="5" fill="none"/>
+  <!-- Legs -->
+  <path d="M350,325 Q355,360 350,400" stroke="orange" stroke-width="3" fill="none"/>
+  <path d="M350,325 Q345,360 350,400" stroke="orange" stroke-width="3" fill="none"/>
+</svg>

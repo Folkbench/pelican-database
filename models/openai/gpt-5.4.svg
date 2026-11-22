@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect width="100%" height="100%" fill="#eef7ff"/>
+  
+  <line x1="0" y1="420" x2="800" y2="420" stroke="#b9d7a8" stroke-width="6"/>
+
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="250" cy="360" r="85" fill="none" stroke="#2f3b52" stroke-width="8"/>
+    <circle cx="520" cy="360" r="85" fill="none" stroke="#2f3b52" stroke-width="8"/>
+    
+    <g stroke="#74839b" stroke-width="3">
+      <line x1="250" y1="360" x2="250" y2="275"/>
+      <line x1="250" y1="360" x2="310" y2="300"/>
+      <line x1="250" y1="360" x2="335" y2="360"/>
+      <line x1="250" y1="360" x2="310" y2="420"/>
+      <line x1="250" y1="360" x2="250" y2="445"/>
+      <line x1="250" y1="360" x2="190" y2="420"/>
+      <line x1="250" y1="360" x2="165" y2="360"/>
+      <line x1="250" y1="360" x2="190" y2="300"/>
+      
+      <line x1="520" y1="360" x2="520" y2="275"/>
+      <line x1="520" y1="360" x2="580" y2="300"/>
+      <line x1="520" y1="360" x2="605" y2="360"/>
+      <line x1="520" y1="360" x2="580" y2="420"/>
+      <line x1="520" y1="360" x2="520" y2="445"/>
+      <line x1="520" y1="360" x2="460" y2="420"/>
+      <line x1="520" y1="360" x2="435" y2="360"/>
+      <line x1="520" y1="360" x2="460" y2="300"/>
+    </g>
+
+    <g fill="none" stroke="#d34f4f" stroke-width="8">
+      <line x1="250" y1="360" x2="360" y2="280"/>
+      <line x1="360" y1="280" x2="430" y2="360"/>
+      <line x1="430" y1="360" x2="250" y2="360"/>
+      <line x1="360" y1="280" x2="470" y2="255"/>
+      <line x1="470" y1="255" x2="520" y2="360"/>
+      <line x1="430" y1="360" x2="520" y2="360"/>
+      <line x1="430" y1="360" x2="405" y2="260"/>
+    </g>
+
+    <g stroke="#2f3b52" stroke-width="7" fill="none">
+      <line x1="405" y1="260" x2="405" y2="230"/>
+      <line x1="390" y1="228" x2="425" y2="228"/>
+    </g>
+
+    <g stroke="#2f3b52" stroke-width="7" fill="none">
+      <line x1="470" y1="255" x2="485" y2="220"/>
+      <line x1="470" y1="255" x2="505" y2="245"/>
+      <line x1="485" y1="220" x2="525" y2="220"/>
+    </g>
+
+    <g stroke="#2f3b52" stroke-width="6" fill="none">
+      <circle cx="430" cy="360" r="18"/>
+      <line x1="430" y1="360" x2="455" y2="340"/>
+      <line x1="430" y1="360" x2="405" y2="385"/>
+    </g>
+
+    <g stroke="#2f3b52" stroke-width="5">
+      <line x1="455" y1="340" x2="472" y2="334"/>
+      <line x1="405" y1="385" x2="388" y2="392"/>
+    </g>
+  </g>
+
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M305 215 Q280 205 272 185 Q292 192 315 202 Z" fill="#d9dde2" stroke="#7d8796" stroke-width="3"/>
+
+    <ellipse cx="390" cy="200" rx="95" ry="60" fill="#f4f6f8" stroke="#7d8796" stroke-width="4"/>
+
+    <path d="M350 185 Q390 145 445 180 Q410 220 350 215 Q332 205 350 185 Z" fill="#cfd6de" stroke="#7d8796" stroke-width="4"/>
+
+    <path d="M455 165 Q490 120 535 130 Q520 155 505 182 Q495 205 470 205 Z" fill="#f4f6f8" stroke="#7d8796" stroke-width="4"/>
+
+    <circle cx="550" cy="125" r="34" fill="#f4f6f8" stroke="#7d8796" stroke-width="4"/>
+
+    <circle cx="560" cy="118" r="4.5" fill="#2b2b2b"/>
+    <circle cx="562" cy="116" r="1.5" fill="#ffffff"/>
+
+    <path d="M575 130 Q655 120 710 138 Q652 148 585 150 Z" fill="#f2b24f" stroke="#a56b1f" stroke-width="4"/>
+
+    <path d="M578 148 Q650 178 700 150 Q642 205 565 172 Z" fill="#f7c98b" stroke="#a56b1f" stroke-width="4"/>
+
+    <path d="M528 102 Q548 84 572 96" fill="none" stroke="#d9b45c" stroke-width="5"/>
+
+    <g stroke="#c47f2c" stroke-width="6" fill="none">
+      <line x1="382" y1="255" x2="430" y2="360"/>
+      <line x1="430" y1="250" x2="490" y2="225"/>
+    </g>
+
+    <g stroke="#c47f2c" stroke-width="5" fill="none">
+      <line x1="490" y1="225" x2="507" y2="224"/>
+      <line x1="430" y1="360" x2="447" y2="355"/>
+    </g>
+  </g>
+
+  <g stroke="#9fc5e8" stroke-width="4" fill="none" opacity="0.8">
+    <path d="M130 150 q-20 10 -35 0"/>
+    <path d="M150 190 q-22 12 -40 0"/>
+    <path d="M115 230 q-18 10 -32 0"/>
+  </g>
+</svg>

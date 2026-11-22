@@ -1,0 +1,50 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#87CEEB" />
+
+  <!-- Bicycle Wheels -->
+  <circle cx="100" cy="200" r="50" fill="none" stroke="#000" stroke-width="8" /> <!-- Back wheel -->
+  <circle cx="100" cy="200" r="40" fill="#FFF" stroke="#000" stroke-width="2" /> <!-- Back wheel inner -->
+  <circle cx="300" cy="200" r="50" fill="none" stroke="#000" stroke-width="8" /> <!-- Front wheel -->
+  <circle cx="300" cy="200" r="40" fill="#FFF" stroke="#000" stroke-width="2" /> <!-- Front wheel inner -->
+
+  <!-- Bicycle Frame -->
+  <path d="M100 200 L200 150 L300 200 M200 150 L200 100 M200 150 L250 200 M100 200 L150 150" stroke="#FF0000" stroke-width="10" fill="none" stroke-linecap="round" />
+
+  <!-- Seat -->
+  <rect x="185" y="90" width="30" height="10" fill="#000" />
+
+  <!-- Handlebars -->
+  <path d="M200 100 L220 80 L240 100" stroke="#000" stroke-width="8" fill="none" stroke-linecap="round" />
+
+  <!-- Pedals (simplified) -->
+  <line x1="200" y1="150" x2="180" y2="180" stroke="#000" stroke-width="6" />
+  <line x1="200" y1="150" x2="220" y2="120" stroke="#000" stroke-width="6" />
+
+  <!-- Pelican Body -->
+  <ellipse cx="200" cy="120" rx="50" ry="70" fill="#FFF" stroke="#000" stroke-width="3" /> <!-- Body -->
+
+  <!-- Pelican Head and Beak -->
+  <circle cx="200" cy="50" r="30" fill="#FFF" stroke="#000" stroke-width="3" /> <!-- Head -->
+  <path d="M200 50 L280 60 L200 70 Z" fill="#FFD700" stroke="#000" stroke-width="3" /> <!-- Beak -->
+  <path d="M200 70 C230 80 260 70 280 60" fill="#FFCC00" stroke="#000" stroke-width="2" /> <!-- Pouch -->
+
+  <!-- Eyes -->
+  <circle cx="185" cy="45" r="5" fill="#000" /> <!-- Left eye -->
+  <circle cx="215" cy="45" r="5" fill="#000" /> <!-- Right eye -->
+
+  <!-- Wings (simplified, folded) -->
+  <path d="M150 120 Q120 100 150 80 Q180 100 150 120" fill="#FFF" stroke="#000" stroke-width="3" /> <!-- Left wing -->
+  <path d="M250 120 Q280 100 250 80 Q220 100 250 120" fill="#FFF" stroke="#000" stroke-width="3" /> <!-- Right wing -->
+
+  <!-- Legs -->
+  <path d="M190 180 L180 220" stroke="#FFD700" stroke-width="8" stroke-linecap="round" /> <!-- Left leg to pedal -->
+  <path d="M210 180 L220 140" stroke="#FFD700" stroke-width="8" stroke-linecap="round" /> <!-- Right leg to pedal -->
+
+  <!-- Feet -->
+  <path d="M175 220 L185 220 L180 230 Z" fill="#FFD700" stroke="#000" stroke-width="2" /> <!-- Left foot -->
+  <path d="M215 140 L225 140 L220 130 Z" fill="#FFD700" stroke="#000" stroke-width="2" /> <!-- Right foot -->
+
+  <!-- Ground -->
+  <rect x="0" y="250" width="400" height="50" fill="#228B22" />
+</svg>

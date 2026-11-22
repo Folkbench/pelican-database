@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="A pelican riding a bicycle">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#85C1E9"/>
+      <stop offset="100%" stop-color="#F1FAEE"/>
+    </linearGradient>
+    <radialGradient id="body" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="85%" stop-color="#EDF2F4"/>
+      <stop offset="100%" stop-color="#D9E0E7"/>
+    </radialGradient>
+    <linearGradient id="pouch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD166"/>
+      <stop offset="70%" stop-color="#FF9F1C"/>
+      <stop offset="100%" stop-color="#F77F00"/>
+    </linearGradient>
+    <g id="spokes" stroke="#B0BEC5" stroke-width="1.5">
+      <line x1="0" y1="-57" x2="0" y2="57"/>
+      <line x1="-57" y1="0" x2="57" y2="0"/>
+      <line x1="-40" y1="-40" x2="40" y2="40"/>
+      <line x1="-40" y1="40" x2="40" y2="-40"/>
+    </g>
+    <g id="wheel">
+      <circle r="70" fill="none" stroke="#2B2D42" stroke-width="14"/>
+      <circle r="63" fill="none" stroke="#F8F9FA" stroke-width="4"/>
+      <circle r="57" fill="none" stroke="#E0E1DD" stroke-width="6"/>
+      <use href="#spokes"/>
+      <circle r="6" fill="#1D3557"/>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="120" cy="120" r="50" fill="#FFD166"/>
+  <path d="M180 150 Q200 130 220 150 Q250 140 260 165 Q280 175 260 185 L160 185 Q140 165 160 150 Z" fill="#fff" opacity="0.8"/>
+  <path d="M650 100 Q665 85 680 100 Q705 95 710 115 Q725 125 710 130 L635 130 Q620 115 635 100 Z" fill="#fff" opacity="0.7"/>
+  <rect x="0" y="450" width="800" height="150" fill="#E9C46A"/>
+  <g stroke="#D4A373" stroke-width="2" opacity="0.7">
+    <line x1="0" y1="490" x2="800" y2="490"/>
+    <line x1="0" y1="535" x2="800" y2="535"/>
+  </g>
+  <ellipse cx="400" cy="460" rx="190" ry="12" fill="#000" opacity="0.15"/>
+
+  <!-- Pelican left leg (behind frame) -->
+  <polyline points="370,270 350,310 380,360" fill="none" stroke="#FF9F1C" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="368" y="355" width="24" height="10" rx="3" fill="#2B2D42"/>
+  <path d="M380 360 L400 355 C410 365 400 375 380 370 Z" fill="#F77F00"/>
+  <line x1="400" y1="390" x2="380" y2="360" stroke="#555" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Bicycle -->
+  <use href="#wheel" x="250" y="380"/>
+  <use href="#wheel" x="550" y="380"/>
+  <path d="M170 380 A84 84 0 0 1 300 310" fill="none" stroke="#E63946" stroke-width="8" stroke-linecap="round"/>
+  <path d="M470 360 A84 84 0 0 1 620 330" fill="none" stroke="#E63946" stroke-width="8" stroke-linecap="round"/>
+  <path d="M250 380 L400 390 L350 250 L250 380 M400 390 L505 290 L490 250 L350 250 M490 250 L505 290" fill="none" stroke="#E63946" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M505 290 Q530 340 550 380" fill="none" stroke="#E63946" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="400" cy="390" r="22" fill="#555"/>
+  <circle cx="400" cy="390" r="14" fill="#2B2D42" stroke="#fff"/>
+  <line x1="250" y1="370" x2="400" y2="368" stroke="#333" stroke-width="4" stroke-dasharray="4,2"/>
+  <line x1="250" y1="390" x2="400" y2="412" stroke="#333" stroke-width="4" stroke-dasharray="4,2"/>
+  <line x1="350" y1="250" x2="335" y2="210" stroke="#C0C0C0" stroke-width="7" stroke-linecap="round"/>
+  <path d="M315 215 C325 205 345 205 355 210 C365 215 360 225 345 225 L320 225 C310 225 305 215 315 215 Z" fill="#6F4E37"/>
+  <line x1="490" y1="250" x2="490" y2="225" stroke="#C0C0C0" stroke-width="7" stroke-linecap="round"/>
+  <path d="M490 225 Q470 230 445 210" fill="none" stroke="#C0C0C0" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Pelican body and neck -->
+  <path d="M450 240 C430 300 360 290 335 220 C330 220 320 240 290 240 L255 240 L275 220 L250 210 L260 190 C290 200 340 230 380 210 C430 180 440 140 430 100 L405 85 L425 75 L410 55 C440 60 455 50 470 60 C475 70 475 90 470 105 C450 140 480 200 450 240 Z" fill="url(#body)" stroke="#CFD6DF" stroke-width="1.5"/>
+
+  <!-- Eye -->
+  <circle cx="456" cy="74" r="8" fill="#F8F9FA" stroke="#A8DADC" stroke-width="2"/>
+  <circle cx="457" cy="74" r="4" fill="#2B2D42"/>
+  <circle cx="458" cy="72" r="1.5" fill="#fff"/>
+
+  <!-- Beak -->
+  <path d="M470 75 Q560 70 650 90 C660 95 660 105 650 105 Q560 95 470 105 Z" fill="#FFE882" stroke="#E3C450" stroke-width="2"/>
+  <path d="M480 85 Q550 85 620 95" fill="none" stroke="#CCA738" stroke-width="2"/>
+  <!-- Pouch -->
+  <path d="M465 120 L458 175 C520 240 620 200 650 105 Q550 95 465 120 Z" fill="url(#pouch)" stroke="#E76F51" stroke-width="1.5"/>
+  <path d="M485 130 Q515 200 580 135" fill="none" stroke="#E76F51" stroke-width="2" opacity="0.5"/>
+
+  <!-- Right crank + pedal (front) -->
+  <line x1="400" y1="390" x2="415" y2="425" stroke="#999" stroke-width="7" stroke-linecap="round"/>
+  <rect x="403" y="420" width="24" height="10" rx="3" fill="#2B2D42"/>
+
+  <!-- Pelican right leg (foreground) -->
+  <polyline points="400,280 380,340 415,425" fill="none" stroke="#FF9F1C" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M415 425 L435 420 C445 430 435 440 415 435 Z" fill="#F77F00"/>
+
+  <!-- Wing -->
+  <path d="M425 200 Q380 240 370 250 Q390 230 410 185 Z" fill="#2B2D42"/>
+  <path d="M440 205 Q390 250 380 265 Q400 240 425 195 Z" fill="#2B2D42"/>
+  <path d="M380 150 C430 160 440 190 450 210 L435 215 C420 185 390 180 360 180 C350 170 360 150 380 150 Z" fill="url(#body)" stroke="#CFD6DF" stroke-width="1.5"/>
+
+  <!-- Cycling cap -->
+  <path d="M435 63 C435 40 475 40 475 63 Z" fill="#E63946"/>
+  <path d="M467 61 Q485 50 492 62 Z" fill="#457B9D"/>
+  <path d="M452 43 Q455 60 455 63 L460 63 Q460 60 458 42 Z" fill="#fff"/>
+</svg>

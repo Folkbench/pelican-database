@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="400" height="400">
+  <!-- Bicycle -->
+  <!-- Wheels -->
+  <circle cx="60" cy="140" r="30" fill="none" stroke="black" stroke-width="3"/>
+  <circle cx="140" cy="140" r="30" fill="none" stroke="black" stroke-width="3"/>
+  <circle cx="60" cy="140" r="8" fill="black"/>
+  <circle cx="140" cy="140" r="8" fill="black"/>
+  
+  <!-- Frame -->
+  <line x1="60" y1="140" x2="140" y2="140" stroke="black" stroke-width="5"/>
+  <line x1="60" y1="140" x2="100" y2="100" stroke="black" stroke-width="5"/>
+  <line x1="140" y1="140" x2="100" y2="100" stroke="black" stroke-width="5"/>
+  <line x1="100" y1="100" x2="100" y2="80" stroke="black" stroke-width="5"/>
+  <line x1="100" y1="80" x2="80" y2="80" stroke="black" stroke-width="5"/>
+  <line x1="100" y1="80" x2="120" y2="60" stroke="black" stroke-width="3"/>
+  <line x1="60" y1="140" x2="80" y2="80" stroke="black" stroke-width="5"/>
+  
+  <!-- Pedals -->
+  <circle cx="100" cy="100" r="10" fill="none" stroke="black" stroke-width="2"/>
+  <line x1="100" y1="100" x2="110" y2="90" stroke="black" stroke-width="3"/>
+  <line x1="100" y1="100" x2="90" y2="110" stroke="black" stroke-width="3"/>
+  
+  <!-- Pelican -->
+  <!-- Body -->
+  <ellipse cx="100" cy="70" rx="25" ry="35" fill="#F5F5DC" stroke="black" stroke-width="2"/>
+  
+  <!-- Head and bill -->
+  <circle cx="120" cy="50" r="15" fill="#F5F5DC" stroke="black" stroke-width="2"/>
+  <path d="M135,45 Q165,40 175,45 Q165,55 135,50 Z" fill="#F8D568" stroke="black" stroke-width="2"/>
+  
+  <!-- Eye -->
+  <circle cx="125" cy="45" r="3" fill="black"/>
+  
+  <!-- Legs -->
+  <line x1="90" y1="100" x2="85" y2="135" stroke="black" stroke-width="3"/>
+  <line x1="110" y1="100" x2="115" y2="135" stroke="black" stroke-width="3"/>
+  
+  <!-- Wings -->
+  <path d="M75,60 Q50,30 80,20 Q90,40 75,60 Z" fill="#F5F5DC" stroke="black" stroke-width="2"/>
+  
+  <!-- Feet on pedals -->
+  <circle cx="110" cy="90" r="4" fill="orange"/>
+  <circle cx="90" cy="110" r="4" fill="orange"/>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600">
+  <rect width="100%" height="100%" fill="skyblue"/>
+
+  <path d="M100,500 Q150,400 200,500 T300,500" stroke="black" stroke-width="5" fill="none"/>
+  <path d="M200,500 Q250,400 300,500" stroke="black" stroke-width="5" fill="none"/>
+  <path d="M100,500 Q150,550 200,500 T300,500" stroke="black" stroke-width="5" fill="none"/>
+  <path d="M200,500 Q250,550 300,500" stroke="black" stroke-width="5" fill="none"/>
+
+  <circle cx="150" cy="500" r="50" stroke="black" stroke-width="5" fill="white"/>
+  <circle cx="250" cy="500" r="50" stroke="black" stroke-width="5" fill="white"/>
+
+  <line x1="150" y1="500" x2="150" y2="450" stroke="black" stroke-width="2"/>
+  <line x1="150" y1="500" x2="170" y2="470" stroke="black" stroke-width="2"/>
+  <line x1="150" y1="500" x2="170" y2="530" stroke="black" stroke-width="2"/>
+  <line x1="150" y1="500" x2="130" y2="470" stroke="black" stroke-width="2"/>
+  <line x1="150" y1="500" x2="130" y2="530" stroke="black" stroke-width="2"/>
+
+  <line x1="250" y1="500" x2="250" y2="450" stroke="black" stroke-width="2"/>
+  <line x1="250" y1="500" x2="270" y2="470" stroke="black" stroke-width="2"/>
+  <line x1="250" y1="500" x2="270" y2="530" stroke="black" stroke-width="2"/>
+  <line x1="250" y1="500" x2="230" y2="470" stroke="black" stroke-width="2"/>
+  <line x1="250" y1="500" x2="230" y2="530" stroke="black" stroke-width="2"/>
+
+  <ellipse cx="200" cy="400" rx="50" ry="30" fill="brown"/>
+  <ellipse cx="200" cy="370" rx="40" ry="20" fill="white"/>
+
+  <ellipse cx="200" cy="350" rx="20" ry="15" fill="brown"/>
+  <ellipse cx="200" cy="340" rx="15" ry="10" fill="white"/>
+
+  <path d="M200,340 Q210,330 220,340" stroke="orange" stroke-width="5" fill="none"/>
+  <path d="M200,340 Q190,330 180,340" stroke="orange" stroke-width="5" fill="none"/>
+
+  <ellipse cx="200" cy="360" rx="30" ry="20" fill="pink"/>
+
+  <line x1="200" y1="430" x2="190" y2="480" stroke="brown" stroke-width="5"/>
+  <line x1="200" y1="430" x2="210" y2="480" stroke="brown" stroke-width="5"/>
+
+  <circle cx="190" cy="480" r="5" fill="brown"/>
+  <circle cx="210" cy="480" r="5" fill="brown"/>
+
+  <path d="M180,400 Q190,380 200,400 T220,400" stroke="brown" stroke-width="2" fill="none"/>
+  <path d="M180,410 Q190,390 200,410 T220,410" stroke="brown" stroke-width="2" fill="none"/>
+  <path d="M180,420 Q190,400 200,420 T220,420" stroke="brown" stroke-width="2" fill="none"/>
+
+  <line x1="190" y1="480" x2="180" y2="500" stroke="brown" stroke-width="5"/>
+  <line x1="210" y1="480" x2="220" y2="500" stroke="brown" stroke-width="5"/>
+
+  <circle cx="180" cy="500" r="5" fill="black"/>
+  <circle cx="220" cy="500" r="5" fill="black"/>
+</svg>

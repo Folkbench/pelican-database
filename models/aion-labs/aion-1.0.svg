@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <style>
+    .wheel { fill: none; stroke: #333; stroke-width: 4; }
+    .spoke { stroke: #666; stroke-width: 1.5; }
+    .frame { fill: none; stroke: #222; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+    .saddle { fill: #8B4513; }
+    .handlebar { fill: none; stroke: #222; stroke-width: 5; }
+    .pedal { fill: #555; }
+    .chainring { fill: #444; }
+    .pelican-body { fill: #8B7355; }
+    .pelican-head { fill: #F0E68C; }
+    .pelican-nape { fill: #8B4513; }
+    .pelican-pouch { fill: #FF6B6B; }
+    .pelican-eye { fill: #000; }
+    .pelican-beak { fill: #DAA520; }
+    .pelican-wing { fill: #6B4F29; }
+    .feather-line { stroke: #5D432C; stroke-width: 1; }
+  </style>
+  <rect width="100%" height="100%" fill="lightblue"/>
+
+  <g id="bicycle">
+    <circle class="wheel" cx="200" cy="250" r="60"/>
+    <g class="spokes">
+      <line class="spoke" x1="200" y1="250" x2="200" y2="190"/>
+      <line class="spoke" x1="200" y1="250" x2="200" y2="310"/>
+      <line class="spoke" x1="200" y1="250" x2="140" y2="250"/>
+      <line class="spoke" x1="200" y1="250" x2="260" y2="250"/>
+      <line class="spoke" x1="200" y1="250" x2="165" y2="215"/>
+      <line class="spoke" x1="200" y1="250" x2="235" y2="215"/>
+      <line class="spoke" x1="200" y1="250" x2="165" y2="285"/>
+      <line class="spoke" x1="200" y1="250" x2="235" y2="285"/>
+    </g>
+    <circle class="wheel" cx="400" cy="250" r="60"/>
+    <g class="spokes">
+      <line class="spoke" x1="400" y1="250" x2="400" y2="190"/>
+      <line class="spoke" x1="400" y1="250" x2="400" y2="310"/>
+      <line class="spoke" x1="400" y1="250" x2="340" y2="250"/>
+      <line class="spoke" x1="400" y1="250" x2="460" y2="250"/>
+      <line class="spoke" x1="400" y1="250" x2="365" y2="215"/>
+      <line class="spoke" x1="400" y1="250" x2="435" y2="215"/>
+      <line class="spoke" x1="400" y1="250" x2="365" y2="285"/>
+      <line class="spoke" x1="400" y1="250" x2="435" y2="285"/>
+    </g>
+    <path class="frame" d="M 200,250 L 220,170 L 320,140 L 400,250"/>
+    <path class="frame" d="M 220,170 L 280,250"/>
+    <path class="frame" d="M 320,140 L 380,170"/>
+    <path class="handlebar" d="M 380,170 L 420,150"/>
+    <line class="handlebar" x1="420" y1="150" x2="460" y2="150"/>
+    <ellipse class="saddle" cx="280" cy="135" rx="15" ry="8"/>
+    <circle class="chainring" cx="250" cy="250" r="15"/>
+    <circle class="pedal" cx="250" cy="230" r="8"/>
+    <circle class="pedal" cx="230" cy="270" r="8"/>
+    <path class="frame" d="M 250,250 L 320,140" stroke-width="3" stroke-dasharray="5,5"/>
+  </g>
+
+  <g id="pelican">
+    <ellipse class="pelican-body" cx="280" cy="200" rx="60" ry="40"/>
+    <g class="feathers">
+      <path class="feather-line" d="M 240,190 Q 250,185 260,190"/>
+      <path class="feather-line" d="M 245,200 Q 255,195 265,200"/>
+      <path class="feather-line" d="M 250,210 Q 260,205 270,210"/>
+      <path class="feather-line" d="M 255,220 Q 265,215 275,220"/>
+      <path class="feather-line" d="M 290,190 Q 300,185 310,190"/>
+      <path class="feather-line" d="M 295,200 Q 305,195 315,200"/>
+      <path class="feather-line" d="M 300,210 Q 310,205 320,210"/>
+      <path class="feather-line" d="M 305,220 Q 315,215 325,220"/>
+    </g>
+    <path class="pelican-head" d="M 320,160 L 350,120 L 380,140 L 360,170 Z"/>
+    <ellipse class="pelican-nape" cx="365" cy="140" rx="15" ry="10"/>
+    <ellipse class="pelican-pouch" cx="390" cy="155" rx="30" ry="20"/>
+    <path class="pelican-beak" d="M 350,120 L 420,150 L 390,155 L 350,130 Z"/>
+    <circle class="pelican-eye" cx="355" cy="135" r="3"/>
+    <ellipse class="pelican-wing" cx="290" cy="180" rx="40" ry="25"/>
+    <path class="feather-line" d="M 260,180 Q 280,175 300,180"/>
+    <path class="feather-line" d="M 265,185 Q 285,180 305,185"/>
+    <path class="feather-line" d="M 270,190 Q 290,185 310,190"/>
+    <path class="frame" d="M 280,230 L 250,230" stroke-width="4"/>
+    <path class="frame" d="M 280,240 L 230,270" stroke-width="4"/>
+    <circle cx="250" cy="230" r="5" fill="#333"/>
+    <circle cx="230" cy="270" r="5" fill="#333"/>
+  </g>
+</svg>

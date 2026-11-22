@@ -1,0 +1,58 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- BICYCLE (Back Layers) -->
+  <g id="bicycle-base" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Back Wheel -->
+    <g transform="translate(290, 215)">
+      <circle r="50" fill="#333"/>
+      <circle r="45" fill="#fff" stroke="#444" stroke-width="3"/>
+      <path d="M 0 0 L 0 -45 M 0 0 L 43.3 -25 M 0 0 L 43.3 25 M 0 0 L 0 45 M 0 0 L -43.3 25 M 0 0 L -43.3 -25" stroke="#9e9e9e" stroke-width="2"/>
+      <circle r="5" fill="#616161" stroke="#444" stroke-width="2"/>
+    </g>
+    <!-- Front Wheel -->
+    <g transform="translate(90, 215)">
+      <circle r="50" fill="#333"/>
+      <circle r="45" fill="#fff" stroke="#444" stroke-width="3"/>
+      <path d="M 0 0 L 0 -45 M 0 0 L 43.3 -25 M 0 0 L 43.3 25 M 0 0 L 0 45 M 0 0 L -43.3 25 M 0 0 L -43.3 -25" stroke="#9e9e9e" stroke-width="2"/>
+      <circle r="5" fill="#616161" stroke="#444" stroke-width="2"/>
+    </g>
+    <!-- Frame -->
+    <path fill="none" stroke="#d32f2f" stroke-width="8" d="M 180 215 L 290 215 L 240 140 Z M 240 140 L 110 130 L 90 215"/>
+    <!-- Seat -->
+    <path d="M 220 130 L 250 130 C 255 130 255 145 240 145 L 210 145 C 205 145 205 130 220 130 Z" fill="#424242" stroke="#212121" stroke-width="2"/>
+  </g>
+
+  <!-- PELICAN -->
+  <g id="pelican" stroke-linecap="round" stroke-linejoin="round" stroke="#212121" stroke-width="2.5">
+    <!-- Legs -->
+    <path fill="none" stroke="#f57c00" stroke-width="6" d="M 210 185 C 205 215, 200 235, 200 240"/>
+    <path fill="none" stroke="#f57c00" stroke-width="6" d="M 195 185 C 180 180, 165 190, 160 195"/>
+    
+    <!-- Body & Wing -->
+    <path fill="#f8f8f8" d="M 250 145 C 290 170, 260 225, 210 215 C 160 205, 160 150, 210 135 C 220 130, 235 135, 250 145 Z"/>
+    <path fill="none" d="M 250 190 Q 270 200 265 180 M 255 195 Q 275 205 270 185"/>
+    <path fill="#f8f8f8" d="M 220 150 C 170 140, 150 180, 230 190 L 240 180 C 200 170, 180 150, 220 150 Z"/>
+    <path fill="#424242" d="M 175 162 C 160 165, 155 150, 165 145 Z"/>
+
+    <!-- Neck, Head, Beak -->
+    <path fill="#f8f8f8" d="M 210 140 C 190 100, 175 110, 165 90 L 145 95 C 155 120, 180 140, 215 150 Z"/>
+    <path fill="#ffb74d" d="M 125 98 C 45 103, 55 165, 135 120 A 20 20 0 0 1 125 98 Z"/>
+    <path fill="#ffecb3" d="M 125 98 C 55 93, 45 98, 130 103 A 10 10 0 0 1 125 98 Z"/>
+    <path fill="#f8f8f8" stroke="none" d="M 165 90 C 150 70, 130 75, 125 90 L 145 95 C 150 85, 165 90, 165 90 Z"/>
+    <path fill="none" d="M 160 70 L 170 60 L 165 75 L 175 65"/>
+    <circle cx="150" cy="88" r="3.5" fill="#212121" stroke="none"/>
+  </g>
+
+  <!-- BICYCLE (Front Layers) -->
+  <g id="bicycle-front" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Handlebars -->
+    <path d="M 110 130 C 90 110, 130 110, 130 125" fill="none" stroke="#616161" stroke-width="6"/>
+    <!-- Cranks & Pedals -->
+    <g stroke="#616161" stroke-width="5">
+      <line x1="180" y1="215" x2="200" y2="240"/>
+      <line x1="180" y1="215" x2="160" y2="195"/>
+    </g>
+    <circle cx="180" cy="215" r="8" fill="#616161" stroke="#212121" stroke-width="2"/>
+    <rect x="190" y="240" width="25" height="8" rx="3" fill="#424242" stroke="#212121" stroke-width="1.5"/>
+    <rect x="145" y="195" width="25" height="8" rx="3" fill="#424242" stroke="#212121" stroke-width="1.5"/>
+  </g>
+</svg>

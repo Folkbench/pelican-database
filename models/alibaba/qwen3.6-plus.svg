@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <style>
+      .frame { stroke: #e63946; stroke-width: 6; fill: none; stroke-linejoin: round; stroke-linecap: round; }
+      .components { stroke: #333; stroke-width: 6; fill: none; stroke-linecap: round; }
+      .tire { fill: none; stroke: #222; stroke-width: 8; }
+      .rim { fill: none; stroke: #ccc; stroke-width: 2; }
+      .spoke { stroke: #aaa; stroke-width: 1.5; }
+      .pelican-body { fill: #f8f9fa; }
+      .pelican-wing { fill: #e9ecef; stroke: #adb5bd; stroke-width: 1.5; }
+      .pelican-leg { stroke: #f4a261; stroke-width: 6; fill: none; stroke-linejoin: round; stroke-linecap: round; }
+      .beak-upper { fill: #ffb347; }
+      .beak-pouch { fill: #ff9f1c; }
+      .detail { stroke: #333; stroke-width: 1.5; fill: none; }
+      .eye { fill: #222; }
+      .ground { stroke: #666; stroke-width: 2; stroke-linecap: round; }
+      .shadow { fill: #000; opacity: 0.12; }
+    </style>
+  </defs>
+
+  <ellipse cx="300" cy="358" rx="170" ry="12" class="shadow"/>
+  <line x1="40" y1="358" x2="560" y2="358" class="ground"/>
+
+  <g id="wheels">
+    <circle cx="170" cy="300" r="52" class="tire"/>
+    <circle cx="170" cy="300" r="48" class="rim"/>
+    <circle cx="170" cy="300" r="5" fill="#777"/>
+    <g class="spoke">
+      <line x1="170" y1="248" x2="170" y2="352"/>
+      <line x1="118" y1="300" x2="222" y2="300"/>
+      <line x1="133" y1="263" x2="207" y2="337"/>
+      <line x1="133" y1="337" x2="207" y2="263"/>
+    </g>
+    
+    <circle cx="430" cy="300" r="52" class="tire"/>
+    <circle cx="430" cy="300" r="48" class="rim"/>
+    <circle cx="430" cy="300" r="5" fill="#777"/>
+    <g class="spoke">
+      <line x1="430" y1="248" x2="430" y2="352"/>
+      <line x1="378" y1="300" x2="482" y2="300"/>
+      <line x1="393" y1="263" x2="467" y2="337"/>
+      <line x1="393" y1="337" x2="467" y2="263"/>
+    </g>
+  </g>
+
+  <g id="frame" class="frame">
+    <line x1="170" y1="300" x2="300" y2="300"/> <line x1="300" y1="300" x2="255" y2="175"/> <line x1="255" y1="175" x2="335" y2="170"/> <line x1="335" y1="170" x2="300" y2="300"/> <line x1="335" y1="170" x2="360" y2="165"/> <line x1="360" y1="165" x2="430" y2="300"/> </g>
+
+  <g id="components" class="components">
+    <rect x="235" y="170" width="40" height="14" rx="7" fill="#333"/>
+    <path d="M 345 165 Q 370 152 395 168"/>
+  </g>
+
+  <g id="pedals">
+    <circle cx="300" cy="300" r="16" fill="#444"/>
+    <line x1="300" y1="300" x2="272" y2="268" stroke="#444" stroke-width="7" stroke-linecap="round"/>
+    <line x1="300" y1="300" x2="328" y2="332" stroke="#444" stroke-width="7" stroke-linecap="round"/>
+    <rect x="264" y="264" width="16" height="9" rx="3" fill="#222" transform="rotate(-48 272 268)"/>
+    <rect x="320" y="328" width="16" height="9" rx="3" fill="#222" transform="rotate(-48 328 332)"/>
+  </g>
+
+  <g id="pelican-legs" class="pelican-leg">
+    <path d="M 268 182 Q 275 235 272 268"/>
+    <path d="M 268 182 Q 318 245 328 332"/>
+  </g>
+  <ellipse cx="270" cy="266" rx="12" ry="6" fill="#e9c46a" transform="rotate(-45 270 266)"/>
+  <ellipse cx="330" cy="330" rx="12" ry="6" fill="#e9c46a" transform="rotate(-45 330 330)"/>
+
+  <g id="pelican-body">
+    <path d="M 240 175 L 200 192 L 210 205 L 245 195 Z" class="pelican-body"/>
+    <ellipse cx="272" cy="152" rx="52" ry="40" class="pelican-body"/>
+    <path d="M 248 128 C 215 108 195 125 210 152 C 232 175 260 168 268 145 Z" class="pelican-wing"/>
+    <path d="M 218 138 L 235 143 M 212 146 L 229 151 M 222 154 L 239 156" stroke="#adb5bd" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <g id="pelican-head">
+    <circle cx="305" cy="112" r="25" class="pelican-body"/>
+    <path d="M 325 105 L 408 107 L 406 115 L 325 112 Z" class="beak-upper"/>
+    <path d="M 323 115 C 358 175 400 145 408 118 Z" class="beak-pouch"/>
+    <line x1="326" y1="110" x2="407" y2="114" class="detail"/>
+    <line x1="408" y1="107" x2="406" y2="115" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="316" cy="104" r="5" fill="#fff"/>
+    <circle cx="317" cy="104" r="3" class="eye"/>
+    <circle cx="318" cy="103" r="1" fill="#fff"/>
+  </g>
+</svg>

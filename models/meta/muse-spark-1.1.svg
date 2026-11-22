@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 600 400">
+  <!-- Sky -->
+  <rect width="600" height="400" rx="20" fill="#B3E5FC"/>
+  <!-- Clouds -->
+  <g fill="white" opacity="0.8">
+    <ellipse cx="80" cy="70" rx="30" ry="18"/><ellipse cx="105" cy="60" rx="35" ry="20"/><ellipse cx="50" cy="65" rx="20" ry="15"/>
+    <ellipse cx="480" cy="80" rx="25" ry="15"/><ellipse cx="505" cy="70" rx="30" ry="18"/><ellipse cx="530" cy="80" rx="20" ry="12"/>
+  </g>
+  <!-- Ground -->
+  <rect x="0" y="330" width="600" height="70" rx="20" fill="#A8D5A2"/>
+  
+  <!-- BICYCLE -->
+  <g id="bicycle">
+    <!-- Wheels -->
+    <g id="wheels">
+      <circle cx="150" cy="285" r="52" fill="none" stroke="#222" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="150" cy="285" r="6" fill="#222"/>
+      <circle cx="350" cy="285" r="52" fill="none" stroke="#222" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="350" cy="285" r="6" fill="#222"/>
+      <!-- simple spokes hint -->
+      <circle cx="150" cy="285" r="38" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="6 10" opacity="0.6"/>
+      <circle cx="350" cy="285" r="38" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="6 10" opacity="0.6"/>
+    </g>
+    <!-- Frame -->
+    <g fill="none" stroke="#E63946" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="150" y1="285" x2="195" y2="195" /> <!-- seat stay -->
+      <line x1="150" y1="285" x2="250" y2="275" /> <!-- chain stay -->
+      <line x1="195" y1="195" x2="250" y2="275" /> <!-- seat tube -->
+      <line x1="195" y1="195" x2="335" y2="205" /> <!-- top tube -->
+      <line x1="250" y1="275" x2="335" y2="205" /> <!-- down tube -->
+      <line x1="335" y1="205" x2="350" y2="285" /> <!-- fork -->
+    </g>
+    <!-- Seat and handlebars -->
+    <ellipse cx="188" cy="188" rx="22" ry="7" fill="#222" />
+    <line x1="335" y1="205" x2="365" y2="195" stroke="#222" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="365" cy="195" r="5" fill="#222"/>
+    <!-- Pedals -->
+    <circle cx="250" cy="275" r="8" fill="#222"/>
+    <ellipse cx="250" cy="305" rx="12" ry="5" fill="#222"/>
+  </g>
+
+  <!-- PELICAN -->
+  <g id="pelican">
+    <!-- Back foot pedaling -->
+    <path d="M 165 215 Q 180 250 240 300" fill="none" stroke="#222" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="250" cy="305" rx="14" ry="6" fill="#FF8C00" stroke="black" stroke-width="2.5"/>
+
+    <!-- Tail -->
+    <ellipse cx="125" cy="200" rx="28" ry="14" fill="white" stroke="black" stroke-width="3" transform="rotate(-15 125 200)"/>
+    
+    <!-- Body -->
+    <ellipse cx="185" cy="195" rx="58" ry="42" fill="white" stroke="black" stroke-width="3.5"/>
+
+    <!-- Front leg -->
+    <path d="M 175 220 Q 200 260 260 275" fill="none" stroke="#222" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="268" cy="278" rx="14" ry="6" fill="#FF8C00" stroke="black" stroke-width="2.5"/>
+
+    <!-- Wing reaching to handlebar -->
+    <path d="M 190 180 Q 270 165 360 200" fill="white" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 195 188 Q 250 190 275 205" fill="none" stroke="black" stroke-width="2" opacity="0.4"/>
+
+    <!-- Neck -->
+    <path d="M 175 165 L 175 115 Q 175 95 195 95 Q 215 95 215 115 L 215 165 Z" fill="white" stroke="black" stroke-width="3"/>
+
+    <!-- Head -->
+    <circle cx="195" cy="105" r="27" fill="white" stroke="black" stroke-width="3"/>
+    <!-- Eye -->
+    <circle cx="206" cy="100" r="5" fill="black"/>
+    <circle cx="208" cy="98" r="1.5" fill="white"/>
+
+    <!-- Beak - Upper -->
+    <path d="M 210 92 L 360 122 L 210 118 Z" fill="#FFA726" stroke="black" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Beak - Pouch / Lower -->
+    <path d="M 210 118 Q 235 165 285 150 L 365 130 Q 300 145 210 118 Z" fill="#FFCC80" stroke="black" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+</svg>

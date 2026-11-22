@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Bicycle Frame -->
+  <path d="M180 150 L200 100 L220 150 L200 200 Z" fill="none" stroke="#333" stroke-width="2"/>
+  
+  <!-- Wheels -->
+  <circle cx="200" cy="250" r="25" fill="none" stroke="#333" stroke-width="2"/>
+  <circle cx="150" cy="200" r="25" fill="none" stroke="#333" stroke-width="2"/>
+  
+  <!-- Handlebars -->
+  <line x1="170" y1="80" x2="230" y2="80" stroke="#333" stroke-width="2"/>
+  <circle cx="170" cy="80" r="4" fill="#333"/>
+  <circle cx="230" cy="80" r="4" fill="#333"/>
+  
+  <!-- Seat -->
+  <rect x="190" y="220" width="20" height="10" fill="#8B4513" rx="2"/>
+  
+  <!-- Pelican Body -->
+  <circle cx="200" cy="205" r="22" fill="#C0C0C0"/>
+  
+  <!-- Pelican Head -->
+  <circle cx="200" cy="180" r="12" fill="#C0C0C0"/>
+  
+  <!-- Pelican Beak -->
+  <polygon points="210,180 225,185 225,175" fill="#FFA500"/>
+  
+  <!-- Pelican Eye -->
+  <circle cx="195" cy="178" r="2" fill="#000"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300">
+  
+  <rect x="0" y="0" width="400" height="300" fill="#87CEEB" rx="10"></rect>
+  
+  
+  <rect x="50" y="200" width="300" height="50" fill="#964B00"></rect>
+  
+  
+  <g>
+    
+    <circle cx="120" cy="250" r="20" fill="#666"></circle>
+    <circle cx="280" cy="250" r="20" fill="#666"></circle>
+    
+    
+    <line x1="120" y1="230" x2="280" y2="230" stroke="#666" stroke-width="10"></line>
+    <line x1="120" y1="230" x2="120" y2="220" stroke="#666" stroke-width="5"></line>
+    <line x1="280" y1="230" x2="280" y2="220" stroke="#666" stroke-width="5"></line>
+    <line x1="120" y1="220" x2="280" y2="220" stroke="#666" stroke-width="5"></line>
+  </g>
+  
+  
+  <g>
+    
+    <ellipse cx="200" cy="180" rx="30" ry="20" fill="#C0C0C0"></ellipse>
+    
+    <circle cx="200" cy="160" r="20" fill="#C0C0C0"></circle>
+    
+    <path d="M 200,140 Q 220,130 240,140" stroke="#C0C0C0" stroke-width="5" fill="none"></path>
+    
+    <line x1="200" y1="200" x2="180" y2="220" stroke="#C0C0C0" stroke-width="5"></line>
+    <line x1="200" y1="200" x2="220" y2="220" stroke="#C0C0C0" stroke-width="5"></line>
+    
+    <line x1="190" y1="170" x2="120" y2="210" stroke="#C0C0C0" stroke-width="5"></line>
+    <line x1="210" y1="170" x2="280" y2="210" stroke="#C0C0C0" stroke-width="5"></line>
+  </g>
+</svg>

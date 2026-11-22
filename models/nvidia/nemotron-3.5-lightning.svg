@@ -1,0 +1,108 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Pelican Body Gradient -->
+    <linearGradient id="pelicanBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5F5F5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D0D0D0;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Pelican Beak Gradient -->
+    <linearGradient id="beakGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F5A505;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Eye Gradient -->
+    <radialGradient id="eyeGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#333333;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A1A1A;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Bicycle Frame Gradient -->
+    <linearGradient id="bikeFrame" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C3E50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A252F;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Bicycle Seat Gradient -->
+    <linearGradient id="bikeSeat" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E74C3C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C0392B;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Wheel Gradient -->
+    <linearGradient id="wheelGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ECF0F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BDC3C7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#ECF0F1" />
+  
+  <!-- Ground -->
+  <rect x="0" y="250" width="400" height="50" fill="#27AE60" />
+  
+  <!-- Bicycle Wheels -->
+  <!-- Rear Wheel -->
+  <circle cx="120" cy="230" r="35" fill="url(#wheelGradient)" />
+  <circle cx="120" cy="230" r="30" fill="#FFFFFF" />
+  <!-- Hub -->
+  <circle cx="120" cy="230" r="8" fill="#2C3E50" />
+  <!-- Spokes -->
+  <line x1="120" y1="230" x2="80" y2="180" stroke="#2C3E50" stroke-width="2" />
+  <line x1="120" y1="230" x2="80" y2="280" stroke="#2C3E50" stroke-width="2" />
+  <line x1="120" y1="230" x2="160" y2="180" stroke="#2C3E50" stroke-width="2" />
+  <line x1="120" y1="230" x2="160" y2="280" stroke="#2C3E50" stroke-width="2" />
+  
+  <!-- Front Wheel -->
+  <circle cx="280" cy="230" r="35" fill="url(#wheelGradient)" />
+  <circle cx="280" cy="230" r="30" fill="#FFFFFF" />
+  <!-- Hub -->
+  <circle cx="280" cy="230" r="8" fill="#2C3E50" />
+  <!-- Spokes -->
+  <line x1="280" y1="230" x2="240" y2="180" stroke="#2C3E50" stroke-width="2" />
+  <line x1="280" y1="230" x2="240" y2="280" stroke="#2C3E50" stroke-width="2" />
+  <line x1="280" y1="230" x2="320" y2="180" stroke="#2C3E50" stroke-width="2" />
+  <line x1="280" y1="230" x2="320" y2="280" stroke="#2C3E50" stroke-width="2" />
+  
+  <!-- Bicycle Frame -->
+  <!-- Main triangle -->
+  <path d="M100 200 Q150 150 200 200 Q250 250 300 200" stroke="url(#bikeFrame)" stroke-width="8" fill="none" />
+  <!-- Seat stay -->
+  <path d="M200 200 Q250 220 300 240" stroke="url(#bikeFrame)" stroke-width="8" fill="none" />
+  <!-- Seat tube -->
+  <path d="M300 200 Q320 220 340 240" stroke="url(#bikeFrame)" stroke-width="8" fill="none" />
+  <!-- Top tube -->
+  <path d="M100 200 Q150 170 200 150" stroke="url(#bikeFrame)" stroke-width="8" fill="none" />
+  <!-- Down tube -->
+  <path d="M200 200 Q250 220 300 240" stroke="url(#bikeFrame)" stroke-width="8" fill="none" />
+  <!-- Chain stay -->
+  <path d="M300 240 Q350 260 380 250" stroke="url(#bikeFrame)" stroke-width="8" fill="none" />
+  <!-- Bottom bracket -->
+  <circle cx="340" cy="250" r="12" fill="url(#bikeFrame)" />
+  <!-- Pedals -->
+  <line x1="340" y1="262" x2="330" y2="280" stroke="url(#bikeFrame)" stroke-width="6" />
+  <line x1="350" y1="262" x2="360" y2="280" stroke="url(#bikeFrame)" stroke-width="6" />
+  <!-- Seat -->
+  <ellipse cx="320" cy="230" rx="20" ry="12" fill="url(#bikeSeat)" />
+  
+  <!-- Pelican Body -->
+  <ellipse cx="180" cy="180" rx="60" ry="40" fill="url(#pelicanBody)" />
+  <!-- Pelican Neck -->
+  <path d="M240 180 Q280 100 320 80 Q360 60 400 70" stroke="url(#pelicanBody)" stroke-width="6" fill="url(#pelicanBody)" />
+  <!-- Pelican Head -->
+  <circle cx="380" cy="70" r="25" fill="url(#pelicanBody)" />
+  <!-- Beak -->
+  <path d="M380 70 Q400 65 420 75 Q440 85 450 80" fill="url(#beakGradient)" />
+  <!-- Eye -->
+  <circle cx="385" cy="72" r="5" fill="url(#eyeGradient)" />
+  <!-- Pelican Wing -->
+  <path d="M180 180 Q150 200 130 220 Q110 240 100 230 Q110 210 130 190 Q150 170 180 180" fill="url(#pelicanBody)" />
+  <!-- Tail -->
+  <path d="M120 180 Q90 200 80 190" stroke="url(#pelicanBody)" stroke-width="6" fill="url(#pelicanBody)" />
+  
+  <!-- Pedal Motion Lines (Illusion of movement) -->
+  <line x1="330" y1="280" x2="310" y2="300" stroke="#BDC3C7" stroke-width="2" opacity="0.5" />
+  <line x1="360" y1="280" x2="380" y2="300" stroke="#BDC3C7" stroke-width="2" opacity="0.5" />
+</svg>

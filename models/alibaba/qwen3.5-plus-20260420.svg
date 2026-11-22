@@ -1,0 +1,242 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4FC3F7"/>
+      <stop offset="100%" stop-color="#E1F5FE"/>
+    </linearGradient>
+    
+    <radialGradient id="sunGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF59D"/>
+      <stop offset="100%" stop-color="#FFD54F"/>
+    </radialGradient>
+
+    <clipPath id="bodyClip">
+      <ellipse cx="360" cy="290" rx="75" ry="65"/>
+    </clipPath>
+
+    <clipPath id="helmetClip">
+      <path d="M 410 220 C 410 160, 490 160, 490 220 Z"/>
+    </clipPath>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#skyGrad)"/>
+  
+  <circle cx="120" cy="100" r="60" fill="url(#sunGrad)"/>
+  <g stroke="#FFD54F" stroke-width="6" stroke-linecap="round">
+    <line x1="120" y1="30" x2="120" y2="10"/>
+    <line x1="120" y1="170" x2="120" y2="190"/>
+    <line x1="50" y1="100" x2="30" y2="100"/>
+    <line x1="190" y1="100" x2="210" y2="100"/>
+    <line x1="71" y1="51" x2="57" y2="37"/>
+    <line x1="169" y1="51" x2="183" y2="37"/>
+    <line x1="71" y1="149" x2="57" y2="163"/>
+    <line x1="169" y1="149" x2="183" y2="163"/>
+  </g>
+
+  <g fill="#FFFFFF" opacity="0.85">
+    <circle cx="250" cy="120" r="30"/>
+    <circle cx="290" cy="110" r="40"/>
+    <circle cx="330" cy="120" r="30"/>
+    <rect x="250" y="120" width="80" height="30" rx="15"/>
+    <circle cx="600" cy="150" r="25"/>
+    <circle cx="640" cy="140" r="35"/>
+    <circle cx="680" cy="150" r="25"/>
+    <rect x="600" y="150" width="80" height="25" rx="12.5"/>
+    <circle cx="720" cy="80" r="20"/>
+    <circle cx="750" cy="70" r="30"/>
+    <circle cx="780" cy="80" r="20"/>
+    <rect x="720" y="80" width="60" height="20" rx="10"/>
+  </g>
+
+  <g stroke="#0288D1" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M 200 180 Q 210 170 220 180 Q 230 170 240 180"/>
+    <path d="M 250 200 Q 255 195 260 200 Q 265 195 270 200"/>
+  </g>
+
+  <path d="M 0 450 Q 200 400 400 450 T 800 450 L 800 600 L 0 600 Z" fill="#9CCC65"/>
+  <path d="M 0 480 Q 300 440 500 480 T 800 460 L 800 600 L 0 600 Z" fill="#8BC34A"/>
+
+  <g fill="#689F38" opacity="0.6">
+    <ellipse cx="150" cy="460" rx="40" ry="10"/>
+    <ellipse cx="680" cy="455" rx="45" ry="12"/>
+    <ellipse cx="450" cy="465" rx="30" ry="8"/>
+  </g>
+
+  <g>
+    <rect x="140" y="350" width="20" height="110" fill="#795548" rx="5"/>
+    <circle cx="150" cy="330" r="55" fill="#4CAF50"/>
+    <circle cx="110" cy="360" r="45" fill="#388E3C"/>
+    <circle cx="190" cy="350" r="50" fill="#2E7D32"/>
+  </g>
+
+  <g>
+    <rect x="670" y="320" width="24" height="140" fill="#6D4C41" rx="6"/>
+    <circle cx="680" cy="290" r="70" fill="#4CAF50"/>
+    <circle cx="620" cy="330" r="55" fill="#388E3C"/>
+    <circle cx="740" cy="320" r="60" fill="#2E7D32"/>
+    <circle cx="680" cy="230" r="50" fill="#81C784"/>
+  </g>
+
+  <g>
+    <rect x="440" y="380" width="16" height="80" fill="#8D6E63" rx="4"/>
+    <circle cx="450" cy="360" r="40" fill="#4CAF50"/>
+    <circle cx="420" cy="380" r="35" fill="#388E3C"/>
+    <circle cx="480" cy="370" r="45" fill="#2E7D32"/>
+  </g>
+
+  <g fill="#388E3C">
+    <circle cx="80" cy="460" r="20"/>
+    <circle cx="110" cy="470" r="25"/>
+    <circle cx="140" cy="460" r="15"/>
+    <circle cx="720" cy="450" r="25"/>
+    <circle cx="750" cy="460" r="20"/>
+  </g>
+
+  <rect x="0" y="480" width="800" height="120" fill="#7CB342"/>
+  
+  <path d="M 0 520 L 800 520 L 800 565 L 0 565 Z" fill="#689F38"/>
+  <line x1="0" y1="542.5" x2="800" y2="542.5" stroke="#8BC34A" stroke-width="4" stroke-dasharray="30, 25" stroke-linecap="round"/>
+
+  <g>
+    <line x1="100" y1="580" x2="100" y2="560" stroke="#4CAF50" stroke-width="3"/>
+    <circle cx="100" cy="560" r="6" fill="#FFEB3B"/>
+    <circle cx="100" cy="552" r="5" fill="#FFEB3B"/>
+    <circle cx="108" cy="560" r="5" fill="#FFEB3B"/>
+    <circle cx="100" cy="568" r="5" fill="#FFEB3B"/>
+    <circle cx="92" cy="560" r="5" fill="#FFEB3B"/>
+    <circle cx="100" cy="560" r="3" fill="#FF9800"/>
+    
+    <line x1="300" y1="570" x2="300" y2="550" stroke="#4CAF50" stroke-width="3"/>
+    <circle cx="300" cy="550" r="5" fill="#E91E63"/>
+    <circle cx="300" cy="544" r="5" fill="#E91E63"/>
+    <circle cx="306" cy="550" r="5" fill="#E91E63"/>
+    <circle cx="300" cy="556" r="5" fill="#E91E63"/>
+    <circle cx="294" cy="550" r="5" fill="#E91E63"/>
+    <circle cx="300" cy="550" r="3" fill="#FFEB3B"/>
+  </g>
+
+  <g fill="none" stroke="#558B2F" stroke-width="3" stroke-linecap="round">
+    <path d="M 50 580 L 45 565 M 50 580 L 55 565"/>
+    <path d="M 200 575 L 195 560 M 200 575 L 205 560"/>
+    <path d="M 400 585 L 395 570 M 400 585 L 405 570"/>
+    <path d="M 600 570 L 595 555 M 600 570 L 605 555"/>
+    <path d="M 750 580 L 745 565 M 750 580 L 755 565"/>
+  </g>
+
+  <g stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.8">
+    <line x1="120" y1="500" x2="220" y2="500" stroke-dasharray="15, 15"/>
+    <line x1="150" y1="520" x2="240" y2="520" stroke-dasharray="25, 15"/>
+    <line x1="100" y1="540" x2="180" y2="540" stroke-dasharray="10, 10"/>
+  </g>
+
+  <g>
+    <path d="M 370 290 L 430 340 L 460 450" fill="none" stroke="#FFA726" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+    <ellipse cx="460" cy="450" rx="10" ry="6" fill="#FFA726"/>
+  </g>
+
+  <g>
+    <circle cx="280" cy="450" r="60" fill="none" stroke="#263238" stroke-width="12"/>
+    <circle cx="280" cy="450" r="50" fill="none" stroke="#ECEFF1" stroke-width="4"/>
+    <g stroke="#B0BEC5" stroke-width="2">
+      <line x1="280" y1="390" x2="280" y2="510"/>
+      <line x1="220" y1="450" x2="340" y2="450"/>
+      <line x1="237" y1="407" x2="323" y2="493"/>
+      <line x1="237" y1="493" x2="323" y2="407"/>
+    </g>
+    <circle cx="280" cy="450" r="6" fill="#78909C"/>
+  </g>
+
+  <g>
+    <polygon points="280,450 320,330 380,450" fill="none" stroke="#FF5252" stroke-width="10" stroke-linejoin="round"/>
+    <polygon points="320,330 440,330 380,450" fill="none" stroke="#FF5252" stroke-width="10" stroke-linejoin="round"/>
+  </g>
+
+  <circle cx="400" cy="450" r="20" fill="#455A64"/>
+  <circle cx="400" cy="450" r="10" fill="#263238"/>
+  <g stroke="#78909C" stroke-width="4">
+    <line x1="400" y1="450" x2="280" y2="450"/>
+  </g>
+
+  <path d="M 285 290 L 240 270 L 250 300 L 230 310 L 275 310 Z" fill="#E0E0E0"/>
+  
+  <ellipse cx="360" cy="290" rx="75" ry="65" fill="#FFFFFF"/>
+  
+  <path d="M 300 330 A 75 65 0 0 0 420 330 A 75 65 0 0 1 300 330 Z" fill="#F5F5F5"/>
+
+  <g clip-path="url(#bodyClip)">
+    <path d="M 360 290 L 330 360 L 340 450" fill="none" stroke="#FFA726" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+    <ellipse cx="340" cy="450" rx="10" ry="6" fill="#FFA726"/>
+  </g>
+
+  <path d="M 300 270 Q 360 240 410 280 Q 360 330 300 270 Z" fill="#E0E0E0"/>
+  <path d="M 320 280 Q 360 260 390 280" fill="none" stroke="#BDBDBD" stroke-width="3" stroke-linecap="round"/>
+
+  <path d="M 360 290 Q 400 260 440 230 L 455 235 Q 410 280 375 300 Z" fill="#FFFFFF"/>
+  <path d="M 385 295 Q 415 265 445 240 L 450 245 Q 420 275 390 305 Z" fill="#F5F5F5"/>
+
+  <circle cx="440" cy="230" r="25" fill="#FFFFFF"/>
+  <path d="M 445 205 L 460 180 L 470 195 Z" fill="#FFFFFF"/>
+
+  <circle cx="450" cy="220" r="5" fill="#212121"/>
+  <circle cx="448" cy="218" r="2" fill="#FFFFFF"/>
+
+  <path d="M 455 225 L 530 235 L 540 240 L 460 240 Z" fill="#FFD54F"/>
+  <path d="M 525 236 L 530 235 L 540 240 Z" fill="#FFA000"/> <path d="M 460 240 L 540 240 Q 500 290 455 250 Z" fill="#FF8A65"/>
+  <path d="M 460 240 Q 500 280 540 240" fill="none" stroke="#FF7043" stroke-width="2"/>
+
+  <g>
+    <path d="M 405 225 C 405 235, 495 235, 495 225" fill="none" stroke="#F06292" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 410 220 C 410 160, 490 160, 490 220 Z" fill="#FF4081"/>
+    <path d="M 420 200 C 420 170, 460 170, 470 190 Z" fill="rgba(255,255,255,0.3)" clip-path="url(#helmetClip)"/>
+  </g>
+
+  <g>
+    <circle cx="520" cy="450" r="60" fill="none" stroke="#263238" stroke-width="12"/>
+    <circle cx="520" cy="450" r="50" fill="none" stroke="#ECEFF1" stroke-width="4"/>
+    <g stroke="#B0BEC5" stroke-width="2">
+      <line x1="520" y1="390" x2="520" y2="510"/>
+      <line x1="460" y1="450" x2="580" y2="450"/>
+      <line x1="477" y1="407" x2="563" y2="493"/>
+      <line x1="477" y1="493" x2="563" y2="407"/>
+    </g>
+    <circle cx="520" cy="450" r="6" fill="#78909C"/>
+  </g>
+
+  <g>
+    <polygon points="520,450 440,330 400,450" fill="none" stroke="#FF5252" stroke-width="10" stroke-linejoin="round"/>
+    <line x1="440" y1="330" x2="520" y2="450" stroke="#FF5252" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <path d="M 305 330 Q 320 315 335 330 L 330 335 Q 315 325 300 335 Z" fill="#263238"/>
+  <line x1="320" y1="330" x2="320" y2="350" stroke="#B0BEC5" stroke-width="6"/>
+
+  <path d="M 440 330 L 450 300 L 490 300" fill="none" stroke="#B0BEC5" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 485 300 L 500 310 L 500 320 L 490 310 Z" fill="#37474F"/> <circle cx="450" cy="300" r="4" fill="#78909C"/>
+
+  <g>
+    <path d="M 470 280 L 520 280 L 510 320 L 480 320 Z" fill="#D7CCC8" stroke="#8D6E63" stroke-width="2"/>
+    <line x1="475" y1="290" x2="515" y2="290" stroke="#8D6E63" stroke-width="2"/>
+    <line x1="478" y1="300" x2="512" y2="300" stroke="#8D6E63" stroke-width="2"/>
+    <line x1="481" y1="310" x2="509" y2="310" stroke="#8D6E63" stroke-width="2"/>
+    <line x1="468" y1="280" x2="522" y2="280" stroke="#8D6E63" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="495" cy="270" r="6" fill="#FFEB3B"/>
+    <circle cx="495" cy="264" r="6" fill="#FFEB3B"/>
+    <circle cx="501" cy="270" r="6" fill="#FFEB3B"/>
+    <circle cx="495" cy="276" r="6" fill="#FFEB3B"/>
+    <circle cx="489" cy="270" r="6" fill="#FFEB3B"/>
+    <circle cx="495" cy="270" r="4" fill="#FF9800"/>
+    <line x1="495" y1="276" x2="495" y2="280" stroke="#4CAF50" stroke-width="2"/>
+  </g>
+
+  <circle cx="400" cy="450" r="12" fill="#78909C"/>
+  <line x1="400" y1="450" x2="460" y2="450" stroke="#B0BEC5" stroke-width="6" stroke-linecap="round"/>
+  <rect x="455" y="446" width="15" height="8" rx="2" fill="#455A64"/>
+  <line x1="400" y1="450" x2="340" y2="450" stroke="#B0BEC5" stroke-width="6" stroke-linecap="round"/>
+  <rect x="330" y="446" width="15" height="8" rx="2" fill="#455A64"/>
+
+  <g fill="#FFEB3B">
+    <path d="M 200 400 Q 200 410 190 410 Q 200 410 200 420 Q 200 410 210 410 Q 200 410 200 400 Z"/>
+    <path d="M 550 380 Q 550 385 545 385 Q 550 385 550 390 Q 550 385 555 385 Q 550 385 550 380 Z"/>
+    <path d="M 650 250 Q 650 260 640 260 Q 650 260 650 270 Q 650 260 660 260 Q 650 260 650 250 Z"/>
+  </g>
+</svg>

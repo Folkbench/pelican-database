@@ -1,0 +1,84 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky background -->
+  <rect width="400" height="300" fill="#87CEEB"/>
+  
+  <!-- Ground -->
+  <rect x="0" y="240" width="400" height="60" fill="#90EE90"/>
+  
+  <!-- Bicycle Back Wheel -->
+  <circle cx="100" cy="210" r="35" fill="none" stroke="#333" stroke-width="4"/>
+  <circle cx="100" cy="210" r="4" fill="#333"/>
+  <line x1="100" y1="175" x2="100" y2="245" stroke="#555" stroke-width="1"/>
+  <line x1="65" y1="210" x2="135" y2="210" stroke="#555" stroke-width="1"/>
+  <line x1="75" y1="185" x2="125" y2="235" stroke="#555" stroke-width="1"/>
+  <line x1="75" y1="235" x2="125" y2="185" stroke="#555" stroke-width="1"/>
+  
+  <!-- Bicycle Front Wheel -->
+  <circle cx="280" cy="210" r="35" fill="none" stroke="#333" stroke-width="4"/>
+  <circle cx="280" cy="210" r="4" fill="#333"/>
+  <line x1="280" y1="175" x2="280" y2="245" stroke="#555" stroke-width="1"/>
+  <line x1="245" y1="210" x2="315" y2="210" stroke="#555" stroke-width="1"/>
+  <line x1="255" y1="185" x2="305" y2="235" stroke="#555" stroke-width="1"/>
+  <line x1="255" y1="235" x2="305" y2="185" stroke="#555" stroke-width="1"/>
+  
+  <!-- Bicycle Frame -->
+  <line x1="100" y1="210" x2="175" y2="155" stroke="#D32F2F" stroke-width="5"/>
+  <line x1="175" y1="155" x2="280" y2="210" stroke="#D32F2F" stroke-width="5"/>
+  <line x1="175" y1="155" x2="175" y2="210" stroke="#D32F2F" stroke-width="5"/>
+  <line x1="100" y1="210" x2="175" y2="210" stroke="#D32F2F" stroke-width="5"/>
+  <line x1="175" y1="210" x2="280" y2="210" stroke="#D32F2F" stroke-width="5"/>
+  
+  <!-- Handlebars -->
+  <line x1="280" y1="210" x2="280" y2="150" stroke="#333" stroke-width="4"/>
+  <line x1="260" y1="150" x2="300" y2="150" stroke="#333" stroke-width="5"/>
+  <circle cx="260" cy="150" r="4" fill="#333"/>
+  <circle cx="300" cy="150" r="4" fill="#333"/>
+  
+  <!-- Seat -->
+  <ellipse cx="175" cy="145" rx="18" ry="6" fill="#5D4037"/>
+  <line x1="175" y1="155" x2="175" y2="145" stroke="#333" stroke-width="3"/>
+  
+  <!-- Pedals and crank -->
+  <circle cx="175" cy="210" r="12" fill="none" stroke="#333" stroke-width="3"/>
+  <line x1="175" y1="198" x2="175" y2="222" stroke="#333" stroke-width="3"/>
+  <rect x="165" y="195" width="12" height="6" rx="2" fill="#666"/>
+  <rect x="165" y="219" width="12" height="6" rx="2" fill="#666"/>
+  
+  <!-- Pelican Body -->
+  <ellipse cx="175" cy="110" rx="32" ry="25" fill="#F5F5F5" stroke="#DDD" stroke-width="2"/>
+  
+  <!-- Pelican Wing (back) -->
+  <ellipse cx="155" cy="105" rx="20" ry="15" fill="#E8E8E8" stroke="#CCC" stroke-width="1" transform="rotate(-20 155 105)"/>
+  
+  <!-- Pelican Wing (front - holding handlebar) -->
+  <ellipse cx="200" cy="100" rx="18" ry="12" fill="#E8E8E8" stroke="#CCC" stroke-width="1" transform="rotate(30 200 100)"/>
+  <ellipse cx="230" cy="130" rx="10" ry="8" fill="#E8E8E8" stroke="#CCC" stroke-width="1"/>
+  
+  <!-- Pelican Neck -->
+  <ellipse cx="165" cy="85" rx="12" ry="20" fill="#F5F5F5" stroke="#DDD" stroke-width="2"/>
+  
+  <!-- Pelican Head -->
+  <ellipse cx="160" cy="55" rx="18" ry="16" fill="#F5F5F5" stroke="#DDD" stroke-width="2"/>
+  
+  <!-- Pelican Eye -->
+  <circle cx="168" cy="50" r="6" fill="white" stroke="#333" stroke-width="1"/>
+  <circle cx="170" cy="49" r="3" fill="#333"/>
+  <circle cx="171" cy="48" r="1" fill="white"/>
+  
+  <!-- Pelican Beak -->
+  <path d="M 175 55 L 220 60 L 220 70 L 175 65 Z" fill="#FF9800" stroke="#E65100" stroke-width="2"/>
+  
+  <!-- Pelican Beak Pouch -->
+  <path d="M 175 65 Q 195 85 175 75 Q 155 85 175 65" fill="#FFB74D" stroke="#E65100" stroke-width="1"/>
+  
+  <!-- Pelican Legs -->
+  <line x1="160" y1="132" x2="155" y2="195" stroke="#FF9800" stroke-width="4"/>
+  <line x1="190" y1="132" x2="195" y2="195" stroke="#FF9800" stroke-width="4"/>
+  
+  <!-- Pelican Feet on Pedals -->
+  <path d="M 150 195 L 160 195 L 158 200 L 152 200 Z" fill="#FF9800"/>
+  <path d="M 190 195 L 200 195 L 198 200 L 192 200 Z" fill="#FF9800"/>
+  
+  <!-- Pelican Head Tuft -->
+  <path d="M 150 42 Q 145 30 155 35 Q 150 25 160 32" stroke="#DDD" stroke-width="2" fill="none"/>
+</svg>
