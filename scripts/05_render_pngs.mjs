@@ -10,7 +10,9 @@ const BASE = path.resolve(__dirname, "..");
 const SELECTED_PATH = path.join(BASE, "cache", "selected_models.json");
 const MANIFEST_PATH = path.join(BASE, "cache", "render_manifest.json");
 const FORCE_RENDER = process.argv.includes("--force");
-const DEBUG_PORT = 9247;
+const BROWSER_LAUNCH_TIMEOUT_MS = 45_000;
+const BROWSER_LAUNCH_RETRIES = 3;
+const CDP_COMMAND_TIMEOUT_MS = 30_000;
 
 function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
@@ -109,66 +111,243 @@ class CDPClient {
       this.ws.onopen = resolve;
       this.ws.onerror = reject;
     });
+    const rejectAll = (reason) => {
+      for (const { reject, timer } of this.pending.values()) {
+        clearTimeout(timer);
+        reject(reason);
+      }
+      this.pending.clear();
+    };
+    this.ws.onclose = () => rejectAll(new Error("CDP WebSocket closed unexpectedly"));
+    this.ws.onerror = (ev) => rejectAll(new Error(`CDP WebSocket error: ${ev?.message || "unknown"}`));
     this.ws.onmessage = (ev) => {
       const msg = JSON.parse(ev.data.toString());
       if (msg.id && this.pending.has(msg.id)) {
-        const { resolve, reject } = this.pending.get(msg.id);
+        const { resolve, reject, timer } = this.pending.get(msg.id);
+        clearTimeout(timer);
         this.pending.delete(msg.id);
         if (msg.error) reject(new Error(msg.error.message || JSON.stringify(msg.error)));
         else resolve(msg.result);
       }
     };
   }
-  send(method, params = {}) {
+  send(method, params = {}, timeoutMs = CDP_COMMAND_TIMEOUT_MS) {
     const id = this.nextId++;
     return new Promise((resolve, reject) => {
-      this.pending.set(id, { resolve, reject });
-      this.ws.send(JSON.stringify({ id, method, params }));
+      const timer = setTimeout(() => {
+        if (this.pending.delete(id)) {
+          reject(new Error(`CDP command timed out after ${timeoutMs}ms: ${method}`));
+        }
+      }, timeoutMs);
+      this.pending.set(id, { resolve, reject, timer });
+      try {
+        this.ws.send(JSON.stringify({ id, method, params }));
+      } catch (err) {
+        clearTimeout(timer);
+        this.pending.delete(id);
+        reject(err);
+      }
     });
   }
   close() {
+    if (!this.ws) return;
+    this.ws.onclose = null;
+    this.ws.onerror = null;
     try { this.ws.close(); } catch {}
   }
 }
 
-async function launchBrowser(browserPath) {
+function killProcessTree(proc, signal) {
+  if (!proc?.pid) return;
+  try {
+    if (process.platform !== "win32") {
+      process.kill(-proc.pid, signal);
+    } else {
+      proc.kill(signal);
+    }
+  } catch {
+    try { proc.kill(signal); } catch {}
+  }
+}
+
+async function closeBrowser(proc, cdp, userDataDir) {
+  if (cdp) {
+    try {
+      await cdp.send("Browser.close", {}, 1500);
+    } catch {}
+    cdp.close();
+  }
+  if (proc && proc.exitCode === null && !proc.killed) {
+    killProcessTree(proc, "SIGTERM");
+    const exitDeadline = Date.now() + 1500;
+    while (proc.exitCode === null && Date.now() < exitDeadline) {
+      await sleep(50);
+    }
+    if (proc.exitCode === null) {
+      killProcessTree(proc, "SIGKILL");
+      await sleep(100);
+    }
+  } else if (proc?.pid && process.platform !== "win32") {
+    // Ensure wrapper-spawned helper processes (cat, crashpad) are gone too.
+    killProcessTree(proc, "SIGKILL");
+  }
+  if (userDataDir) {
+    try { fs.rmSync(userDataDir, { recursive: true, force: true }); } catch {}
+  }
+}
+
+async function findOrCreatePageTarget(port, allowCreate) {
+  try {
+    const r = await fetch(`http://127.0.0.1:${port}/json/list`, {
+      signal: AbortSignal.timeout(2000),
+    });
+    if (r.ok) {
+      const list = await r.json();
+      const page = list.find((t) => t.type === "page" && t.webSocketDebuggerUrl);
+      if (page) return page;
+      if (allowCreate) {
+        for (const method of ["PUT", "GET"]) {
+          try {
+            const nr = await fetch(`http://127.0.0.1:${port}/json/new?about:blank`, {
+              method,
+              signal: AbortSignal.timeout(2000),
+            });
+            if (nr.ok) {
+              const created = await nr.json();
+              if (created?.webSocketDebuggerUrl) return created;
+            }
+          } catch {}
+        }
+      }
+    }
+  } catch {}
+  return null;
+}
+
+async function launchBrowserOnce(browserPath) {
   const userDataDir = fs.mkdtempSync(path.join(os.tmpdir(), "pelican-browser-"));
+  const env = { ...process.env };
+  if (process.platform === "linux") {
+    // Avoid 25s DBus/Secret-Service activation stalls on headless Linux CI VMs.
+    env.DBUS_SESSION_BUS_ADDRESS = "/dev/null";
+    env.XDG_CONFIG_HOME = path.join(userDataDir, "xdg-config");
+    env.XDG_CACHE_HOME = path.join(userDataDir, "xdg-cache");
+  }
+
   const proc = spawn(
     browserPath,
     [
       "--headless=new",
       "--disable-gpu",
       "--no-sandbox",
+      "--disable-setuid-sandbox",
       "--disable-dev-shm-usage",
       "--disable-extensions",
       "--disable-background-networking",
-      `--remote-debugging-port=${DEBUG_PORT}`,
+      "--disable-default-apps",
+      "--disable-sync",
+      "--disable-translate",
+      "--disable-component-update",
+      "--disable-crash-reporter",
+      "--disable-breakpad",
+      "--no-first-run",
+      "--no-default-browser-check",
+      "--password-store=basic",
+      "--use-mock-keychain",
+      "--metrics-recording-only",
+      "--mute-audio",
+      "--hide-scrollbars",
+      "--disable-background-timer-throttling",
+      "--disable-renderer-backgrounding",
+      "--disable-backgrounding-occluded-windows",
+      "--disable-features=Translate,BackForwardCache,AcceptCHFrame,MediaRouter,OptimizationHints,DialMediaRouteProvider",
+      "--remote-debugging-address=127.0.0.1",
+      "--remote-debugging-port=0",
       `--user-data-dir=${userDataDir}`,
       "about:blank",
     ],
-    { stdio: "ignore" }
+    {
+      stdio: ["ignore", "ignore", "pipe"],
+      detached: process.platform !== "win32",
+      env,
+    }
   );
 
-  let target = null;
-  for (let i = 0; i < 60; i++) {
-    try {
-      const r = await fetch(`http://127.0.0.1:${DEBUG_PORT}/json/list`);
-      if (r.ok) {
-        const list = await r.json();
-        const page = list.find((t) => t.type === "page" && t.webSocketDebuggerUrl);
-        if (page) {
-          target = page;
-          break;
-        }
+  let stderrBuf = "";
+  let debugPort = null;
+  let portFoundAt = null;
+  let exited = false;
+  let exitInfo = "";
+
+  proc.stderr?.on("data", (chunk) => {
+    const text = chunk.toString("utf-8");
+    stderrBuf = (stderrBuf + text).slice(-4000);
+    if (!debugPort) {
+      const m = text.match(/DevTools listening on ws:\/\/[^:]+:(\d+)\//);
+      if (m) {
+        debugPort = Number(m[1]);
+        portFoundAt = Date.now();
       }
-    } catch {}
-    await sleep(250);
+    }
+  });
+  proc.on("exit", (code, signal) => {
+    exited = true;
+    exitInfo = `code=${code}, signal=${signal}`;
+  });
+  proc.on("error", (err) => {
+    exited = true;
+    exitInfo = `spawn error: ${err.message}`;
+  });
+
+  const activePortFile = path.join(userDataDir, "DevToolsActivePort");
+  const deadline = Date.now() + BROWSER_LAUNCH_TIMEOUT_MS;
+  let target = null;
+
+  while (Date.now() < deadline && !exited) {
+    if (!debugPort && fs.existsSync(activePortFile)) {
+      try {
+        const firstLine = fs.readFileSync(activePortFile, "utf-8").split(/\r?\n/)[0]?.trim();
+        const parsed = Number(firstLine);
+        if (Number.isInteger(parsed) && parsed > 0) {
+          debugPort = parsed;
+          portFoundAt = Date.now();
+        }
+      } catch {}
+    }
+    if (debugPort) {
+      const allowCreate = portFoundAt !== null && Date.now() - portFoundAt > 2000;
+      target = await findOrCreatePageTarget(debugPort, allowCreate);
+      if (target) break;
+    }
+    await sleep(150);
   }
+
   if (!target) {
-    proc.kill();
-    throw new Error(`Could not connect to headless browser CDP (${browserPath})`);
+    await closeBrowser(proc, null, userDataDir);
+    const details = [
+      exited ? `exited early (${exitInfo})` : `timed out after ${BROWSER_LAUNCH_TIMEOUT_MS}ms`,
+      debugPort ? `port=${debugPort}` : "DevTools port never opened",
+      stderrBuf.trim() ? `stderr:\n${stderrBuf.trim()}` : "no stderr output",
+    ].join("; ");
+    throw new Error(`Could not connect to headless browser CDP (${browserPath}): ${details}`);
   }
   return { proc, wsUrl: target.webSocketDebuggerUrl, userDataDir };
+}
+
+async function launchBrowser(browserPath) {
+  let lastErr;
+  for (let attempt = 1; attempt <= BROWSER_LAUNCH_RETRIES; attempt++) {
+    try {
+      return await launchBrowserOnce(browserPath);
+    } catch (err) {
+      lastErr = err;
+      if (attempt < BROWSER_LAUNCH_RETRIES) {
+        console.warn(`Browser launch attempt ${attempt}/${BROWSER_LAUNCH_RETRIES} failed, retrying... (${err.message})`);
+        await sleep(1000);
+      }
+    }
+  }
+  throw lastErr;
 }
 
 async function renderSvgToPng(cdp, svgPath, outPngPath) {
@@ -301,7 +480,8 @@ async function main() {
   }
 
   const manifest = {};
-  const toRender = [];
+  const directPngCopies = [];
+  const browserToRender = [];
   let reusedCount = 0;
 
   for (const m of models) {
@@ -313,28 +493,48 @@ async function main() {
     if (!FORCE_RENDER && prev?.ok && prev.source_sha256 === srcHash && fs.existsSync(outPngPath)) {
       manifest[m.model_id] = prev;
       reusedCount++;
+    } else if (!m.has_svg && srcPath && fs.existsSync(srcPath) && isPngFile(fs.readFileSync(srcPath))) {
+      directPngCopies.push({ model: m, srcPath, srcHash, outPngPath });
     } else {
-      toRender.push({ model: m, srcPath, srcHash, outPngPath });
+      browserToRender.push({ model: m, srcPath, srcHash, outPngPath });
     }
   }
 
-  console.log(`PNG render plan: ${models.length} total | ${reusedCount} unchanged (cached) | ${toRender.length} to render`);
+  const totalToRender = directPngCopies.length + browserToRender.length;
+  console.log(
+    `PNG render plan: ${models.length} total | ${reusedCount} unchanged (cached) | ${totalToRender} to render` +
+      (directPngCopies.length > 0 ? ` (${directPngCopies.length} direct PNG copy, ${browserToRender.length} via browser)` : "")
+  );
 
   let okCount = reusedCount;
   let errCount = 0;
   const errors = [];
 
-  if (toRender.length > 0) {
+  for (const { model: m, srcPath, srcHash, outPngPath } of directPngCopies) {
+    try {
+      const info = await convertRasterToPng(null, srcPath, outPngPath);
+      info.source_sha256 = srcHash;
+      manifest[m.model_id] = info;
+      okCount++;
+    } catch (e) {
+      errCount++;
+      errors.push({ model_id: m.model_id, error: String(e) });
+      manifest[m.model_id] = { ok: false, error: String(e) };
+    }
+  }
+
+  if (browserToRender.length > 0) {
     const browserPath = findBrowserExecutable();
     console.log(`Using headless browser: ${browserPath}`);
     const { proc, wsUrl, userDataDir } = await launchBrowser(browserPath);
     const cdp = new CDPClient(wsUrl);
-    await cdp.connect();
-    await cdp.send("Page.enable");
 
     try {
-      for (let i = 0; i < toRender.length; i++) {
-        const { model: m, srcPath, srcHash, outPngPath } = toRender[i];
+      await cdp.connect();
+      await cdp.send("Page.enable");
+
+      for (let i = 0; i < browserToRender.length; i++) {
+        const { model: m, srcPath, srcHash, outPngPath } = browserToRender[i];
         try {
           let info;
           if (m.has_svg && m.svg_path) {
@@ -352,14 +552,12 @@ async function main() {
           errors.push({ model_id: m.model_id, error: String(e) });
           manifest[m.model_id] = { ok: false, error: String(e) };
         }
-        if ((i + 1) % 50 === 0 || i + 1 === toRender.length) {
-          console.log(`  Rendered ${i + 1}/${toRender.length} (ok=${okCount}, err=${errCount})`);
+        if ((i + 1) % 50 === 0 || i + 1 === browserToRender.length) {
+          console.log(`  Rendered ${i + 1}/${browserToRender.length} (ok=${okCount}, err=${errCount})`);
         }
       }
     } finally {
-      cdp.close();
-      proc.kill();
-      try { fs.rmSync(userDataDir, { recursive: true, force: true }); } catch {}
+      await closeBrowser(proc, cdp, userDataDir);
     }
   }
 
