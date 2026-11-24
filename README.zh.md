@@ -17,13 +17,13 @@
 <!-- STATS:START -->
 | 指标 | 数值 |
 |---|---:|
-| **最后更新（UTC）** | `2026-11-22T16:51:21Z` |
-| **唯一模型数（`provider/model_id`）** | **507** |
+| **最后更新（UTC）** | `2026-11-24T19:52:58Z` |
+| **唯一模型数（`provider/model_id`）** | **510** |
 | **覆盖 Provider 数** | **68** |
-| **含原始 `.svg` + 渲染 `.png`** | **454** (89.5%) |
+| **含原始 `.svg` + 渲染 `.png`** | **457** (89.6%) |
 | **仅截图样本（`has_svg: false`，已统一转 `.png`）** | **53** |
-| **精确命中活跃 `models.dev/api.json`** | **378** (74.6%) |
-| **含 Simon Willison 实测记录** | **177** |
+| **精确命中活跃 `models.dev/api.json`** | **375** (73.5%) |
+| **含 Simon Willison 实测记录** | **179** |
 <!-- STATS:END -->
 
 ---
@@ -81,20 +81,20 @@ pelican-database/
 | `google` | 64 | 52 | 12 | 35 | 35 |
 | `alibaba` | 63 | 54 | 9 | 50 | 19 |
 | `anthropic` | 30 | 30 | 0 | 23 | 22 |
-| `meta` | 21 | 18 | 3 | 18 | 12 |
-| `mistral` | 21 | 18 | 3 | 19 | 7 |
+| `meta` | 21 | 18 | 3 | 17 | 12 |
+| `mistral` | 21 | 18 | 3 | 18 | 7 |
 | `openrouter` | 21 | 20 | 1 | 0 | 0 |
 | `deepseek` | 19 | 17 | 2 | 18 | 9 |
 | `zai` | 19 | 18 | 1 | 17 | 7 |
 | `xai` | 16 | 16 | 0 | 12 | 2 |
+| `moonshotai` | 12 | 12 | 0 | 10 | 6 |
 | `bailing` | 11 | 10 | 1 | 8 | 0 |
-| `moonshotai` | 11 | 11 | 0 | 9 | 6 |
 | `amazon-bedrock` | 9 | 9 | 0 | 9 | 6 |
 | `minimax` | 9 | 8 | 1 | 8 | 1 |
 | `nvidia` | 9 | 8 | 1 | 9 | 0 |
 | `volcengine` | 9 | 8 | 1 | 9 | 0 |
+| `community` | 7 | 4 | 3 | 0 | 3 |
 | `xiaomi` | 7 | 7 | 0 | 6 | 0 |
-| `community` | 5 | 2 | 3 | 0 | 1 |
 | `inception` | 5 | 5 | 0 | 4 | 0 |
 | `tencent-tokenhub` | 5 | 5 | 0 | 5 | 2 |
 | `cohere` | 4 | 4 | 0 | 4 | 0 |

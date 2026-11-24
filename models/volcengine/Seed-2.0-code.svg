@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="auto" role="img" aria-label="Pelican riding a blue bicycle with webbed feet on pedals and wings gripping handlebars">
+  <!-- Metadata for Accessibility -->
+  <title>Pelican on a Bicycle</title>
+  <desc>A playful illustration of a white pelican with an orange beak riding a blue bicycle, holding handlebars with black-tipped wings and resting webbed orange feet on the pedals.</desc>
+
+  <!-- Subtle Sky Background (Optional, can be removed) -->
+  <rect x="0" y="0" width="800" height="600" fill="#f0f9ff" />
+
+  <!-- ========================================== -->
+  <!-- BICYCLE GROUP (Dark Blue Frame, Black Parts) -->
+  <!-- ========================================== -->
+  <g id="bicycle" stroke-linecap="round">
+    <!-- WHEELS (Rear: 250,450; Front: 550,450; Radius 50) -->
+    <g id="wheels">
+      <!-- Rear Wheel -->
+      <circle cx="250" cy="450" r="50" fill="none" stroke="#1f2937" stroke-width="4" /> <!-- Rim -->
+      <circle cx="250" cy="450" r="5" fill="#1f2937" /> <!-- Hub -->
+      <!-- 8 Spokes (Cardinal + Diagonal) -->
+      <line x1="250" y1="400" x2="250" y2="500" stroke="#1f2937" stroke-width="1.5" />
+      <line x1="200" y1="450" x2="300" y2="450" stroke="#1f2937" stroke-width="1.5" />
+      <line x1="214" y1="414" x2="286" y2="486" stroke="#1f2937" stroke-width="1.5" />
+      <line x1="214" y1="486" x2="286" y2="414" stroke="#1f2937" stroke-width="1.5" />
+
+      <!-- Front Wheel (Mirror of Rear) -->
+      <circle cx="550" cy="450" r="50" fill="none" stroke="#1f2937" stroke-width="4" />
+      <circle cx="550" cy="450" r="5" fill="#1f2937" />
+      <line x1="550" y1="400" x2="550" y2="500" stroke="#1f2937" stroke-width="1.5" />
+      <line x1="500" y1="450" x2="600" y2="450" stroke="#1f2937" stroke-width="1.5" />
+      <line x1="514" y1="414" x2="586" y2="486" stroke="#1f2937" stroke-width="1.5" />
+      <line x1="514" y1="486" x2="586" y2="414" stroke="#1f2937" stroke-width="1.5" />
+    </g>
+
+    <!-- FRAME (Dark Blue: #2563eb) -->
+    <g id="frame" stroke="#2563eb" stroke-width="5">
+      <line x1="350" y1="345" x2="250" y2="450" /> <!-- Seat Stay -->
+      <line x1="350" y1="450" x2="250" y2="450" /> <!-- Chain Stay -->
+      <line x1="350" y1="345" x2="450" y2="380" /> <!-- Top Tube -->
+      <line x1="450" y1="380" x2="350" y2="450" /> <!-- Down Tube -->
+      <line x1="450" y1="370" x2="450" y2="390" /> <!-- Head Tube -->
+    </g>
+
+    <!-- HANDLEBARS + GRIPS -->
+    <g id="handlebars">
+      <line x1="420" y1="360" x2="480" y2="360" stroke="#1f2937" stroke-width="4" /> <!-- Bar -->
+      <circle cx="420" cy="360" r="6" fill="#6b7280" /> <!-- Left Grip -->
+      <circle cx="480" cy="360" r="6" fill="#6b7280" /> <!-- Right Grip -->
+    </g>
+
+    <!-- SEAT + CRANKSET + PEDALS -->
+    <g id="seat-crank">
+      <ellipse cx="350" cy="342" rx="18" ry="6" fill="#1f2937" /> <!-- Seat -->
+      <circle cx="350" cy="450" r="18" fill="none" stroke="#374151" stroke-width="3" /> <!-- Chainring -->
+      <circle cx="250" cy="450" r="12" fill="none" stroke="#374151" stroke-width="3" /> <!-- Rear Cassette -->
+      <path d="M350 468 L250 462" stroke="#374151" stroke-width="1.5" /> <!-- Chain -->
+      <!-- Crank Arms (45° + 225° for natural pedaling position) -->
+      <line x1="350" y1="450" x2="372" y2="472" stroke="#374151" stroke-width="4" /> <!-- Upper Crank -->
+      <line x1="350" y1="450" x2="328" y2="428" stroke="#374151" stroke-width="4" /> <!-- Lower Crank -->
+      <!-- Pedals (Centered on Crank Ends) -->
+      <rect x="367" y="467" width="10" height="10" fill="#1f2937" rx="2" /> <!-- Upper Pedal -->
+      <rect x="323" y="423" width="10" height="10" fill="#1f2937" rx="2" /> <!-- Lower Pedal -->
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- PELICAN GROUP (White Body, Orange Accents) -->
+  <!-- ========================================== -->
+  <g id="pelican" stroke-linecap="round">
+    <!-- BODY (White, Slight Gray Outline for Definition) -->
+    <ellipse cx="350" cy="320" rx="55" ry="65" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+
+    <!-- HEAD (With Eye, Highlight, and Tiny Feather Crest) -->
+    <ellipse cx="355" cy="270" rx="22" ry="28" fill="#ffffff" />
+    <circle cx="365" cy="260" r="3" fill="#111827" /> <!-- Black Eye -->
+    <circle cx="366" cy="259" r="1" fill="#ffffff" /> <!-- Eye Highlight -->
+    <path d="M355 242 Q348 232 362 237" stroke="#e5e7eb" stroke-width="2" fill="none" /> <!-- Crest -->
+
+    <!-- BEAK + POUCH (Orange Beak, Light Amber Pouch) -->
+    <path d="M362 265 Q415 225 465 215" stroke="#fb923c" stroke-width="4" fill="none" /> <!-- Upper Mandible -->
+    <path d="M362 265 Q385 290 460 220" stroke="#fb923c" stroke-width="4" fill="none" /> <!-- Lower Mandible -->
+    <path d="M362 265 Q380 300 455 225 Q445 218 465 215 Q455 222 362 265 Z" fill="#fcd34d" stroke="#fb923c" stroke-width="1" /> <!-- Pouch -->
+
+    <!-- WINGS (White with Black Tips GRIPPING HANDLEBARS) -->
+    <g id="wings">
+      <!-- Left Wing (Grips Right Handlebar) -->
+      <path d="M340 315 Q390 330 475 355" fill="#ffffff" stroke="#d1d5db" stroke-width="1" /> <!-- Wing Shaft -->
+      <path d="M475 355 L485 365 L490 355 Z" fill="#111827" /> <!-- Black Tip (On Grip) -->
+      
+      <!-- Right Wing (Grips Left Handlebar) -->
+      <path d="M340 315 Q310 330 325 355" fill="#ffffff" stroke="#d1d5db" stroke-width="1" /> <!-- Wing Shaft -->
+      <path d="M325 355 L415 355 L425 365 L430 355 Z" fill="#111827" /> <!-- Black Tip (On Grip) -->
+    </g>
+
+    <!-- WEBBED FEET (Orange, On Pedals) -->
+    <g id="feet" fill="#fb923c" stroke="#ea580c" stroke-width="1">
+      <!-- Upper Foot (On Right Pedal: 372,472 Center) -->
+      <path d="M372 472 L357 487 L372 492 L387 487 Z" />
+      <!-- Lower Foot (On Left Pedal: 328,428 Center) -->
+      <path d="M328 428 L313 443 L328 448 L343 443 Z" />
+    </g>
+  </g>
+
+  <!-- Optional Cute Detail: Tiny Red Heart on Pelican's Wing -->
+  <path d="M400 340 Q395 335 400 330 Q405 335 400 340 Z" fill="#ef4444" />
+</svg>
