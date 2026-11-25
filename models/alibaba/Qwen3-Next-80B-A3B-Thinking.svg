@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="300" height="225">
+  <!-- Bicycle -->
+  <circle cx="50" cy="100" r="15" fill="none" stroke="#000" stroke-width="2" />
+  <circle cx="150" cy="100" r="15" fill="none" stroke="#000" stroke-width="2" />
+  
+  <!-- Frame -->
+  <line x1="50" y1="85" x2="50" y2="70" stroke="#000" stroke-width="2" />
+  <line x1="50" y1="70" x2="40" y2="70" stroke="#000" stroke-width="2" />
+  <line x1="50" y1="70" x2="60" y2="70" stroke="#000" stroke-width="2" />
+  <line x1="50" y1="85" x2="150" y2="85" stroke="#000" stroke-width="2" />
+  <line x1="150" y1="85" x2="120" y2="70" stroke="#000" stroke-width="2" />
+  <line x1="120" y1="70" x2="120" y2="65" stroke="#000" stroke-width="2" />
+  
+  <!-- Seat -->
+  <ellipse cx="120" cy="65" rx="8" ry="3" fill="#a52a2a" stroke="#000" />
+  
+  <!-- Pelican -->
+  <ellipse cx="120" cy="65" rx="10" ry="8" fill="#fff" stroke="#000" />
+  <circle cx="135" cy="60" r="5" fill="#fff" stroke="#000" />
+  <polygon points="140,60 150,55 150,65" fill="#fbc02d" stroke="#000" />
+  <path d="M150,55 Q155,60 150,65" fill="none" stroke="#000" stroke-width="1" />
+  
+  <!-- Legs & Feet -->
+  <line x1="110" y1="70" x2="110" y2="80" stroke="#000" stroke-width="1.5" />
+  <line x1="130" y1="70" x2="130" y2="80" stroke="#000" stroke-width="1.5" />
+  <path d="M110,80 L105,85 L115,85 Z" fill="#ff9800" />
+  <path d="M130,80 L125,85 L135,85 Z" fill="#ff9800" />
+  
+  <!-- Handlebar decoration -->
+  <circle cx="50" cy="70" r="3" fill="#333" />
+</svg>

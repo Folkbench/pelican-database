@@ -17,12 +17,12 @@ Each model is indexed under a canonical `provider/model_id` identifier with one 
 <!-- STATS:START -->
 | Metric | Value |
 |---|---:|
-| **Last Updated (UTC)** | `2026-11-24T19:52:58Z` |
-| **Unique Models (`provider/model_id`)** | **510** |
+| **Last Updated (UTC)** | `2026-11-25T18:56:45Z` |
+| **Unique Models (`provider/model_id`)** | **508** |
 | **Providers Covered** | **68** |
-| **Original `.svg` + Rendered `.png`** | **457** (89.6%) |
+| **Original `.svg` + Rendered `.png`** | **455** (89.6%) |
 | **Raster-only (`has_svg: false`, normalized `.png`)** | **53** |
-| **Exact Match in Live `models.dev/api.json`** | **375** (73.5%) |
+| **Exact Match in Live `models.dev/api.json`** | **373** (73.4%) |
 | **Tested by Simon Willison** | **179** |
 <!-- STATS:END -->
 
@@ -77,9 +77,9 @@ pelican-database/
 <!-- PROVIDERS:START -->
 | Provider (`models.dev`) | Models | With SVG | Raster-only | Exact `models.dev` | Simon Tested |
 |---|---:|---:|---:|---:|---:|
-| `openai` | 72 | 61 | 11 | 63 | 39 |
-| `google` | 64 | 52 | 12 | 35 | 35 |
-| `alibaba` | 63 | 54 | 9 | 50 | 19 |
+| `openai` | 72 | 61 | 11 | 62 | 39 |
+| `google` | 63 | 51 | 12 | 34 | 35 |
+| `alibaba` | 62 | 53 | 9 | 49 | 19 |
 | `anthropic` | 30 | 30 | 0 | 23 | 22 |
 | `meta` | 21 | 18 | 3 | 17 | 12 |
 | `mistral` | 21 | 18 | 3 | 18 | 7 |
