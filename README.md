@@ -17,12 +17,12 @@ Each model is indexed under a canonical `provider/model_id` identifier with one 
 <!-- STATS:START -->
 | Metric | Value |
 |---|---:|
-| **Last Updated (UTC)** | `2026-11-25T18:56:45Z` |
-| **Unique Models (`provider/model_id`)** | **508** |
+| **Last Updated (UTC)** | `2026-11-26T18:47:32Z` |
+| **Unique Models (`provider/model_id`)** | **507** |
 | **Providers Covered** | **68** |
-| **Original `.svg` + Rendered `.png`** | **455** (89.6%) |
+| **Original `.svg` + Rendered `.png`** | **454** (89.5%) |
 | **Raster-only (`has_svg: false`, normalized `.png`)** | **53** |
-| **Exact Match in Live `models.dev/api.json`** | **373** (73.4%) |
+| **Exact Match in Live `models.dev/api.json`** | **371** (73.2%) |
 | **Tested by Simon Willison** | **179** |
 <!-- STATS:END -->
 
@@ -87,13 +87,13 @@ pelican-database/
 | `deepseek` | 19 | 17 | 2 | 18 | 9 |
 | `zai` | 19 | 18 | 1 | 17 | 7 |
 | `xai` | 16 | 16 | 0 | 12 | 2 |
-| `moonshotai` | 12 | 12 | 0 | 10 | 6 |
 | `bailing` | 11 | 10 | 1 | 8 | 0 |
+| `moonshotai` | 11 | 11 | 0 | 9 | 6 |
 | `amazon-bedrock` | 9 | 9 | 0 | 9 | 6 |
 | `minimax` | 9 | 8 | 1 | 8 | 1 |
 | `nvidia` | 9 | 8 | 1 | 9 | 0 |
 | `volcengine` | 9 | 8 | 1 | 9 | 0 |
-| `community` | 7 | 4 | 3 | 0 | 3 |
+| `community` | 8 | 5 | 3 | 0 | 3 |
 | `xiaomi` | 7 | 7 | 0 | 6 | 0 |
 | `inception` | 5 | 5 | 0 | 4 | 0 |
 | `tencent-tokenhub` | 5 | 5 | 0 | 5 | 2 |
